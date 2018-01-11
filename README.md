@@ -8,7 +8,9 @@ Opas on tarkoitettu ohjelmistokehityksessä tarvittavien menetelmien sekä käyt
 
 [Tavoitteet](/tavoitteet.md)
 
-##### **Versionhallinta**
+#### **Versionhallinta**
+
+Perusteet luvun tehtävät koostuvat useammasta tasosta. Tasot on yritetty kokoa loogiseen järjestykseen siten, että aina ennen seuraavaa tasoa olisi hyvä tehdä edellinen. Loppupäässä tehtävät ovat kuitenkin vapaampia ja enemmän tiedonhakuun liittyviä, koska joitakin asioita versionhallinnan käytöstä on vaikeampi opettaa suoraan. Erikoistilanteiden luominen opetusta varten on hankalaa ja sen sijaan pyritään tuomaan esille erilaisia tilanteita, joita työskentelyn aikana kohtaa. Monet ovat kuitenkin harvinaisia mutta varsinkin aluksi voi syntyä paljonkin erikoistilanteita mihin ei löydy suoraa vastausta tästä oppaasta.
 
 [Git perusteet 101](/chapter1.md)
 
