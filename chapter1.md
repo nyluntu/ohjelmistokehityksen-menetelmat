@@ -1,4 +1,6 @@
-# Git perusteet
+# Git perusteet 101
+
+---
 
 Perusteet luvun tehtävät koostuvat useammasta tasosta. Tasot on yritetty kokoa loogiseen järjestykseen siten, että aina ennen seuraavaa tasoa olisi hyvä tehdä edellinen. Loppupäässä tehtävät ovat kuitenkin vapaampia ja enemmän tiedonhakuun liittyviä, koska joitakin asioita versionhallinnan käytöstä on vaikeampi opettaa suoraan. Erikoistilanteiden luominen opetusta varten on hankalaa ja sen sijaan pyritään tuomaan esille erilaisia tilanteita, joita työskentelyn aikana kohtaa. Monet ovat kuitenkin harvinaisia mutta varsinkin aluksi voi syntyä paljonkin erikoistilanteita mihin ei löydy suoraa vastausta tästä oppaasta.
 
@@ -20,7 +22,7 @@ Tietovaraston luonnin jälkeen lisää muutama tiedosto versionhallinnan jäljit
 
 ### Luo paikallinen tietovarasto olemassa olevasta etätietovarastosta
 
-Luo paikallinen kopio seuraavasta julkisesta tietovarastosta:  [https://github.com/nyluntu/hacksummit-forecast](https://github.com/nyluntu/hacksummit-forecast)
+Luo paikallinen kopio seuraavasta julkisesta tietovarastosta:  [https://github.com/nyluntu/hacksummit-forecast](https://github.com/nyluntu/hacksummit-forecast)
 
 Tämän jälkeen anna komento `git remote–v` ja ota kuvakaappaus.
 
@@ -42,11 +44,11 @@ Kerro miten sivuutus tapahtuu ja miksi käyttäisit tällaista ominaisuutta? Tar
 
 ### Tulevien pysyvien muutosten peruuttaminen
 
-Millä komennolla voit peruuttaa jo valmistellut tiedostot tulevaan pysyvään muutokseen? 
+Millä komennolla voit peruuttaa jo valmistellut tiedostot tulevaan pysyvään muutokseen?
 
-Eli olet esimerkiksi muuttanut tiedostoa tai lisännyt uuden jäljitettäväksi mutta huomaat, ettet haluakaan ottaa uutta tiedostoa mukaan seuraavaan pysyvään muutokseen. Muutos on siis jo tässä kohdin **staged** tilassa. 
+Eli olet esimerkiksi muuttanut tiedostoa tai lisännyt uuden jäljitettäväksi mutta huomaat, ettet haluakaan ottaa uutta tiedostoa mukaan seuraavaan pysyvään muutokseen. Muutos on siis jo tässä kohdin **staged** tilassa.
 
-Miten siis peruuttaisit tulevan muutokset, että saat osan tiedostoista pois **staged** tilasta? 
+Miten siis peruuttaisit tulevan muutokset, että saat osan tiedostoista pois **staged** tilasta?
 
 Kerro tarvittavat komennot ja ota myös `git status`–komentoa käyttäen pari kuvakaappausta ennen ja jälkeen tilanteen.
 
@@ -65,6 +67,4 @@ Voit luoda etätietovaraston haluamaasi palveluun. Kun olet muutokset työntäny
 # Sanasto
 
 // TODO
-
-
 

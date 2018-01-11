@@ -1,0 +1,38 @@
+# Git perusteet 102
+
+---
+
+### Etätietovarastonviittauksienlisääminen ja poistaminen
+
+Miten voit lisätä ja poistaa viittauksia etätietovarastoihin? 
+
+Paikallinen tietovarasto osoittaa useimmiten myös yhteen etätietovarastooon, jos lähdekoodit jaetaan muiden kehittäjien kanssa. 
+
+Millä komennoilla näiden osoitteiden ja viittausten hallinta onnistuu,kun ei käytetä `git clone` –komentoa? 
+
+Anna lopuksi komento `git remote–v` ja ota kuvakaappaus, josta näkyy vähintään kaksi eri viittausta etätietovarastoon.
+
+### Etätietovaraston kehityshaaran hakeminen paikalliseen tietovarastoon
+
+Millä komennoilla saat haettua etätietovarastosta erillisen kehityshaaran paikalliseen tietovarastoon? 
+
+Kehityshaara ei saa olla siis `master` –kehityshaara vaan jokin muu. Kehityshaara tulee hakea omaan paikalliseen kehityshaaraan ilman, että tapahtuu ns. `merge`. 
+
+Kerro vaadittavat komennot ja kuvaile mitä ne tekevät.
+
+### Etätietovaraston kehityshaaran hakeminen paikalliseen tietovarastoon vetämällä muutokset
+
+Kysymys on sama kuin edellinen mutta nyt `merge` –tapahtuma saa tapahtua samalla. Kehityshaaran on oltava jokin muu kuin `master` –kehityshaara. 
+
+Kerro vaadittavat komennot ja kuvaile mitä ne tekevät.
+
+### Paikallisten tietovaraston `master` -kehityshaaran työntäminen etätietovarastoon
+
+Kerro millä komennoilla saat työnnettyä paikallisessa tietovarastossa olevan master-kehityshaaran etätietovarastoon, kun olet ensin siihen tehnyt muutoksia?
+
+### Paikallisen tietovaraston kehityshaaran tai `tagin` työntäminen etätietovarastoon
+
+Sama idea kuin edellisessä mutta kehityshaaran pitää olla jokin muu kuin master–kehityshaara. Ota kuvakaappaus etätietovarastosta, jossa tämä kehityshaara näkyy. Ota kuvakaappaus etätietovarastosta, josta näkyy sinne merkitty `tag`–merkintä.
+
+
+

@@ -1,5 +1,7 @@
 # Tavoitteet
 
+---
+
 Oppaan tavoitteena on tukea opetusta ja sisältää pääosin erilaisia tehtäviä sisältöjen opetteluun. Vastauksia ei näihin tehtäviin ole vielä valitettavasti olemassa. Tehtävät voi suorittaa yleensä usealla eri tavalla, joten oikea vastaus ei ole tärkeintä vaan se, että työkalut ja niiden käyttötavat tulevat tutuksi.
 
 ##### Opit seuraavista ohjelmistokehityksen osa-alueista
@@ -25,7 +27,7 @@ Osallistujat tullaan jakamaan pienempiin kehitystiimeihin, jotka toteuttavat par
 Asenna ja testaa seuraavien työkalujen toimivuus:
 
 * Visual Studio 2017 \(community riittää\)
-* Git -versionhallinta \(https://git-scm.com/\)
+* Git -versionhallinta \([https://git-scm.com/\](https://git-scm.com/\)\)
 
-Ohjelmoimme C\#-kielellä. 
+Ohjelmoimme C\#-kielellä.
 
