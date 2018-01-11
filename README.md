@@ -22,3 +22,5 @@ Perusteet luvun tehtävät koostuvat useammasta tasosta. Tasot on yritetty kokoa
 
 [Git perusteet 105](/git-perusteet-105.md)
 
+[Git muu materiaali ja lähteitä](/git-muu-materiaali-ja-lahteita.md)
+
