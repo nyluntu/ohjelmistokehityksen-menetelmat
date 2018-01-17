@@ -10,4 +10,5 @@
 * [Git muu materiaali ja lähteitä](git-muu-materiaali-ja-lahteita.md)
 * [NUnit perusteet 101](nunit-perusteet-101.md)
 * [NUnit perusteet 101](nunit-perusteet-101.md)
+* NUnit perusteet 102
 
