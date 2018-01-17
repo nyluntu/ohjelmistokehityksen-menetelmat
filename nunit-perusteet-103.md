@@ -1,4 +1,4 @@
-# NUnit perusteet 3
+# NUnit perusteet 103
 
 ---
 
@@ -21,6 +21,16 @@ Seuraavaksi sulje ohjelma ja tutustu SaliavustajaTests -projektiin. Yritä saada
 * Miten eri Assert-tarkistuksia on käytetty?
 * Miten itse testit on rakenteeltaan ja luettavuudeltaan kirjoitettu?
 
+### Arrange-Act-Assert -sääntö testien kirjoittamisessa
+
+Tutustu seuraavaan artikkeliin. [http://wiki.c2.com/?ArrangeActAssert](http://wiki.c2.com/?ArrangeActAssert)
+
+Mikä on Arrange, Act, Assert säännön tarkoitus=
+
+Tutustu edelliseen Saliavustaja esimerkkiin ja huomioi, toteutuuko siellä kyseinen rakenne?
+
+Mitä muita tapoja on järjestellä yksikkötestien ohjelmointikoodia?
+
 ### Merkkijono laskin -ohjelman toteuttaminen yksikkötestein
 
 Seuraava harjoitus ei ole kirjoittajan oma vaan perustuu Roy Osheroven String Calculator harjoitukseen. [http://osherove.com/tdd-kata-1/](http://osherove.com/tdd-kata-1/)
@@ -42,6 +52,21 @@ Ohjelman tulee toimia siten, että luokan nimi, joka toteuttaa kyseisen vaatimuk
   * Ei tarvitse tukea muotoa, jossa erottimet seuraavat toisiaan. Esimerkiksi "1,\n". Voidaan olettaa, ettei tällaisia syötteitä anneta.
 * [ ] Negatiivinen luku, pienempi kuin nolla, aiheuttaa virheen. \(Exception\)
 * [ ] Luvut, jotka ovat yli 1000, ei huomioida yhteenlaskussa.
+
+### FizzBuzz -ohjelman toteuttaminen yksikkötestein
+
+Tutustutaan klassikoksi muodostuneeseen ohjelmointiongelmaan: 
+
+> Kirjoita ohjelma, joka kysyy käyttäjältä lukua yhden ja sadan väliltä ja tulostaa luvun. Jos luku on kolmella jaollinen, luvun sijaan tulostetaan "Fizz". Jos luku on viidellä jaollinen, luvun sijaan tulostetaan "Buzz". Jos luku on sekä kolmellä että viidellä jaollinen, luvun sijaan tulostetaan "FizzBuzz".
+
+Ohjelma voi olla sinulle tuttu. Nyt tavoitteena on tehdä ohjelma ensin yksikkötestien kanssa ja vasta lopuksi toteuttaa konsoliohjelma syötteiden kysymiseen. Tarkoituksena on oppia erottamaan testikoodi niin sanotusta tuotantokoodista. Yritä, että saisit testien avulla varmistettua ensin ohjelman toimivuuden. Alla annettu vielä apuja ohjelman toteuttamiseen osissa;
+
+1. Tee ohjelma, joka lukee luvun käyttäjältä ja tulostaa sen.
+2. Jos luku on jaollinen kolmella, tulosta luvun sijaan merkkijono "Fizz".
+3. Jos luku on jaollinen viidellä, tulosta luvun sijaan merkkijono "Buzz".
+4. Jos luku on jaollinen kolmella ja viidellä, tulosta luvun sijan merkkijono "FizzBuzz".
+
+_Ps. Tehtävänannossa puhutaan tarkoituksella, että käyttäjä antaa syötteen. Lopullisen ohjelman tulisi toimia tällä tavoin mutta sinun tehtäväsi on pohtia, miten esimerkiksi käyttäjän syöte tulee huomioitua testeissä. Tarvitseeko sitä edes testata? Perustele vastauksesi tai kerro oma toteutustapasi tälle._
 
 
 
