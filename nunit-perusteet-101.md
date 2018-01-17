@@ -28,12 +28,6 @@ Katso video: [https://www.youtube.com/watch?v=f2NrKazjWes](https://www.youtube.c
 
 Luo videon mukainen testi. Videolla kerrataan myös NUnit käyttöönotto. Yritä saada testit toimimaan siten, että sinulla on itselläsi käsitys miten hylätty ja läpäisty testi erottuvat kun ne ajetaan Visual Studion kautta.
 
-
-
-
-
-
-
 ### 
 
 

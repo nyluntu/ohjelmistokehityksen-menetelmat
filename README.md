@@ -28,11 +28,11 @@ Perusteet luvun tehtävät koostuvat useammasta tasosta. Tasot on yritetty kokoa
 
 Perusteissä käydään läpi yksikkötestauksen pääperiaatteet käytännössä. Tasot on suunniteltu siten, että alempi taso täydentää ylempää. Sisällöt auttavat tutustumaan aiheeseen ja opiskelijan tehtävä on itsenäisesti löytää näihin kysyttyihin asioihin vastaukset. Yksikkötestauksen harjoituksissa käytetään xUnit perheeseen kuuluvia yksikkötestauskirjastoja. Esimerkit ovat C\# -ohjelmointikielellä tehtyjä mutta samat periaatteet toimivat ohjelmointikielestä riippumatta.
 
-NUnit perusteet 101
+[NUnit perusteet 101](/nunit-perusteet-101.md)
 
 NUnit perusteet 102
 
 NUnit perusteet 103
 
-NUnit muu materiaali ja lähteitä
+[NUnit muu materiaali ja lähteitä](/nunit-muu-materiaali-ja-lahteita.md)
 
