@@ -30,9 +30,9 @@ Perusteissä käydään läpi yksikkötestauksen pääperiaatteet käytännöss�
 
 [NUnit perusteet 101](/nunit-perusteet-101.md)
 
-NUnit perusteet 102
+[NUnit perusteet 102](/nunit-perusteet-102.md)
 
-NUnit perusteet 103
+[NUnit perusteet 103](/nunit-perusteet-103.md)
 
 [NUnit muu materiaali ja lähteitä](/nunit-muu-materiaali-ja-lahteita.md)
 
