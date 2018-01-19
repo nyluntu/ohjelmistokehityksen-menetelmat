@@ -55,7 +55,7 @@ Ohjelman tulee toimia siten, että luokan nimi, joka toteuttaa kyseisen vaatimuk
 
 ### FizzBuzz -ohjelman toteuttaminen yksikkötestein
 
-Tutustutaan klassikoksi muodostuneeseen ohjelmointiongelmaan: 
+Tutustutaan klassikoksi muodostuneeseen ohjelmointiongelmaan:
 
 > Kirjoita ohjelma, joka kysyy käyttäjältä lukua yhden ja sadan väliltä ja tulostaa luvun. Jos luku on kolmella jaollinen, luvun sijaan tulostetaan "Fizz". Jos luku on viidellä jaollinen, luvun sijaan tulostetaan "Buzz". Jos luku on sekä kolmellä että viidellä jaollinen, luvun sijaan tulostetaan "FizzBuzz".
 
@@ -67,6 +67,22 @@ Ohjelma voi olla sinulle tuttu. Nyt tavoitteena on tehdä ohjelma ensin yksikkö
 4. Jos luku on jaollinen kolmella ja viidellä, tulosta luvun sijan merkkijono "FizzBuzz".
 
 _Ps. Tehtävänannossa puhutaan tarkoituksella, että käyttäjä antaa syötteen. Lopullisen ohjelman tulisi toimia tällä tavoin mutta sinun tehtäväsi on pohtia, miten esimerkiksi käyttäjän syöte tulee huomioitua testeissä. Tarvitseeko sitä edes testata? Perustele vastauksesi tai kerro oma toteutustapasi tälle._
+
+### Keilauksen pistelaskuri
+
+Tutustu alla olevaan tehtävänantoon. Sinun tehtäväsi on toteuttaa ohjelma käyttäen yksikkötestausta. Tehtävänanto on tarkoituksella jätetty pilkkomatta pieniin välivaiheisiin. Sinun pitää itse lähteä purkamaan tehtävänantoa ja miettiä mitä testaisit ensin tai mistä lähtisit liikkeelle. Voit aloittaa vaikka hahmottelemalla miten ohjelma toimii.
+
+Tee itsellesi muistiinpanot, miten tehtävän ratkaisisit. Kun sinulla on jonkinlainen ajatus niin yritä toteuttaa ratkaisusi. Alkuun voit esimerkiksi listata helpoimmat testit, jotka vievät ohjelman kokonaisuutta eteenpäin.
+
+> Yksi keilasarja koostuu kymmenestä ruudusta. Yhdeksään ensimmäiseen ruutuun saa heittää kaksi heittoa, jos ensimmäinen heitto ei ole kaato ja kymmenenteen ruutuun heitetään kolme heittoa, jos ensimmäinen heitto on kaato tai toinen heitto on paikko.
+>
+> Jokaisesta heitosta saa pisteitä yhtä paljon kuin on kaadettuja keiloja. Jos heitto on kaato, kyseisen ruudun pisteisiin lasketaan mukaan lisäksi kahden seuraavan heiton pisteet ja paikon jälkeen lasketaan ruutuun mukaan seuraavan yhden heiton pisteet. 
+>
+> Ruudun pisteet lasketaan ja merkitään vasta kun kaikki ruutuun tarvittavat heitot on heitetty, esimerkiksi kaadon jälkeen on heitettävä ensin kaksi heittoa ennen kuin pisteet voidaan laskea.
+>
+>  Maksimipisteet 300 saadaan, kun heitetään 12 kaatoa peräkkäin, jolloin jokaista ruutua kohti tulee 30 pistettä. 
+>
+> \(alkuperäinen idea http://codingdojo.org/kata/Bowling/\)
 
 
 
