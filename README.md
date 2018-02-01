@@ -46,3 +46,9 @@ Testausvetoinen kehitys tai kuten se paremmin tunnetaan termillä Test Driven De
 
 [TDD muu materiaali ja lähteitä](/tdd-muu-materiaali-ja-lahteita.md)
 
+#### Ketterä ohjelmistokehitys \(Agile development\)
+
+Kirjassa ei ole varsinaisia tehtäviä ketterän ohjelmistokehityksen osalta. Lähteet toimivat vain aiheen esittelijänä. Tarkoitus on lisätä myöhemmin käytännön asioita miten kokonaisuus voi toimia ja minkälaisia hyötyjä menetelmien noudattamisesta on.
+
+[Muu materiaali ja lähteitä](/agile-muu-materiaali-ja-lahteita.md)
+
