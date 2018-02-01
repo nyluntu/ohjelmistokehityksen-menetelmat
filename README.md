@@ -52,3 +52,5 @@ Kirjassa ei ole varsinaisia tehtäviä ketterän ohjelmistokehityksen osalta. L�
 
 [Muu materiaali ja lähteitä](/agile-muu-materiaali-ja-lahteita.md)
 
+[Agile esimerkki, sykli ](/agile-esimerkki-sykli.md)\(alunperin valmisteltu projektityöskentelyn harjoitusta varten\)
+
