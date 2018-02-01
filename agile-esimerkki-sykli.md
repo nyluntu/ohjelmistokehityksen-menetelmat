@@ -23,17 +23,40 @@ Usein tarkempi määrittely ja kuvaus voidaan kirjoittaa ennen tarinan toteuttam
 * [User Stories Versus Use Cases](https://www.scrumalliance.org/community/articles/2015/october/user-stories-vs-use-cases)
 * [Basic Use Case template, Alistair Cockburn](http://alistair.cockburn.us/Basic+use+case+template)
 
+Käyttötapaus on dokumentti mikä voidaan kirjoittaa esimerkiksi käyttäjätarinan perusteella. Huomaa lähteissäkin, että ne pyrkivät kertomaan mikä ero on käyttäjätarinalla ja käyttötapauksella. Lyhyesti, käyttötapaus voidaan nähdä tarkempana määritelmänä miten ohjelma kommunikoi eri osapuolten kanssa ja toteuttaa halutun tavoitteen.
+
 #### Tuotteen -backlog
 
+* [Backlog](https://www.agilealliance.org/glossary/backlog/)
+* [Product Backlog](http://www.scrumguides.org/scrum-guide.html#artifacts-productbacklog)
+* [Grooming Backlog](https://www.agilealliance.org/glossary/backlog-grooming/)
+
+Tuotteen tehtävälista on dokumentti, joka ohjaa kehitystä. Se muuttuu aika ajoin ja pääasiassa tuotteen omistaja huolehtii siitä. Kehitystiimi kuitenkin osallistuu tähän myös tarvittaessa ja varsinkin kun tehtäviä otetaan seuraavaan sykliin. 
+
 #### Syklin \(sprintin\) -backlog
+
+* [Sprint Backlog](http://www.scrumguides.org/scrum-guide.html#artifacts-sprintbacklog)
+
+Syklin tehtävälista on dokumentti, johon on valittu ne tehtävät mitkä kehitystiimi "lupaa" tehdä. Tarkoitus on, ettei valita liikaa vaan voidaan melko tarkasti sanoa, että ne toteutuvat. Tehtäviä katsotaan läpi aina syklien lopussa ja siivotaan sekä korjataan olettamuksia.
 
 ## Ohjelmointi
 
 #### Versionhallinta
 
+* Kts. Versionhallinan perusteet
+
 #### Yksikkötestaus ja TDD
 
+* Kts. yksikkötestauksen perusteet
+* Kts. yksikkötestauksen perusteet
+
 #### SOLID -sääntö/ohje
+
+* [Wikipedia: SOLID](https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29)
+* [SOLID architecture principles using simple C\# examples](https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp)
+* [Robert Martin SOLID Principles of Object Oriented and Agile Design \(video\)](https://www.youtube.com/watch?v=TMuno5RZNeE)
+
+SOLID säännöstä ei ole muuta kirjoitettua materiaalia tässä kirjassa. Lähteet auttavat sinua tutustumaan aiheeseen ja varsinkin Robert Martinin video on valaiseva. Kyseinen henkilö on säännön luonut eri kokemuksien pohjalta. Säännön tarkoitus on koostaa hyviä tapoja olio-ohjelmoinnin luokkien ohjelmointiin ja parantaa koodin laatua. Käytännössä on kyse ohjelmoinnista ja vain vinkata mitä huomioida kun ohjelman koodia tuotetaan ja kuinka se auttaa myöhemmin muutosten tekemisessä.
 
 ## Syklin lopetus
 
