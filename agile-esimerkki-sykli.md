@@ -31,7 +31,7 @@ Käyttötapaus on dokumentti mikä voidaan kirjoittaa esimerkiksi käyttäjätar
 * [Product Backlog](http://www.scrumguides.org/scrum-guide.html#artifacts-productbacklog)
 * [Grooming Backlog](https://www.agilealliance.org/glossary/backlog-grooming/)
 
-Tuotteen tehtävälista on dokumentti, joka ohjaa kehitystä. Se muuttuu aika ajoin ja pääasiassa tuotteen omistaja huolehtii siitä. Kehitystiimi kuitenkin osallistuu tähän myös tarvittaessa ja varsinkin kun tehtäviä otetaan seuraavaan sykliin. 
+Tuotteen tehtävälista on dokumentti, joka ohjaa kehitystä. Se muuttuu aika ajoin ja pääasiassa tuotteen omistaja huolehtii siitä. Kehitystiimi kuitenkin osallistuu tähän myös tarvittaessa ja varsinkin kun tehtäviä otetaan seuraavaan sykliin.
 
 #### Syklin \(sprintin\) -backlog
 
@@ -60,9 +60,11 @@ SOLID säännöstä ei ole muuta kirjoitettua materiaalia tässä kirjassa. Läh
 
 ## Syklin lopetus
 
-#### Ohjelman demo
+#### Tuoteversio \(Increment\)
 
-#### Julkaisu
+* Kts. Scrum guide ja etsi sana increment.
+
+Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominaisuuksia, jotka tarvittaessa tuotteen omistajan hyväksymisen jälkeen voidaan julkaista. Julkaisu ei ole pakollinen vaan isompi julkaisu voidaan tehdä useammassa syklissä. Tärkeintä on, että tuote on aina julkaisuvalmis tarvittaessa, koska välttämättä kaikkien ominaisuuksien ei tarvitse olla valmiita. Tämä on ketterän ohjelmistokehityksen tavoite. Tehdä vähän, julkaista ja oppia tuotteesta. Tällöin riskit voidaan rajat esimerkiksi 2 viikon jaksoihin kuukausien sijasta.
 
 
 
