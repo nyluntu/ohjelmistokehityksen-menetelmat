@@ -3,6 +3,7 @@
 * [Ohjelmistokehityksen menetelmät ja käytänteet](README.md)
 * [Tavoitteet](tavoitteet.md)
 * [Agile esimerkki, sykli](agile-esimerkki-sykli.md)
+* [Agile, Käyttäjätarina ja käyttötapaus](agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md)
 * [Agile muu materiaali ja lähteitä](agile-muu-materiaali-ja-laehteitae.md)
 * [Git perusteet 101](git-perusteet-101.md)
 * [Git perusteet 102](git-perusteet-102.md)
