@@ -1,5 +1,20 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Ohjelmistokehityksen menetelmät ja käytänteet](README.md)
 * [Tavoitteet](tavoitteet.md)
+* [Agile esimerkki, sykli](agile-esimerkki-sykli.md)
+* [Agile muu materiaali ja lähteitä](agile-muu-materiaali-ja-laehteitae.md)
+* [Git perusteet 101](git-perusteet-101.md)
+* [Git perusteet 102](git-perusteet-102.md)
+* [Git perusteet 103](git-perusteet-103.md)
+* [Git perusteet 104](git-perusteet-104.md)
+* [Git perusteet 105](git-perusteet-105.md)
+* [Git muu materiaali ja lähteet](git-muu-materiaali-ja-laehteet.md)
+* [NUnit perusteet 101](nunit-perusteet-101.md)
+* [NUnit perusteet 102](nunit-perusteet-102.md)
+* [NUnit perusteet 103](nunit-perusteet-103.md)
+* [NUnit muu materiaali ja lähteitä](nunit-muu-materiaali-ja-laehteitae.md)
+* [TDD perusteet 101](tdd-perusteet-101.md)
+* [TDD perusteet 102](tdd-perusteet-102.md)
+* [TDD muu materiaali ja lähteitä](tdd-muu-materiaali-ja-laehteitae.md)
 
