@@ -3,6 +3,7 @@
 * [Ohjelmistokehityksen menetelmät ja käytänteet](README.md)
 * [Tavoitteet](tavoitteet.md)
 * [Agile esimerkki, sykli](agile-esimerkki-sykli.md)
+* [Agile, Tuotteen tehtävälista](agile-tuotteen-tehta-va-lista.md)
 * [Agile, Käyttäjätarina ja käyttötapaus](agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md)
 * [Agile muu materiaali ja lähteitä](agile-muu-materiaali-ja-laehteitae.md)
 * [Git perusteet 101](git-perusteet-101.md)
@@ -18,4 +19,6 @@
 * [TDD perusteet 101](tdd-perusteet-101.md)
 * [TDD perusteet 102](tdd-perusteet-102.md)
 * [TDD muu materiaali ja lähteitä](tdd-muu-materiaali-ja-laehteitae.md)
+* [Suunnitelmia](suunnitelmia.md)
+* [Projekti 2018/01](projekti-2018-01.md)
 
