@@ -77,3 +77,21 @@ Eri rooleille tai käyttäjäryhmille on tehty oma listauksensa heille tarkoitet
 
 Käyttötapauksien kohdalla yksi käyttäjätarina pilkotaan tarkemmin vaiheisiin ja tapahtumiin mistä se koostuu. Käyttötapauksia ei ole kirjoitettu kaikista käyttätarinoista valmiiksi vaan niitä luodaan sen mukaan kuinka projekti etenee.
 
+## Tarvittavat ohjelmistot
+
+Alla on kuvattu tarvittavia työkaluja ohjelmia. Mikään ei estä käyttämästä muita vastaavia, esimerkiksi projektissa ei ole väliä mikä Visual Studion versio on käytössä kunhan se on vähintään vuoden 2017 version julkaisu.
+
+Osa työkaluista on voitu määrittää pakollisiksi työskentelyn seuraamista varten, esimerkiksi Gitlab palvelu.
+
+### Pakolliset palvelut ja ohjelmistot
+
+{% embed data="{\"url\":\"https://git-scm.com/\",\"type\":\"link\",\"title\":\"Git\",\"icon\":{\"type\":\"icon\",\"url\":\"https://git-scm.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Versionhallintatyökalu\"}" %}
+
+{% embed data="{\"url\":\"https://gitlab.com\",\"type\":\"link\",\"title\":\"The only single product for the complete DevOps lifecycle - GitLab\",\"description\":\"“GitLab is the leading integrated product for modern software development. Connecting issue management, version control, code review, CI, CD, and monitoring into a single, easy-to-install application, we help teams go faster from planning to monitoring.”\",\"icon\":{\"type\":\"icon\",\"url\":\"https://about.gitlab.com/ico/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://about.gitlab.com/images/blogimages/gitlab-blog-cover.png\",\"width\":1750,\"height\":1225,\"aspectRatio\":0.7},\"caption\":\"Projektinhallintaan sekä versionhallintaan tarkoitettu palvelu\"}" %}
+
+### Muut palvelut ja ohjelmistot
+
+{% embed data="{\"url\":\"https://visualstudio.microsoft.com/vs/\",\"type\":\"link\",\"title\":\"Visual Studio IDE\",\"description\":\"Fully-featured IDE for Android, iOS, Windows, web, & cloud. Learn more about Visual Studio\'s Integrated Development Environment. Free trial.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://visualstudio.microsoft.com/wp-content/uploads/2017/02/Microsoft-favicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://visualstudio.microsoft.com/wp-content/uploads/2018/06/vscom\_vs\_twitter.png\",\"width\":1200,\"height\":628,\"aspectRatio\":0.5233333333333333},\"caption\":\"C\# ohjelman tekemiseen\"}" %}
+
+
+

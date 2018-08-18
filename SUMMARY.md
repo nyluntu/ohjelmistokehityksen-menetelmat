@@ -21,4 +21,5 @@
 * [TDD muu materiaali ja lähteitä](tdd-muu-materiaali-ja-laehteitae.md)
 * [Suunnitelmia](suunnitelmia.md)
 * [Projekti 2018/01](projekti-2018-01.md)
+* [Projekti 2018/01 Käytänteet ja menetelmät](projekti-2018-01-kaeytaenteet.md)
 
