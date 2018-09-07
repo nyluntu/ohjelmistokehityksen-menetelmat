@@ -8,3 +8,7 @@
 
 [9 Benefits of Test Driven Development](https://www.madetech.com/blog/9-benefits-of-test-driven-development), David Winter
 
+[The Three laws of TDD ](https://www.youtube.com/watch?v=AoIfc5NwRks)\(video\), Robert C. Martin
+
+[TDD Basics with C\# \(video\),](https://www.youtube.com/watch?v=l4xhTq4qmC0) Jeremy Clark
+

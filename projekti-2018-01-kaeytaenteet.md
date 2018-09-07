@@ -35,6 +35,7 @@ Muun käytetyn materiaalin lisäksi katso seuraavat linkit.
 * ​[User Stories](https://www.agilealliance.org/glossary/user-stories)​
 * ​[Advantages of User Stories for Requirements](http://www.mountaingoatsoftware.com/articles/advantages-of-user-stories-for-requirements)​
 * ​[Role-Feature-Reason](https://www.agilealliance.org/glossary/role-feature/)​
+* [INVEST sääntö](https://www.agilealliance.org/glossary/invest/)
 
 ### Käyttötapauskuvaukset
 
