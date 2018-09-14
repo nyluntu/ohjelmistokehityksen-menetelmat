@@ -200,7 +200,7 @@ Harjoituksessa on rajattu toteutusvaihtoehtoja seuraavasti:
 
 Tehtävä tehdään ryhmissä. Ryhmien tulee tehdä tehtävän osia käyttäen versionhallintaa ja Gitlab palvelua. 
 
-Tehtävät tulee listata Gitlab palveluun.
+Gitlab palvelussa pyritään pitämään myös projektin etenemiseen liittyvät dokumentit eli käyttäkää issue ja board toimintoja näyttääksenne projektin eri vaiheita ja se etenemistä.
 
 Tehtävää tehdään niin pitkälle kuin mahdollista. Ohjaaja auttaa tunnilla.
 
