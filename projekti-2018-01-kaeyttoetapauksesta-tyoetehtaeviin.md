@@ -113,5 +113,9 @@ Tässä kohdin on vain aloitettava ohjelmointi. Vasta sitten tiedetään oikeat 
 Kun ohjelmoidaan, se ei tarkoita, että kaikki asiat pitää tietää ja osata. Sellaista tilannetta ei olekaan. On paljon tärkeämpää tunnistaa osa-alueet, joista ei tiedä mitään ja mitkä ovat haastavia, koska silloin niitä on tarkoitus osa-alueita on tarkoitus parantaa.
 {% endhint %}
 
+## Videot
 
+Soittolista tähän liittyvistä asioista. Esittelee omia ajatuksia miten näihin työtehtäviin on päästy.
+
+{% embed data="{\"url\":\"https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_7GzGYkoO1msZPSLl1vIaz\",\"type\":\"video\",\"title\":\"Projektityö 2018/01 Käyttötapauksesta työtehtäviin\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.youtube.com/yts/img/favicon\_144-vfliLAfaB.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://i.ytimg.com/vi/goroT7tj5rE/hqdefault.jpg\",\"width\":480,\"height\":360,\"aspectRatio\":0.75},\"embed\":{\"type\":\"player\",\"url\":\"https://www.youtube.com/embed/videoseries?list=PL3iay\_FdAzV\_7GzGYkoO1msZPSLl1vIaz\",\"html\":\"<div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"https://www.youtube.com/embed/videoseries?list=PL3iay\_FdAzV\_7GzGYkoO1msZPSLl1vIaz\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"></iframe></div>\",\"aspectRatio\":1.7778}}" %}
 
