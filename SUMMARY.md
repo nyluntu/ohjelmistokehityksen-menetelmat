@@ -23,4 +23,5 @@
 * [Projekti 2018/01](projekti-2018-01.md)
 * [Projekti 2018/01 Käytänteet ja menetelmät](projekti-2018-01-kaeytaenteet.md)
 * [Projekti 2018/01 Perjantaille 14.9](projekti-2018-01-perjantaille-14.9.md)
+* [Projekti 2018/01 Käyttötapauksesta työtehtäviin](projekti-2018-01-kaeyttoetapauksesta-tyoetehtaeviin.md)
 
