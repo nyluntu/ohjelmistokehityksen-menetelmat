@@ -10,7 +10,7 @@ description: >-
 
 **KOPIO** edellisistä esimerkeistä.
 
-Yritysasiakkaana ****_**\(jäljempänä asiakas\)**_ ****tahdon pystyä _**poimimaan tilaukseen**_ haluamani _**tuotteita**_ voin luoda haluamani tilauksen.
+Yritysasiakkaana ****_**\(jäljempänä asiakas\)**_ ****tahdon pystyä _**poimimaan tilaukseen**_ haluamani _**tuotteita,**_ jotta voin luoda haluamani tilauksen.
 
 ## Tarinan ensimmäinen käyttötapaus
 
@@ -22,7 +22,7 @@ Yritysasiakkaana ****_**\(jäljempänä asiakas\)**_ ****tahdon pystyä _**poimi
 
 **Tavoite**
 
-Verkkokauppaohjelmistoa käyttävä _**asiakas**_ saa lisättyä _**vahvistamattomaan tilaukseen tu**_otteita.
+Verkkokauppaohjelmistoa käyttävä _**asiakas**_ saa lisättyä _**vahvistamattomaan tilaukseen**_ tuotteita.
 
 **Esiehdot**
 
@@ -81,7 +81,30 @@ Kun ohjelman rakennnetta ja vaatimuksia on käyty läpi, pitää vielä listata 
 
 Seuraava kokonaisuus on taas hieman helpompi kun asia on tutumpi ja alun ongelmat ratkaistu.
 
-* 
+### Käyttöliittymä
+
+* Miten esitän tietoa käyttöliittymässä?
+* Miten käyttöliittymän logiikka tai valintarakenne tulee toimimaan?
+* Miten käyttöliittymän valintarakenne päivitetään?
+* Miten otan käyttäjän antaman syötteen vastaan käyttöliittymästä?
+* Miten määritän ohjelman tekemän toiminnon annetun syötteen perusteella?
+
+### Ohjelman toiminnot
+
+* Käytetäänkö luokkarakenteita vai ei?
+* Mitä tietoja tai metodeita Tilaus-luokassa tulisi olla?
+* Miten tilauksen luominen toimii kokonaisuudessaan?
+* Miten tuotelistaus tulisi toimimaan?
+* Onko tuotteet "kovakoodattu" vai luetaanko tiedostosta? \(mitkä ovat näiden hyödyt ja haitat?\)
+
+### Tiedostojärjestelmä
+
+* Miten tallennan yhden olion/luokan esimerkiksi tiedostoon?
+* Käytetäänkö tekstitiedostoja, tietokantaa tai mitä tallennusratkaisua?
+* Miten tallennan monimutkaisen olin/luokan esimerkiksi tiedostoon?
+* Miten ohjelma lukee tallennetut tiedot kun se niitä tarvitsee?
+* Missä tilanteissa ohjelma tallentaa tiedot?
+
 ## VAIHE 4: Ohjelmointi
 
 Tässä kohdin on vain aloitettava ohjelmointi. Vasta sitten tiedetään oikeat ongelmakohdat ja puutteet tiedoissa. Sillä ei ole väliä miten tämä tulee tapahtumaan vaan yksi kerrallaan pyritään tekemään työkokonaisuus ja oppia sen kautta.
