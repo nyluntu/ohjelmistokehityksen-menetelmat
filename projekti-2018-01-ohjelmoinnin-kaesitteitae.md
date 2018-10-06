@@ -7,6 +7,16 @@ description: >-
 
 # Projekti 2018/01 Ohjelmoinnin käsitteitä
 
+## Videoita ohjelman rakentamisesta
+
+Soittolista, joka sisältää muutaman videon ohjelman rakenteesta. Videoissa käyty läpi miten yksinkertainen sovellus toimisi aina tiedon tallentamiseen asti. Videoilla esitettyä tapaa voisi sitten toistaa eri ohjelman toiminnoissa.
+
+Lähdekoodit löytyvät alla olevasta liitetiedostosta. Kyseessä on ohjelman viimeinen versio, joten se näyttää erilaiselta kuin alussa.
+
+{% embed data="{\"url\":\"https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE\",\"type\":\"video\",\"title\":\"Projektityö 2018/01 Pääohjelman esimerkki\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.youtube.com/yts/img/favicon\_144-vfliLAfaB.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://i.ytimg.com/vi/cOVDNCJTl2Y/hqdefault.jpg\",\"width\":480,\"height\":360,\"aspectRatio\":0.75},\"embed\":{\"type\":\"player\",\"url\":\"https://www.youtube.com/embed/videoseries?list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE\",\"html\":\"<div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"https://www.youtube.com/embed/videoseries?list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"></iframe></div>\",\"aspectRatio\":1.7778}}" %}
+
+{% file src=".gitbook/assets/projekti-2018-01-esimerkit-master.zip" caption="Videossa esiintyvän ohjelman lähdekoodit" %}
+
 ## Konsoliohjelman rakenne ja elinkaari
 
 Ensimmäinen kuva on yksinkertainen esitys siitä miten konsolisovellus toimii ja mikä on sen elinkaari. Ohjelmilla on aina alku- ja lopputila. Sama kaava toistuu puhutaan sitten kokonaisesta ohjelmasta tai ohjelmassa olevista metodeista.
@@ -226,12 +236,4 @@ public static void Main(string[] args)
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-## Listat ja niiden käyttö ohjelmassa
-
-## Valintarakenteiden käyttö ohjelmassa
-
-## Olion tallentaminen tekstitiedostoon \(csv\)
-
-
 
