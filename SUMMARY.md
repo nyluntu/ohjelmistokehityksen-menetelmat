@@ -24,7 +24,8 @@
 * [Projekti 2018/01 Käytänteet ja menetelmät](projekti-2018-01-kaeytaenteet.md)
 * [Projekti 2018/01 Perjantaille 14.9](projekti-2018-01-perjantaille-14.9.md)
 * [Projekti 2018/01 Käyttötapauksesta työtehtäviin](projekti-2018-01-kaeyttoetapauksesta-tyoetehtaeviin.md)
-* [Projekti 2018/01 Ohjelmoinnin käsitteitä](projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
+* [Projekti 2018/01 Ohjelmoinnin aloittaminen](projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
+* [Projekti 2018/01 TDD esimerkki](projekti-2018-01-tdd-esimerkki.md)
 
 ## Harjoitteet \(keskeneräiset\)
 
