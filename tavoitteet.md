@@ -17,7 +17,7 @@ Varsinainen päätarkoitus on hyödyntää näitä taitoja projektissa. Projekti
 
 Osallistujat tullaan jakamaan pienempiin kehitystiimeihin, jotka toteuttavat parhaansa mukaan yhtä ominaisuutta. Yksi kehitystiimi on osa suurempaa kokonaisuutta, joten myös useampien kehitystiimien tulee tehdä yhteistyötä. Yhteiset tehtävät tarkentuvat projektin tehtävänannossa.
 
-### Käytettävät ohjelmat {#k%C3%A4ytett%C3%A4v%C3%A4t-ohjelmat}
+### Käytettävät ohjelmat <a id="k%C3%A4ytett%C3%A4v%C3%A4t-ohjelmat"></a>
 
 Asenna ja testaa seuraavien työkalujen toimivuus:
 

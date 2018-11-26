@@ -6,7 +6,7 @@ Yksikkötestaus ei eroa varsinaisesti ohjelmoinnista ja attribuutit sekä testie
 
 Sovella aiemmin oppimaasi seuraaviin käytännön läheisiin harjoitustehtäviin. Sinua auttavat myös muutamat apukysymykset.
 
-#### Tutustu valmiiseen ohjelmaan, jossa on hyödynnetty testejä {#tutustu-valmiiseen-ohjelmaan-jossa-on-hy%C3%B6dynnetty-testej%C3%A4}
+#### Tutustu valmiiseen ohjelmaan, jossa on hyödynnetty testejä <a id="tutustu-valmiiseen-ohjelmaan-jossa-on-hy%C3%B6dynnetty-testej%C3%A4"></a>
 
 Kloonaa projekti [https://github.com/nyluntu/saliavustaja](https://github.com/nyluntu/saliavustaja)
 
@@ -21,7 +21,7 @@ Seuraavaksi sulje ohjelma ja tutustu SaliavustajaTests -projektiin. Yritä saada
 * Miten eri Assert-tarkistuksia on käytetty?
 * Miten itse testit on rakenteeltaan ja luettavuudeltaan kirjoitettu?
 
-#### Arrange-Act-Assert -sääntö testien kirjoittamisessa {#arrange-act-assert--s%C3%A4%C3%A4nt%C3%B6-testien-kirjoittamisessa}
+#### Arrange-Act-Assert -sääntö testien kirjoittamisessa <a id="arrange-act-assert--s%C3%A4%C3%A4nt%C3%B6-testien-kirjoittamisessa"></a>
 
 Tutustu seuraavaan artikkeliin. [http://wiki.c2.com/?ArrangeActAssert](http://wiki.c2.com/?ArrangeActAssert)
 
@@ -31,7 +31,7 @@ Tutustu edelliseen Saliavustaja esimerkkiin ja huomioi, toteutuuko siellä kysei
 
 Mitä muita tapoja on järjestellä yksikkötestien ohjelmointikoodia?
 
-#### Merkkijono laskin -ohjelman toteuttaminen yksikkötestein {#merkkijono-laskin--ohjelman-toteuttaminen-yksikk%C3%B6testein}
+#### Merkkijono laskin -ohjelman toteuttaminen yksikkötestein <a id="merkkijono-laskin--ohjelman-toteuttaminen-yksikk%C3%B6testein"></a>
 
 Seuraava harjoitus ei ole kirjoittajan oma vaan perustuu Roy Osheroven String Calculator harjoitukseen. [http://osherove.com/tdd-kata-1/](http://osherove.com/tdd-kata-1/)
 
@@ -53,7 +53,7 @@ Ohjelman tulee toimia siten, että luokan nimi, joka toteuttaa kyseisen vaatimuk
 * \[ \] Negatiivinen luku, pienempi kuin nolla, aiheuttaa virheen. \(Exception\)
 * \[ \] Luvut, jotka ovat yli 1000, ei huomioida yhteenlaskussa.
 
-#### FizzBuzz -ohjelman toteuttaminen yksikkötestein {#fizzbuzz--ohjelman-toteuttaminen-yksikk%C3%B6testein}
+#### FizzBuzz -ohjelman toteuttaminen yksikkötestein <a id="fizzbuzz--ohjelman-toteuttaminen-yksikk%C3%B6testein"></a>
 
 Tutustutaan klassikoksi muodostuneeseen ohjelmointiongelmaan:
 
@@ -68,7 +68,7 @@ Ohjelma voi olla sinulle tuttu. Nyt tavoitteena on tehdä ohjelma ensin yksikkö
 
 _Ps. Tehtävänannossa puhutaan tarkoituksella, että käyttäjä antaa syötteen. Lopullisen ohjelman tulisi toimia tällä tavoin mutta sinun tehtäväsi on pohtia, miten esimerkiksi käyttäjän syöte tulee huomioitua testeissä. Tarvitseeko sitä edes testata? Perustele vastauksesi tai kerro oma toteutustapasi tälle._
 
-#### Keilauksen pistelaskuri {#keilauksen-pistelaskuri}
+#### Keilauksen pistelaskuri <a id="keilauksen-pistelaskuri"></a>
 
 Tutustu alla olevaan tehtävänantoon. Sinun tehtäväsi on toteuttaa ohjelma käyttäen yksikkötestausta. Tehtävänanto on tarkoituksella jätetty pilkkomatta pieniin välivaiheisiin. Sinun pitää itse lähteä purkamaan tehtävänantoa ja miettiä mitä testaisit ensin tai mistä lähtisit liikkeelle. Voit aloittaa vaikka hahmottelemalla miten ohjelma toimii.
 

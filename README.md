@@ -2,7 +2,7 @@
 
 Opas on tarkoitettu ohjelmistokehityksessä tarvittavien menetelmien sekä käytänteiden kouluttamiseen. Tutustutaan eri työkalujen käyttöön, joita päivittäin ja viikottain tarvitaan. Opas on tehty opettamisen tueksi.
 
-### Sisältö {#sis%C3%A4lt%C3%B6}
+### Sisältö <a id="sis%C3%A4lt%C3%B6"></a>
 
 [Tavoitteet](vscode-resource:/Users/sovelluskontti/dev/ohjelmistokehityksen-menetelmat/tavoitteet.md)
 

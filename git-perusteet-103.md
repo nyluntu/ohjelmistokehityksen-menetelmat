@@ -1,6 +1,10 @@
 # Git perusteet 103
 
-#### Luo uusi kehityshaara paikalliseen tietovarastoon {#luo-uusi-kehityshaara-paikalliseen-tietovarastoon}
+{% hint style="warning" %}
+Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi, joten etsi oikea komento. Virheitä voi olla esimerkiksi väliviivojen kanssa, joiden edestä puuttuu tyhjä välilyönti.
+{% endhint %}
+
+#### Luo uusi kehityshaara paikalliseen tietovarastoon <a id="luo-uusi-kehityshaara-paikalliseen-tietovarastoon"></a>
 
 Kerro millä eri tavoin voit luoda haaroja paikallisessa tietovarastossa? Kerro tarvittavat komennot ja anna lopuksi seuraava komento
 
@@ -8,13 +12,13 @@ Kerro millä eri tavoin voit luoda haaroja paikallisessa tietovarastossa? Kerro 
 
 Ota komennon antamasta tulosteesta kuva, jossa näkyy luotu kehityshaara. Huomioi, että sinun pitää tehdä kehityshaaraan vähintään yksi pysyvä muutos.
 
-#### Kehityshaarojen tarkastelu {#kehityshaarojen-tarkastelu}
+#### Kehityshaarojen tarkastelu <a id="kehityshaarojen-tarkastelu"></a>
 
 Kerro millä komennoilla voit nähdä paikallisen tietovaraston tai etätietovarastojen kehityshaaroja?
 
 Ota lopuksi kuvakaappaus paikallisessa tietovarastossa olevista kehityshaaroista. Kehityshaaroja pitää olla useampi kuin kaksi.
 
-#### Kehityshaarojen yhdistäminen {#kehityshaarojen-yhdist%C3%A4minen}
+#### Kehityshaarojen yhdistäminen <a id="kehityshaarojen-yhdist%C3%A4minen"></a>
 
 Kerro millä komennoilla voit yhdistää kehityshaaroja paikallisessa tietovarastossa?
 
@@ -22,17 +26,17 @@ Ota lopuksi kuvakaappaus käyttäen seuraavaa komentoa
 
 `git log --graph --pretty=oneline --abbrev-commit`
 
-#### Kehityshaaran uudelleenkirjoittaminen \(rebase\) {#kehityshaaran-uudelleenkirjoittaminen-rebase}
+#### Kehityshaaran uudelleenkirjoittaminen \(rebase\) <a id="kehityshaaran-uudelleenkirjoittaminen-rebase"></a>
 
 Kerro mitä `git rebase` komennolla voi tehdä?
 
-#### Kehityshaarojen poistaminen {#kehityshaarojen-poistaminen}
+#### Kehityshaarojen poistaminen <a id="kehityshaarojen-poistaminen"></a>
 
 Kerro millä komennoilla voit poistaa kehityshaaroja?
 
 Ota kuvakaappaus ennen ja jälkeen toimenpiteen kehityshaarojen listauksesta, josta näkyy tarvittavat muutokset tietovarastossa.
 
-#### `Tag`–merkinnät {#tag%E2%80%93merkinn%C3%A4t}
+#### `Tag`–merkinnät <a id="tag%E2%80%93merkinn%C3%A4t"></a>
 
 Kerro mitä ovat `tag` –merkinnät tietovarastossa ja missä tilanteessa käyttäisit niitä?
 

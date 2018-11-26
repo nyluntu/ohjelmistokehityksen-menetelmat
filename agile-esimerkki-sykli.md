@@ -2,7 +2,7 @@
 
 Esimerkissä on kuvattu yksittäisen syklin \(sprintti, vaihe, sykli, iteraatio jne.\) kierto ja mitä se sisältää. Syklin sisältö on kerätty omien kokemusten perusteella ja se saattaa yhdistellä useita eri menetelmiä. Tarkoituksena on kuitenkin antaa esimerkki ja sen kautta harjoitusprojektin yhteydessä noudattaa ohjeistettua tapaa.
 
-### Vaatimusmäärittely {#vaatimusm%C3%A4%C3%A4rittely}
+### Vaatimusmäärittely <a id="vaatimusm%C3%A4%C3%A4rittely"></a>
 
 **Käyttäjätarina -kuvaus**
 
@@ -37,7 +37,7 @@ Tuotteen tehtävälista on dokumentti, joka ohjaa kehitystä. Se muuttuu aika aj
 
 Syklin tehtävälista on dokumentti, johon on valittu ne tehtävät mitkä kehitystiimi "lupaa" tehdä. Tarkoitus on, ettei valita liikaa vaan voidaan melko tarkasti sanoa, että ne toteutuvat. Tehtäviä katsotaan läpi aina syklien lopussa ja siivotaan sekä korjataan olettamuksia.
 
-### Ohjelmointi {#ohjelmointi}
+### Ohjelmointi <a id="ohjelmointi"></a>
 
 **Versionhallinta**
 
@@ -56,7 +56,7 @@ Syklin tehtävälista on dokumentti, johon on valittu ne tehtävät mitkä kehit
 
 SOLID säännöstä ei ole muuta kirjoitettua materiaalia tässä kirjassa. Lähteet auttavat sinua tutustumaan aiheeseen ja varsinkin Robert Martinin video on valaiseva. Kyseinen henkilö on säännön luonut eri kokemuksien pohjalta. Säännön tarkoitus on koostaa hyviä tapoja olio-ohjelmoinnin luokkien ohjelmointiin ja parantaa koodin laatua. Käytännössä on kyse ohjelmoinnista ja vain vinkata mitä huomioida kun ohjelman koodia tuotetaan ja kuinka se auttaa myöhemmin muutosten tekemisessä.
 
-### Syklin lopetus {#syklin-lopetus}
+### Syklin lopetus <a id="syklin-lopetus"></a>
 
 **Tuoteversio \(Increment\)**
 
