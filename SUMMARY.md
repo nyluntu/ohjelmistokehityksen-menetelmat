@@ -6,6 +6,7 @@
 ## Toimeksiannot \(2019/01\)
 
 * [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
+* [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
 
 ## Ketterä ohjelmistokehitys
 
@@ -13,7 +14,6 @@
 * [Agile, Tuotteen tehtävälista](ketterae-ohjelmistokehitys/agile-tuotteen-tehta-va-lista.md)
 * [Agile, Käyttäjätarina ja käyttötapaus](ketterae-ohjelmistokehitys/agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md)
 * [Agile muu materiaali ja lähteitä](ketterae-ohjelmistokehitys/agile-muu-materiaali-ja-laehteitae.md)
-* [Käytänteet ja menetelmät](ketterae-ohjelmistokehitys/projekti-2018-01-kaeytaenteet.md)
 
 ## Versionhallinta
 

@@ -46,7 +46,7 @@ Ennen toimeksiannon aloittamista kannattaa tutustua vanhaan projektitoimeksianto
 
 Katso alla mainittu sivu, jossa kerrottu käytänteistä ja menetelmistä, joita toimeksiannon aikana harjoitellaan.
 
-{% page-ref page="../ketterae-ohjelmistokehitys/projekti-2018-01-kaeytaenteet.md" %}
+{% page-ref page="projekti-2018-01-kaeytaenteet.md" %}
 
 ## Tarvittavat ohjelmistot
 
