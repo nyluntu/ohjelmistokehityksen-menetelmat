@@ -1,10 +1,10 @@
 ---
 description: >-
-  Luvussa on listattu ne käytänteet, joita tulisi hyödyntää projektin tekemisen
-  aikana.
+  Luvussa on listattu ne käytänteet, joita tulisi hyödyntää toimeksiannon
+  tekemisen aikana.
 ---
 
-# Projekti 2018/01 Käytänteet ja menetelmät
+# Käytänteet ja menetelmät
 
 Tuotteen kehityksen aikana kehitystiimin tulee näyttää osaavansa soveltaa opetettuja käytänteitä ja menetelmiä. Luvussa on kuvattu ne käsitteet, käytänteet, menetelmät ja periaatteet, joita kehitystiimin tulisi noudattaa. Kyseisiä osa-alueita arvioidaan tuotteen kehityksen etenemisen aikana sekä myös lopputulosta arvioidessa.
 

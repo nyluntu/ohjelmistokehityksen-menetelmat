@@ -61,13 +61,13 @@ Helpoin tapa on paperi ja kynä, sitten erilaiset luonnosteluohjelmat jne. Mikä
 
 ### Kuvakaappaukset
 
-![Ohjelman ensimm&#xE4;inen n&#xE4;kym&#xE4; t&#xE4;ss&#xE4; kohtaa sen historiaa.](.gitbook/assets/screen-shot-2018-09-23-at-10.27.54.png)
+![Ohjelman ensimm&#xE4;inen n&#xE4;kym&#xE4; t&#xE4;ss&#xE4; kohtaa sen historiaa.](../.gitbook/assets/screen-shot-2018-09-23-at-10.27.54.png)
 
-![Ohjelman listaus tuotteista kun niit&#xE4; on vain muutama kappale.](.gitbook/assets/screen-shot-2018-09-23-at-10.28.04.png)
+![Ohjelman listaus tuotteista kun niit&#xE4; on vain muutama kappale.](../.gitbook/assets/screen-shot-2018-09-23-at-10.28.04.png)
 
 ## VAIHE 2: Ohjelman rakenteen luokkakaavio
 
-{% file src=".gitbook/assets/20180921\_riihimaki\_ohjelmointiprojekti.html" caption="Ohjelman rakenteen luonnos" %}
+{% file src="../.gitbook/assets/20180921\_riihimaki\_ohjelmointiprojekti.html" caption="Ohjelman rakenteen luonnos" %}
 
 Liitteesstä _**"Ohjelman rakenteen luonnos"**_ on käyty läpi ohjelman rakennetta mitä se voisi olla teknisesti toteutettuna. Kyseessä on vain esimerkki omasta näkemyksestä ja se saa ja voi erota riippuen ohjelmoijasta.
 

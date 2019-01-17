@@ -15,7 +15,7 @@ Lähdekoodit löytyvät alla olevasta liitetiedostosta. Kyseessä on ohjelman vi
 
 {% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE" %}
 
-{% file src=".gitbook/assets/projekti-2018-01-esimerkit-master.zip" caption="Videossa esiintyvän ohjelman lähdekoodit" %}
+{% file src="../.gitbook/assets/projekti-2018-01-esimerkit-master.zip" caption="Videossa esiintyvän ohjelman lähdekoodit" %}
 
 ## Konsoliohjelman rakenne ja elinkaari
 
@@ -29,9 +29,9 @@ Kun ohjelma alkaa, se varaa itselleen käyttöönsä muistia. Määrä riippuu s
 
 
 
-![Yleinen ja yksinkertainen kuva ohjelman rakenteesta.](.gitbook/assets/projekti2018.png)
+![Yleinen ja yksinkertainen kuva ohjelman rakenteesta.](../.gitbook/assets/projekti2018.png)
 
-![Ruutukaappaus konsolisovelluksen projektipohjasta.](.gitbook/assets/screen-shot-2018-10-06-at-15.24.08.png)
+![Ruutukaappaus konsolisovelluksen projektipohjasta.](../.gitbook/assets/screen-shot-2018-10-06-at-15.24.08.png)
 
 ## Ohjelmoinnin logiikat ja rakenteet
 
@@ -48,7 +48,7 @@ Ohjelmoinnissa on muutamia perusrakenteita, joilla vaikutetaan ohjelman kulkuun 
 
 Rakenteiden hallinta on elintärkeää ohjelmoinnin kanssa. Niiden hahmottamista auttavat esimerkiksi vuokaaviot. Jos et tunne miten edellä mainitut ohjausrakenteet vaikuttavat ohjelman toimintaan, ota ensin niistä selvää eri esimerkkien kanssa.
 
-![Esimerkki vuokaavioista.](.gitbook/assets/image.png)
+![Esimerkki vuokaavioista.](../.gitbook/assets/image.png)
 
 Toinen tärkeä tunnettava asia on muuttujat ja niiden elinkaari. Ohjelmassa on usein globaaleja ja paikallisia muuttujia. Näiden erot ovat siinä miten ne näkyvät ja vaikuttavat ohjelman eri osissa kun se on päällä.
 
