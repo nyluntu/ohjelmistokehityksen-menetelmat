@@ -8,6 +8,14 @@
 * [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
 * [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
 
+## Toimeksiannot \(2018/01\)
+
+* [Projekti 2018/01](toimeksiannot-2018-01/projekti-2018-01.md)
+* [Projekti 2018/01 Perjantaille 14.9](toimeksiannot-2018-01/projekti-2018-01-perjantaille-14.9.md)
+* [Projekti 2018/01 Käyttötapauksesta työtehtäviin](toimeksiannot-2018-01/projekti-2018-01-kaeyttoetapauksesta-tyoetehtaeviin.md)
+* [Projekti 2018/01 Ohjelmoinnin aloittaminen](toimeksiannot-2018-01/projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
+* [Projekti 2018/01 TDD esimerkki](toimeksiannot-2018-01/projekti-2018-01-tdd-esimerkki.md)
+
 ## Ketterä ohjelmistokehitys
 
 * [Agile esimerkki, sykli](ketterae-ohjelmistokehitys/agile-esimerkki-sykli.md)
@@ -42,12 +50,4 @@
 * [Testivetoinen kehitys](harjoitteet/testivetoinen-kehitys.md)
 * [Jatkuva integraatio](harjoitteet/jatkuva-integraatio.md)
 * [Inkrementaalinen dokumentointi](harjoitteet/inkrementaalinen-dokumentointi.md)
-
-## Toimeksiannot \(2018/01\)
-
-* [Projekti 2018/01](toimeksiannot-2018-01/projekti-2018-01.md)
-* [Projekti 2018/01 Perjantaille 14.9](toimeksiannot-2018-01/projekti-2018-01-perjantaille-14.9.md)
-* [Projekti 2018/01 Käyttötapauksesta työtehtäviin](toimeksiannot-2018-01/projekti-2018-01-kaeyttoetapauksesta-tyoetehtaeviin.md)
-* [Projekti 2018/01 Ohjelmoinnin aloittaminen](toimeksiannot-2018-01/projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
-* [Projekti 2018/01 TDD esimerkki](toimeksiannot-2018-01/projekti-2018-01-tdd-esimerkki.md)
 

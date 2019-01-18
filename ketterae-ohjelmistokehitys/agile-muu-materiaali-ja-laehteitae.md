@@ -13,3 +13,13 @@ Ensimmäinen lähde SCRUM menetelmän tutustumiseen. Sisältää SCRUM oppaan, j
 
 Extreme Programming on SCRUMin tapaan toinen tunnettu ketterä menetelmä. Se keskittyy enemmän kehittäjän erilaisiin työvaiheisiin ja tekniikoihin. Ohjelmoijalle erittäin käytännöllinen ja taidot ovat useasti monen onnistuneen projektin takana. Usein ketterissä menetelmissä unohtuu tekniset taidot kaiken muun hälinän keskellä.
 
+## Asiakasprofiiliin liittyvät asiat
+
+{% embed url="https://www.agilealliance.org/glossary/personas/" %}
+
+{% embed url="https://www.romanpichler.com/blog/10-tips-agile-personas/" %}
+
+{% embed url="https://www.mountaingoatsoftware.com/blog/advantages-of-the-as-a-user-i-want-user-story-template" %}
+
+{% embed url="https://www.mountaingoatsoftware.com/blog/selecting-the-right-user-role" %}
+
