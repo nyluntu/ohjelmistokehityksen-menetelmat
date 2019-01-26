@@ -12,7 +12,7 @@ Suorita ensin [Git perusteet 107](git-harjoitus-107.md)
 
 Aiheuttakaa kehitystiimin kanssa niin sanottu **merge conflict** tilanne. Selvittäkää kyseinen tilanne. Jokaisen kehitystiimin jäsenen tulee selvittää konflikti.
 
-Käyttäkää pohjana edellisess' harjoituksessa ollutta Gitlab projektia.
+Käyttäkää pohjana edellisessä harjoituksessa ollutta Gitlab projektia.
 
 Lopputuloksena, ottakaa Gitlabista kuvakaappaus versionhallinnan historiasta, josta näkyy, että konflikteja on selvitetty. \(kun selvitätte konfliktin, nimetkää commit viesti sen mukaisesti\)
 
