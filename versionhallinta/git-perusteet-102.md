@@ -14,7 +14,7 @@ Paikallinen tietovarasto osoittaa useimmiten myös yhteen etätietovarastooon, j
 
 Millä komennoilla näiden osoitteiden ja viittausten hallinta onnistuu,kun ei käytetä `git clone` –komentoa?
 
-Anna lopuksi komento `git remote–v` ja ota kuvakaappaus, josta näkyy vähintään kaksi eri viittausta etätietovarastoon.
+Anna lopuksi komento `git remote –v` ja ota kuvakaappaus, josta näkyy vähintään kaksi eri viittausta etätietovarastoon.
 
 #### Etätietovaraston kehityshaaran hakeminen paikalliseen tietovarastoon <a id="et%C3%A4tietovaraston-kehityshaaran-hakeminen-paikalliseen-tietovarastoon"></a>
 

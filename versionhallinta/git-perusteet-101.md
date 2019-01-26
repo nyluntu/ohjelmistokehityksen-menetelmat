@@ -6,21 +6,21 @@ Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komenno
 
 **Asenna Git tietokoneellesi**
 
-Asentamisen jälkeen anna komento `git–version` ja ota kuvakaappaus.
+Asentamisen jälkeen anna komento `git --version` ja ota kuvakaappaus.
 
 #### Konfiguroi Git ensimmäistä käyttökertaa varten <a id="konfiguroi-git-ensimm%C3%A4ist%C3%A4-k%C3%A4ytt%C3%B6kertaa-varten"></a>
 
-Konfiguroinnin jälkeen anna komento `git config–list` ja ota kuvakaappaus.
+Konfiguroinnin jälkeen anna komento `git config –list` ja ota kuvakaappaus.
 
 #### Luo uusi paikallinentietovarastoja ensimmäisen pysyvän muutoksen tekeminen <a id="luo-uusi-paikallinentietovarastoja-ensimm%C3%A4isen-pysyv%C3%A4n-muutoksen-tekeminen"></a>
 
-Tietovaraston luonnin jälkeen lisää muutama tiedosto versionhallinnan jäljitettäväksi ja sen jälkeen tee muutoksista pysyviä. Anna tämän jälkeen komento `git log–stat` ja ota kuvakaappaus.
+Tietovaraston luonnin jälkeen lisää muutama tiedosto versionhallinnan jäljitettäväksi ja sen jälkeen tee muutoksista pysyviä. Anna tämän jälkeen komento `git log –stat` ja ota kuvakaappaus.
 
 #### Luo paikallinen tietovarasto olemassa olevasta etätietovarastosta <a id="luo-paikallinen-tietovarasto-olemassa-olevasta-et%C3%A4tietovarastosta"></a>
 
 Luo paikallinen kopio seuraavasta julkisesta tietovarastosta: [https://github.com/nyluntu/hacksummit-forecast](https://github.com/nyluntu/hacksummit-forecast)
 
-Tämän jälkeen anna komento `git remote–v` ja ota kuvakaappaus.
+Tämän jälkeen anna komento `git remote –v` ja ota kuvakaappaus.
 
 #### Nykyisten muutosten tarkistaminen ennen pysyvän muutoksen tekemistä <a id="nykyisten-muutosten-tarkistaminen-ennen-pysyv%C3%A4n-muutoksen-tekemist%C3%A4"></a>
 
@@ -60,7 +60,5 @@ Kerro mitä otsikossa mainittu komento tekee ja miksi käyttäisit tai et käytt
 
 Voit luoda etätietovaraston haluamaasi palveluun. Kun olet muutokset työntänyt tietovarastoon, ota kuva palvelun Git historia-näkymästä sekä sinun paikallisesta historiasta komennolla `git log -10 -oneline`
 
-## Sanasto <a id="sanasto"></a>
 
-// TODO
 

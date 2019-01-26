@@ -30,6 +30,9 @@
 * [Git perusteet 103](versionhallinta/git-perusteet-103.md)
 * [Git perusteet 104](versionhallinta/git-perusteet-104.md)
 * [Git perusteet 105](versionhallinta/git-perusteet-105.md)
+* [Git perusteet 106](versionhallinta/git-perusteet-106.md)
+* [Git perusteet 107](versionhallinta/git-harjoitus-107.md)
+* [Git perusteet 108](versionhallinta/git-harjoitus-108.md)
 * [Git muu materiaali ja lähteet](versionhallinta/git-muu-materiaali-ja-laehteet.md)
 
 ## Yksikkötestaus
