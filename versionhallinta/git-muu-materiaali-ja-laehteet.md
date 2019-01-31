@@ -12,6 +12,8 @@
 
 {% embed url="https://medium.com/@christo8989/what-college-students-should-learn-about-git-6bbf6eaac39c" %}
 
+{% embed url="http://rogerdudler.github.io/git-guide/" %}
+
 Suurinpiirtein osaa gitin perusteet kun seuraava alkaa naurattaa: [https://www.youtube.com/watch?v=CDeG4S-mJts](https://www.youtube.com/watch?v=CDeG4S-mJts)
 
 
