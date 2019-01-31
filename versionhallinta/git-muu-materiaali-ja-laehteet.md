@@ -1,10 +1,16 @@
 # Git muu materiaali ja lähteet
 
-[https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
+{% embed url="https://git-scm.com/book/en/v2" %}
 
-[https://www.atlassian.com/git](https://www.atlassian.com/git)
+{% embed url="https://www.atlassian.com/git" %}
 
-[https://learngitbranching.js.org/](https://learngitbranching.js.org/)
+{% embed url="https://learngitbranching.js.org/" %}
 
-[https://try.github.io/levels/1/challenges/1](https://try.github.io/levels/1/challenges/1)
+{% embed url="https://try.github.io/levels/1/challenges/1" %}
+
+{% embed url="https://blog.prototypr.io/git-for-beginners-12-commands-you-need-to-know-e084cce9cc94" %}
+
+{% embed url="https://medium.com/@christo8989/what-college-students-should-learn-about-git-6bbf6eaac39c" %}
+
+
 
