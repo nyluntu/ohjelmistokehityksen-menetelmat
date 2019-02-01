@@ -13,7 +13,15 @@ Omalla paikallisella koneellasi, tee sellainen harjoite, jossa sinulla on vähin
 Ota kuva lopputuloksesta seuraavalla komennolla:
 
 ```bash
+git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
+
+```text
+# Jos haluat edellisen komennon ns. pikakomennoksi niin voit antaa myös seuraavan version komennosta.
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# Tämän jälkeen riittää aina seuraava komento.
+git lg
 ```
 
 ## Huomioi tehdessä seuraavat asiat
