@@ -22,6 +22,7 @@
 * [Agile, Tuotteen tehtävälista](ketterae-ohjelmistokehitys/agile-tuotteen-tehta-va-lista.md)
 * [Agile, Käyttäjätarina ja käyttötapaus](ketterae-ohjelmistokehitys/agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md)
 * [Agile muu materiaali ja lähteitä](ketterae-ohjelmistokehitys/agile-muu-materiaali-ja-laehteitae.md)
+* [Agile termit \(scrum\)](ketterae-ohjelmistokehitys/agile-termit-scrum.md)
 
 ## Versionhallinta
 

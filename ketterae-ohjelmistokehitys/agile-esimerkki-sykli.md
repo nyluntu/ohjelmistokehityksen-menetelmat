@@ -2,6 +2,8 @@
 
 Esimerkissä on kuvattu yksittäisen syklin \(sprintti, vaihe, sykli, iteraatio jne.\) kierto ja mitä se sisältää. Syklin sisältö on kerätty omien kokemusten perusteella ja se saattaa yhdistellä useita eri menetelmiä. Tarkoituksena on kuitenkin antaa esimerkki ja sen kautta harjoitusprojektin yhteydessä noudattaa ohjeistettua tapaa.
 
+![Viitattu 1.2.2019, Smashing Magazine, Fitting Big-Picture UX Into Agile Development \[1\]](../.gitbook/assets/designsprint.png)
+
 ### Vaatimusmäärittely <a id="vaatimusm%C3%A4%C3%A4rittely"></a>
 
 **Käyttäjätarina -kuvaus**
@@ -65,4 +67,8 @@ SOLID säännöstä ei ole muuta kirjoitettua materiaalia tässä kirjassa. Läh
 * [Sprint Retrospective](http://www.scrumguides.org/scrum-guide.html#events-retro)
 
 Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominaisuuksia, jotka tarvittaessa tuotteen omistajan hyväksymisen jälkeen voidaan julkaista. Julkaisu ei ole pakollinen vaan isompi julkaisu voidaan tehdä useammassa syklissä. Tärkeintä on, että tuote on aina julkaisuvalmis tarvittaessa, koska välttämättä kaikkien ominaisuuksien ei tarvitse olla valmiita. Tämä on ketterän ohjelmistokehityksen tavoite. Tehdä vähän, julkaista ja oppia tuotteesta. Tällöin riskit voidaan rajat esimerkiksi 2 viikon jaksoihin kuukausien sijasta.
+
+## Lähteet
+
+\[1\] [https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/](https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/)
 
