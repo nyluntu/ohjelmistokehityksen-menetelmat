@@ -16,5 +16,13 @@
 
 Suurinpiirtein osaa gitin perusteet kun seuraava alkaa naurattaa: [https://www.youtube.com/watch?v=CDeG4S-mJts](https://www.youtube.com/watch?v=CDeG4S-mJts)
 
+### Sekalaista
+
+{% embed url="https://stackoverflow.com/questions/10564/how-can-i-set-up-an-editor-to-work-with-git-on-windows" %}
+
+{% embed url="https://stackoverflow.com/questions/7527982/applying-gitignore-to-committed-files" %}
+
+
+
 
 
