@@ -2,6 +2,7 @@
 
 * [Ohjelmistokehityksen menetelmät ja käytänteet](README.md)
 * [Tavoitteet](tavoitteet.md)
+* [Työkalut](tyoekalut.md)
 
 ## Toimeksiannot \(2019/01\)
 
