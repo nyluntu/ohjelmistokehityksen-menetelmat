@@ -12,6 +12,8 @@
 
 [TDD Basics with C\# \(video\),](https://www.youtube.com/watch?v=l4xhTq4qmC0) Jeremy Clark
 
+[ Get some hands-on practice with test-driven development in C\#](https://medium.freecodecamp.org/tdd-explanation-hands-on-practice-with-c-a0124338be44), Moshe Binieli, Viitattu 14.2.2019
+
 ## 22 vastausta TDD aiheisiin kysymyksiin
 
 {% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV-bFzWOhjw2x1YcYSEQCHvH" %}

@@ -1,32 +1,38 @@
 # NUnit perusteet 101
 
-#### Luo Visual Studiolla C\# konsoliprojekti <a id="luo-visual-studiolla-c-konsoliprojekti"></a>
+## **Katso ensin video** 
 
-Nimeä projekti haluamallasi tavalla.
+{% embed url="https://www.youtube.com/watch?v=f2NrKazjWes" %}
 
-#### Visual Studion solutioniin, luo toinen Library projekti <a id="visual-studion-solutioniin-luo-toinen-library-projekti"></a>
+## **Videon katsomisen jälkeen**
+
+* Luo Visual Studiolla C\# konsoliprojekti
+* Nimeä projekti haluamallasi tavalla.
+
+### Luo toinen Library projekti Visual Studio solutioniin
 
 Luo edellisen projektin rinnalle toinen Library tyyppinen projekti. Nimeä projekti samoin kuten konsoliprojekti mutta siten, että sen nimi päätyy sanoihin Tests tai Test. Projekti sisältää aluksi vain yhden luokan.
 
+{% hint style="info" %}
 Miksi projekti on nimetty edellä mainitulla tavalla?
+{% endhint %}
 
-#### Lisää Library projektiin Nuget Package Manageria käyttäen NUnit -kirjasto <a id="lis%C3%A4%C3%A4-library-projektiin-nuget-package-manageria-k%C3%A4ytt%C3%A4en-nunit--kirjasto"></a>
+**Lisää Library projektiin Nuget Package Manageria käyttäen NUnit -kirjasto**
 
+* Asenna NUnit 3 versio
+* Lisää Library projektiin Nuget Package Manageria käyttäen NUnit Test Adapter
+
+{% hint style="info" %}
 Mikä on nuget pakettien tarkoitus?
 
-Asenna NUnit 3 versio.
-
-#### Lisää Library projektiin Nuget Package Manageria käyttäen NUnit Test Adapter <a id="lis%C3%A4%C3%A4-library-projektiin-nuget-package-manageria-k%C3%A4ytt%C3%A4en-nunit-test-adapter"></a>
-
 Mikä on NUnit Test Adapter ja miksi se asennettiin?
+{% endhint %}
 
-#### Tee ensimmäinen testi <a id="tee-ensimm%C3%A4inen-testi"></a>
+### **Tee ensimmäinen testi**
 
-Katso video: [https://www.youtube.com/watch?v=f2NrKazjWes](https://www.youtube.com/watch?v=f2NrKazjWes)
+Luo videon mukainen testi. Videolla kerrataan myös NUnit käyttöönotto. Yritä saada testit toimimaan siten, että sinulla on itselläsi käsitys miten virheellinen ja virheetön testi erottuvat kun ne ajetaan Visual Studion kautta.
 
-Luo videon mukainen testi. Videolla kerrataan myös NUnit käyttöönotto. Yritä saada testit toimimaan siten, että sinulla on itselläsi käsitys miten hylätty ja läpäisty testi erottuvat kun ne ajetaan Visual Studion kautta.
-
-**Lisää testiprojektiin vähintään 5 sinun itsesi luomaa testiä**
+### **Lisää testiprojektiin vähintään 5 sinun itsesi luomaa testiä**
 
 Laajenna alkuperäistä projektia siten, että teet vähintään 5 omaa testiä, jotka testaavat videossa esiteltyä luokkaa. Voit päättää itse lisäätkö esimerkiksi luokkaan ominaisuuksia tai uusia laskutoimituksia, joita testaat.
 
