@@ -8,6 +8,7 @@
 
 * [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
 * [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
+* [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
 
 ## Toimeksiannot \(2018/01\)
 
