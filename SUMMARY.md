@@ -46,9 +46,10 @@
 * [NUnit muu materiaali ja lähteitä](yksikkoetestaus/nunit-muu-materiaali-ja-laehteitae.md)
 * [TDD perusteet 101](yksikkoetestaus/tdd-perusteet-101.md)
 * [TDD perusteet 102](yksikkoetestaus/tdd-perusteet-102.md)
+* [TDD perusteet 103](yksikkoetestaus/tdd-perusteet-103.md)
 * [TDD muu materiaali ja lähteitä](yksikkoetestaus/tdd-muu-materiaali-ja-laehteitae.md)
 
-## Harjoitteet \(keskeneräiset\)
+## Harjoitteet \(keskeneräiset\) <a id="harjoitteet"></a>
 
 * [Käyttäjätarinat](harjoitteet/kaeyttaejaetarinat.md)
 * [Pariohjelmointi](harjoitteet/pariohjelmointi.md)
