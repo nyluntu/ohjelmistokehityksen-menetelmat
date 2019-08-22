@@ -60,5 +60,5 @@
 
 ## Miten yrittäjänä voin hyötyä ohjelmistokehityksen ostamisesta?
 
-* [Mitä on ohjelmistokehityksen ostaminen?](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/mitae-on-ohjelmistokehityksen-ostaminen.md)
+* [TL;DR](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/tl-dr.md)
 
