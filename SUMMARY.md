@@ -58,3 +58,7 @@
 * [Jatkuva integraatio](harjoitteet/jatkuva-integraatio.md)
 * [Inkrementaalinen dokumentointi](harjoitteet/inkrementaalinen-dokumentointi.md)
 
+## Miten yrittäjänä voin hyötyä ohjelmistokehityksen ostamisesta?
+
+* [Mitä on ohjelmistokehityksen ostaminen?](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/mitae-on-ohjelmistokehityksen-ostaminen.md)
+
