@@ -53,7 +53,7 @@ Käännä edelliset tavoitteet ympäri eli aloita kysymällä **"Miten?"**
 
 ## Mitä asioita minun tulisi huomioida ennen ohjelmistokehityksen ostamista?
 
-* Varaa riittävästi aikaa. 1 työpäivä vähintään, mieluiten enemmän joskus.
+* Varaa riittävästi aikaa. 1 työpäivä vähintään viikossa, mieluiten enemmän joskus.
 * Älä arkaile asiasi esille tuomisessa, ei ole suurta pelkoa ideoiden varastamisesta.
 * Yritä jäsentää asia ja tavoitteet. Kokeile piirtää oma visiosi ohjelmasta ulkonäöllisesti tai käytettävyyden näkökulmasta.
 * Kysy tarjouksia eri lähteistä. Eroja on huomattavasti. Tämä ei tarkoita, että halpa on hyvä.
