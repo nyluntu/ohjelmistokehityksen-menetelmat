@@ -24,7 +24,7 @@ Esimerkkinä tilausjärjestelmästä voidaan pitää verkkokauppaa. Verkkokaupas
 
 Ennen toimeksiannon aloittamista kannattaa tutustua vanhaan projektitoimeksiantoon, jossa on samankaltaista sisältöä. 
 
-{% page-ref page="../../toimeksiannot-2018-01/projekti-2018-01.md" %}
+{% page-ref page="../toimeksiannot-2018-01/projekti-2018-01.md" %}
 
 **Tilausjärjestelmän minimivaatimukset:**
 
@@ -46,7 +46,7 @@ Ennen toimeksiannon aloittamista kannattaa tutustua vanhaan projektitoimeksianto
 
 Katso alla mainittu sivu, jossa kerrottu käytänteistä ja menetelmistä, joita toimeksiannon aikana harjoitellaan.
 
-{% page-ref page="../projekti-2018-01-kaeytaenteet.md" %}
+{% page-ref page="projekti-2018-01-kaeytaenteet.md" %}
 
 ## Tarvittavat ohjelmistot
 
