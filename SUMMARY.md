@@ -4,9 +4,14 @@
 * [Tavoitteet](tavoitteet.md)
 * [Työkalut](tyoekalut.md)
 
+## Toimeksiannot \(2019/02\)
+
+* [Toimeksianto 2019/02](toimeksiannot-2019-02/untitled.md)
+
 ## Toimeksiannot \(2019/01\)
 
-* [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
+* [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01/README.md)
+  * [Untitled](toimeksiannot-2019-01/toimeksianto-2019-01/untitled.md)
 * [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
 * [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
 
