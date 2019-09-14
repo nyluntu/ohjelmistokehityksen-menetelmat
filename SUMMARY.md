@@ -69,4 +69,5 @@
 ## Relaatiotietokannat
 
 * [SQL JOIN -lauseke](relaatiotietokannat/sql-join-lauseke.md)
+* [SQL hakukyselyjä](relaatiotietokannat/sql-hakukyselyjae.md)
 
