@@ -209,3 +209,26 @@ GROUP BY officeCode
 ORDER BY sales DESC;
 ```
 
+Mihin kaupunkeihin huippumyyjät myyvät eniten? Kun siis tiedämme ensin TOP10 huippumyyjää niin mihin kaupunkeihin he pääasiassa myyvät.
+
+```sql
+SELECT c.city, 
+       Sum(o2.quantityordered * o2.priceeach) sales 
+FROM   (SELECT salesrepemployeenumber, 
+               Sum(quantityordered * priceeach) sales 
+        FROM   customers 
+               INNER JOIN orders USING (customernumber) 
+               INNER JOIN orderdetails USING (ordernumber) 
+        GROUP  BY salesrepemployeenumber 
+        ORDER  BY sales DESC 
+        LIMIT  10) salestop10 
+       INNER JOIN customers c 
+               ON c.salesrepemployeenumber = salestop10.salesrepemployeenumber 
+       INNER JOIN orders o1 
+               ON o1.customernumber = c.customernumber 
+       INNER JOIN orderdetails o2 
+               ON o2.ordernumber = o1.ordernumber 
+GROUP  BY c.city
+ORDER BY city
+```
+
