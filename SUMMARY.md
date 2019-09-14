@@ -66,3 +66,7 @@
 
 * [TL;DR](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/tl-dr.md)
 
+## Relaatiotietokannat
+
+* [SQL JOIN -lauseke](relaatiotietokannat/sql-join-lauseke.md)
+
