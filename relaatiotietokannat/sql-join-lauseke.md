@@ -465,7 +465,7 @@ Kun meillä on edellsen vaiheen tulosjoukko tiedossa, siirrymme SQL kyselyssä e
 {% code-tabs %}
 {% code-tabs-item title="useampi-join-esimerkki-neljas-vaihe-01" %}
 ```sql
-WHERE  Lower(c.country) LIKE 'finland';
+WHERE Lower(c.country) LIKE 'finland';
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -473,6 +473,14 @@ WHERE  Lower(c.country) LIKE 'finland';
 SQL on tässä kohdin suorittanut siis kaikki JOIN -ehdot ja WHERE ehtoa sovelletaan viimeiseen tulosjoukkoon. Tulosjoukko sisältää kaikki **customers** taulun sarakkeet vaikka niitä ei esiteltäisi SELECT lauseen alussa. Tässä esimerkissä lopputulosta on suodatettu siis vielä maan nimen mukaisesti.
 
 Tällä tavoin vaihe vaiheelta rakentuu usean JOIN kyselyn suoritustapa. Aina edellisen JOIN ehdon tulosjoukkoa käytetään seuraavassa JOIN lausekkeessa. Vastaavanlainen esimerkki erilaisin tiedoin on esitelty seuraavassa lähteessä: [https://academy.vertabelo.com/blog/illustrated-guide-multiple-join/](https://academy.vertabelo.com/blog/illustrated-guide-multiple-join/)
+
+Jos esimerkki sisältäisi esimerkiksi GROUP BY tai ORDER BY sääntöjä niin näitä sovellettaisiin sitten suodatettujen tietojen jälkeiseen tulosjoukkoon.
+
+Käytännössä tällä tavoin SQL tietokanta käsittelee kyselyn kokonaisuudessan eräänlaisten välitaulujen avulla vaikka se ei näy ulospäin suoraan. Tämän tarkoituksena ei ole selittää meneekö asia teknisesti oikein vaan toimia esimerkkinä hahmottamaan kuinka kirjoitta oikein JOIN kyselyjä peräkkäin.
+
+{% hint style="info" %}
+JOIN kyselyissä voi sattua erilaisia virheitä ns. duplikaattirivien vuoksi. Ole siis tarkkana kun teet kyselyjä, jotka sisältävät useita JOIN -ehtoja. [https://alexpetralia.com/posts/2017/7/19/more-dangerous-subtleties-of-joins-in-sql](https://alexpetralia.com/posts/2017/7/19/more-dangerous-subtleties-of-joins-in-sql)
+{% endhint %}
 
 ## Yhteenveto 
 
@@ -495,6 +503,8 @@ Taulujen väliset liitokset ovat tärkeä asia tuntea SQL -tietokannoissa. JOIN 
 {% embed url="https://sql-joins.leopard.in.ua/" %}
 
 {% embed url="https://academy.vertabelo.com/blog/illustrated-guide-multiple-join/" %}
+
+{% embed url="https://alexpetralia.com/posts/2017/7/19/more-dangerous-subtleties-of-joins-in-sql" %}
 
 
 
