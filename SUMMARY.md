@@ -68,6 +68,12 @@
 
 ## Relaatiotietokannat
 
-* [SQL JOIN -lauseke](relaatiotietokannat/sql-join-lauseke.md)
+* [Johdanto](relaatiotietokannat/johdanto.md)
+* [Sanasto](relaatiotietokannat/sanasto.md)
 * [SQL hakukyselyjä](relaatiotietokannat/sql-hakukyselyjae.md)
+* [SQL JOIN -lauseke](relaatiotietokannat/sql-join-lauseke.md)
+* [Pää- ja viiteavaimet](relaatiotietokannat/paeae-ja-viiteavaimet.md)
+* [ER kaaviot](relaatiotietokannat/er-kaaviot.md)
+* [Normalisointisäännöt](relaatiotietokannat/normalisointisaeaennoet.md)
+* [Indeksointi](relaatiotietokannat/indeksointi.md)
 
