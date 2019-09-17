@@ -5,7 +5,7 @@ description: >-
   tietokantaratkaisua.
 ---
 
-# Normalisointimuodot
+# Normalisointi
 
 ## Mitä normalisoinnilla tarkoitetaan?
 
