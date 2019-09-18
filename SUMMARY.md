@@ -73,8 +73,8 @@
 * [SQL hakukyselyjä](relaatiotietokannat/sql-hakukyselyjae.md)
 * [SQL JOIN -lauseke](relaatiotietokannat/sql-join-lauseke.md)
 * [Pää- ja viiteavaimet](relaatiotietokannat/paeae-ja-viiteavaimet.md)
-* [ER kaaviot](relaatiotietokannat/er-kaaviot.md)
 * [Normalisointi](relaatiotietokannat/normalisointisaeaennoet.md)
-* [Indeksointi](relaatiotietokannat/indeksointi.md)
+* [ER kaaviot](relaatiotietokannat/er-kaaviot.md)
 * [SQL View](relaatiotietokannat/sql-view.md)
+* [Indeksointi](relaatiotietokannat/indeksointi.md)
 
