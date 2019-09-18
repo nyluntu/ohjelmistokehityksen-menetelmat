@@ -190,6 +190,22 @@ Niin sanottuja **ei-toivottuja** riippuvuuksia tiedon muuttamisen kohdalla ovat 
 
 Hyvin normalisoidut tietokannan kohdalla tietojen päivittäminen ja sen käyttö on sujuvaa. Uusien tietojen esittäminen ei vaadi rakenteen muuttamista. Kaikki tämä on siis hyvä tavoite ja kun puutteita näkee, niitä pitäisi yrittää korjata ajoissa mallintamalla tietoa uudelleen. Myöhemmässä vaiheessa tämä on usein hankalaa kun tietoa on jo olemassa ja tällöin vaatisi erilaisia migraatioita tietokannan rakenteeseen.
 
+## Lopputilanne
+
+Esimerkin tietokanta jäi 3. normaalimuodon esimerkin kuvauksen muotoiseksi. Tämä ei tarkoita, että tietokanta olisi vielä 3. normaalimuodon mukainen tai edes **televisiosarjat** -taulu. Edellisiä vaiheita tulisi toistaa loppujen sarakkeiden kohdalla ja ensin koko taulu yrittää saada 1. normaalimuodon mukaiseksi. Tämä tarkoittaisi, että kaikki sarakkeet, joissa on mainittu listana henkilöitä tulisi laittaa omaan tauluunsa.
+
+Huomaamme kuitenkin, että tiedoissa on paljon näyttelijöiden tai muiden henkilöiden nimiä. Tämä toimii vielä hyvänä esimerkkinä, että myös jo luodut taulut eivät välttämättä noudata normaalimuotoja. Tällöin myös ne tulisi tarkastella sääntöjen mukaan ja tarvittaessa pilkkoa tiedon perusteella omiksi kokonaisuuksiksi.
+
+Otetaan vielä lopuksi tilanne, joka vie kohti normaalimuotoja henkilöiden kohdalla. Tehdään seuraavanlainen rakenne tietokantaan.
+
+![Esimerkki - henkilot taulut](../.gitbook/assets/screenshot-2019-09-19-at-0.39.35.png)
+
+Esimerkin ero edelliseen on, että henkilöt on lisätty omaan tauluunsa. Henkilöt voivat toimia eri rooleissa kuten pääosassa ja vastaavina. Näille on luotu omat liitostaulunsa ja edetessä **luojat** -taulu voitaisiin muuttaa samanlaiseksi liitostauluksi. Tällä hetkellä tietoa olisi kopiona ja toistuvana kyseisessä taulussa.
+
+Tällä tavoin myös eri henkilöiden tieto voidaan saada päivitettyä sujuvammin. Tietokannan rakenne tosin taas muuttuu hieman monimuotoisemmaksi, jos jokaiselle eri tehtävälle teemme liitostaulun. Riippuen juuri tilanteesta, väärää vastausta ei ole. Voimme myös ensin yhden esimerkin kautta löytää paremman ratkaisun.
+
+Mikäli vielä kävisimme tietoja läpi niin esimerkin tapauksessa voisi olal myös esimerkiksi **televisiosarja\_tehtava** ja **tehtavat** taulut. Tällöin voitaisiin päästä rakenteeseen, jossa liitostaulu sisältäisi seuraavat tunnisteet: **tv-sarja, henkilo ja tehtävä**. **Tehtävä** -taulussa puolestaan olisi lueteltu erilaisia tehtäviä missä henkilö on voinut toimia kuten vastaavana tuottajana, pääosan esittäjänä jne. Tällainen rakenne voisi siis yhtä hyvin toimia, koska silloin jokainen henkilö voidaan asettaa useampaan eri tehtävään mutta heidän omat tietonsa ei toistu. Myös liitosten määrä vähenee taulujen välillä, joka tarkoittaa yksinkertaisempia kyselyjä.
+
 ## Lähteet
 
 {% embed url="https://www.w3schools.in/dbms/database-normalization/" %}
