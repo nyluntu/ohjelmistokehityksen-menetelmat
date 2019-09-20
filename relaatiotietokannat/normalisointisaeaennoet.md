@@ -216,5 +216,7 @@ Mikäli vielä kävisimme tietoja läpi niin esimerkin tapauksessa voisi olal my
 
 {% embed url="https://www.guru99.com/database-normalization.html" %}
 
+{% embed url="https://gerardnico.com/data/modeling/normalization" %}
+
 {% embed url="https://tietokantojen-perusteet-19.mooc.fi/osa-4/1-tietokannan-normalisointi" %}
 
