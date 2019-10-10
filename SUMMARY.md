@@ -76,5 +76,6 @@
 * [Normalisointi](relaatiotietokannat/normalisointisaeaennoet.md)
 * [ER kaaviot](relaatiotietokannat/er-kaaviot.md)
 * [SQL View](relaatiotietokannat/sql-view.md)
+* [Hitaat hakukyselyt](relaatiotietokannat/hitaat-hakukyselyt.md)
 * [Indeksointi](relaatiotietokannat/indeksointi.md)
 
