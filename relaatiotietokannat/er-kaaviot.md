@@ -11,7 +11,7 @@ description: >-
 
 Tietokantasuunnittelussa yksi osa-alue on kuvata tietokantarakennetta. Todellinen rakenne tiedetään kun se on toteutettu mutta monet ongelmat voi ratkaista paperilla. Jotta rakenteiden tulkinta olisi ymmärrettävämpää usean henkilön kanssa, on tätä varten luotu erilaisia kuvaustapoja.
 
-ER -kaavio eli Entity Relationshio Diagram kuvaa taulujen välisiä suhteita sekä niiden sisältöjä. Esimerkki kaaviosta alla.
+ER -kaavio eli Entity Relationship Diagram kuvaa taulujen välisiä suhteita sekä niiden sisältöjä. Esimerkki kaaviosta alla.
 
 ![http://www.mysqltutorial.org/mysql-sample-database.aspx](../.gitbook/assets/mysql-sample-database-schema.png)
 

@@ -78,4 +78,16 @@
 * [SQL View](relaatiotietokannat/sql-view.md)
 * [Hitaat hakukyselyt](relaatiotietokannat/hitaat-hakukyselyt.md)
 * [Indeksointi](relaatiotietokannat/indeksointi.md)
+* [Untitled](untitled.md)
+
+## Mysql 2020
+
+* [Johdanto](mysql-2020/johdanto.md)
+* [Esimerkkitietokannan käyttöönotto](mysql-2020/esimerkkitietokannan-kaeyttoeoenotto.md)
+* [Mysql perusteet 101](mysql-2020/mysql-perusteet-101.md)
+* [Mysql perusteet 102](mysql-2020/mysql-perusteet-102.md)
+* [Mysql perusteet 103](mysql-2020/mysql-perusteet-103.md)
+* [Mysql perusteet 104](mysql-2020/untitled.md)
+* [Mysql perusteet 105](mysql-2020/mysql-perusteet-105.md)
+* [Mysql perusteet 106](mysql-2020/mysql-perusteet-106.md)
 
