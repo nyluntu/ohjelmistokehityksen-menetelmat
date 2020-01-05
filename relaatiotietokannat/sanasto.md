@@ -18,3 +18,5 @@ Tietokantoihin tutustuessa tulee vastaan useita eri termejä, jotka on hyvä tun
 
 **rajoitteet** \(constraints\)
 
+**mahtavuus** \(Cardinality\)
+

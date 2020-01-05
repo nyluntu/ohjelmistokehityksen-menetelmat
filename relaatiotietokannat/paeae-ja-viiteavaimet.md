@@ -18,8 +18,7 @@ Tutustutaan esimerkin kautta pääavaimeen. Tutkitaan **products** taulua harjoi
 
 ![Products taulun rakenne.](../.gitbook/assets/screenshot-2019-09-15-at-22.14.20.png)
 
-{% code-tabs %}
-{% code-tabs-item title="products-taulun-luontikomento" %}
+{% code title="products-taulun-luontikomento" %}
 ```sql
 CREATE TABLE `products` 
   ( 
@@ -40,8 +39,7 @@ CREATE TABLE `products`
 engine=innodb 
 DEFAULT charset=latin1 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Yllä on siis kuva tuote-taulusta sekä sen luontikomento. Kuvassa pääavaimen kenttä on värjätty sinisellä. Pääavaimena toimii siis **productCode** niminen sarake, joka on tietotyypiltään **varchar**. 
 
@@ -56,8 +54,7 @@ PRIMARY KEY (`productcode`)
 
 Pääavaimen määrittäminen ei ole edellistä esimerkkiä hankalampaa. Usein voi olla vaikeampi löytää sopiva pääavain. Usein nähdään käytettävän juoksevaa numeroa pääavaimena, että luku kasvaa aina yhdellä kun rivi lisätään. Tällainen pääavain voidaan luoda käyttäen `AUTO INCREMENT` määritystä. Itsenäisesti kasvava pääavain on kätevä monessa tilanteessa mutta kannattaa aina miettiä löytyykö pääavaimeksi jokin muu arvo taulun sarakkeista. Käydään seuraavaksi esimerkki miten juokseva pääavain luodaan.
 
-{% code-tabs %}
-{% code-tabs-item title="auto-increment-example" %}
+{% code title="auto-increment-example" %}
 ```sql
 CREATE TABLE `customers_example` 
   ( 
@@ -70,8 +67,7 @@ CREATE TABLE `customers_example`
 engine=innodb 
 DEFAULT charset=latin1 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Esimerkin vuoksi taulu on pidetty yksinkertaisena ja perustuu **customers** tauluun. Erona on, että nyt pääavaimena toimiva sarake on määritetty rivillä 3 `auto_increment` määrityksellä. Tämä tekee pääavaimesta juoksevan numeron ja tietokanta itsessään huolehtii, että seuraava arvo on aina uniikki.
 
@@ -97,8 +93,7 @@ Kuvasta pystymme lukemaan seuraavaa. **Products** -taulun pääavaimena toimii *
 
 Esitellään vielä taulujen luontikomennot, jotka kertovat saman asian. Products -taulun luontikomento on jo esitelty pääavaimen osiossa, joten tässä esitellään vain uusien taulujen luontikomennot.
 
-{% code-tabs %}
-{% code-tabs-item title="viiteavain-esimerkki-luontikomennot" %}
+{% code title="viiteavain-esimerkki-luontikomennot" %}
 ```sql
 CREATE TABLE `orderdetails` (
  `orderNumber` int(11) NOT NULL,
@@ -120,8 +115,7 @@ CREATE TABLE `productlines` (
  PRIMARY KEY (`productLine`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Yllä olevissa uontikomennoissa rivit 9 ja 10 ovat tärkeitä. Niissä on määritetty miten viiteavain luodaan. \(huomaa myös rivillä 7 oleva usean sarakkeen pääavaimen luonti.\)
 

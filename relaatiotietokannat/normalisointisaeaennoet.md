@@ -29,8 +29,7 @@ On mahdollista, että oikean tiedon kanssa tietyissä olosuhteissa normalisointi
 
 ![Normalisoimaton tietokantataulu](../.gitbook/assets/screenshot-2019-09-17-at-17.09.02.png)
 
-{% code-tabs %}
-{% code-tabs-item title="Esimerkkidata-televisiosarjat" %}
+{% code title="Esimerkkidata-televisiosarjat" %}
 ```text
 *************************** 1. row ***************************
               id: 1
@@ -57,8 +56,7 @@ kasikirjoittajat: David Benioff,D. B. Weiss,Bryan Cogman,George R. R. Martin,Van
         kuvaajat: Alik Sakharov,Marco Pontecorvo,Matthew Jensen
    tuotantoyhtio: HBO
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Yllä oleva malli esittää yhden esimerkkirivin millaista tietoa taulu sisältää. Kun tietoa ei ole tallennettu oikealla tavalla, tuottaa se usein ongelmia. Tiedon lisääminen, muokkaaminen ja poistaminen osoittautuu yleensä hankalaksi. Ensimmäiseksi tarkastelemme esimerkkiä 1. normaalimuodon määrittelemällä tavalla.
 

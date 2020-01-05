@@ -58,8 +58,7 @@ Edellä mainittu tilanne on vain yksi esimerkki ja tilanne voi vaihdella ohjelmo
 
 Alla olevassa esimerkissä on huomioitava myös se, että muuttujat ovat olemassa aina koko ohjelman elinkaaren ajan. Tällöin niihin tallennettu tieto pysyy tallessa niin kauan kunnes ne alustetaan uudelleen tai ohjelma loppuu.
 
-{% code-tabs %}
-{% code-tabs-item title="Paaohjelma\_esimerkki" %}
+{% code title="Paaohjelma\_esimerkki" %}
 ```csharp
 class MainClass
     {
@@ -109,8 +108,7 @@ class MainClass
         }
     }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Luokat ja niiden käyttö ohjelmassa
 
@@ -124,8 +122,7 @@ Tällaisen luokan tarkoitus on koostaa yksittäisiä muuttujia yhteen ymmärrett
 
 Luokka voi myös osata tehdä omilla tiedoillaan jotain, esimerkiksi laskea sen pohjalta asioita tai muuttaa tietojaan.
 
-{% code-tabs %}
-{% code-tabs-item title="Tuote.cs" %}
+{% code title="Tuote.cs" %}
 ```csharp
 public class Tuote {
 
@@ -158,8 +155,7 @@ public class Tuote {
 
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Toiminnallinen luokka
 
@@ -167,8 +163,7 @@ Toiminnallisella luokalla tarkoitetaan tässä sellaista luokkaa, joka tekee asi
 
 Alla olevassa esimerkissä luokka huolehtii konsoliin tulevista viesteistä. Huomaa `TulostaTuoterivi` metodin kohdalla, että sille annetaan `Tuote` luokan olio parametrina. Näin metodissa voidaan kertoa miltä tuloste näyttäisi.
 
-{% code-tabs %}
-{% code-tabs-item title="Tulostaja.cs" %}
+{% code title="Tulostaja.cs" %}
 ```csharp
 public class Tulostaja {
 
@@ -196,8 +191,7 @@ public class Tulostaja {
 }
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Miksi teemme näin?
 
@@ -209,8 +203,7 @@ Usein ei haittaa, että vaikka luokkia tulisi useampia. Aluksi se voi tuntua vai
 
 Alla vielä esimerkki missä olemme käyttäneet näitä luokkia yhdessä.
 
-{% code-tabs %}
-{% code-tabs-item title="MainProgram.cs" %}
+{% code title="MainProgram.cs" %}
 ```csharp
 
 public static void Main(string[] args)
@@ -234,6 +227,5 @@ public static void Main(string[] args)
     }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

@@ -10,8 +10,7 @@ description: >-
 
 SQL -kielissä JOIN -lauseke esiintyy vahvasti osana hakukyselyjä. JOIN voi esiintyä myös tietoja lisättäessa \(INSERT\), päivittäessä \(UPDATE\) tai poistaessa \(UPDATE\). Alla esimerkki perinteisestä JOIN -ehdon sisältämästä kyselystä.
 
-{% code-tabs %}
-{% code-tabs-item title="JOIN\_esimerkki\_01" %}
+{% code title="JOIN\_esimerkki\_01" %}
 ```sql
 SELECT asiakkaat.customernumber, 
        tilaukset.ordernumber, 
@@ -22,8 +21,7 @@ FROM   customers AS `asiakkaat`
               ON asiakkaat.customernumber = tilaukset.customernumber 
 ORDER  BY asiakkaat.customernumber ASC 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Yllä olevassa esimerkissä on kuvattu kuinka JOIN -ehto on lisätty kyselyn osaksi. _\(rivi 6\)_ Esimerkin LEFT JOIN on yksi ehto mutta SQL kielessä on muutamia ehtoja taulujen liittämiseen. JOIN -ehdot toimivat eräänlaisina suodattimina WHERE ehdon tapaan. 
 
@@ -71,8 +69,7 @@ Kyseinen liitostyyppi on hyvin yleinen ja usein oletustapa miten SQL -liittää 
 Seuraavan esimerkin vuoksi on hyvä muistaa, että harjoitustietokannassa **customers** taulu sisältää 122 riviä. **Orders** taulu sisältää 326 riviä.
 {% endhint %}
 
-{% code-tabs %}
-{% code-tabs-item title="inner\_join\_esimerkki" %}
+{% code title="inner\_join\_esimerkki" %}
 ```sql
 SELECT asiakkaat.customernumber, 
        tilaukset.ordernumber, 
@@ -83,8 +80,7 @@ FROM   customers AS `asiakkaat`
                ON asiakkaat.customernumber = tilaukset.customernumber 
 ORDER  BY `customernumber` ASC;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **SELECT kysely selitettynä**
 
@@ -127,8 +123,7 @@ Seuraava lähde havainnollistaa tätä liitosta pienellä animaatiolla. [https:/
 
 Liitos tulee hyvin usein vastaan ja toimii samankaltaisesti monessa eri SQL -tietokannassa. Liitoksesta löytyy myös LEFT OUTER JOIN -variaatio mikä tarkoittaa sitä, että se palauttaa vain A -joukon rivit. Tämä tarkoittaa, että voitaisiin saada tulokseksi ne rivit, jotka eivät esiinny B joukossa. Tämä variaatio on käyty läpi alempana ensimmäisen esimerkin jälkeen.
 
-{% code-tabs %}
-{% code-tabs-item title="left\_join\_esimerkki" %}
+{% code title="left\_join\_esimerkki" %}
 ```sql
 SELECT asiakkaat.customernumber, 
        tilaukset.ordernumber, 
@@ -139,8 +134,7 @@ FROM   customers AS `asiakkaat`
                ON asiakkaat.customernumber = tilaukset.customernumber 
 ORDER  BY `customernumber` ASC;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 Esimerkin kysely on aivan samanlainen kuin INNER JOIN -esimerkissä. Nyt LEFT JOIN esiintyy vain INNER JOIN -tilalla.
@@ -176,8 +170,7 @@ Seuraavasta lähteestä löydät myös animoidun version liitoksen käyttäytymi
 
 Liitoksesta on myös mahdollista tehdä variaatio, jossa haettaisiin vain ne asiakkaat, joilla ei ole yhtään tilausta. Tämä onnistuisi seuraavanlaisella hakulauseella, joka on muokattu esimerkistä:
 
-{% code-tabs %}
-{% code-tabs-item title="left\_join\_esimerkki\_null" %}
+{% code title="left\_join\_esimerkki\_null" %}
 ```sql
 SELECT asiakkaat.customernumber, 
        tilaukset.ordernumber, 
@@ -189,8 +182,7 @@ FROM   customers AS `asiakkaat`
 WHERE  tilaukset.customernumber IS NULL 
 ORDER  BY `customernumber` ASC;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 Esimerkissä ero on rivillä 8, jossa määritetään haettavan vain ne rivit, joissa tilaukset taulun asiakastunniste on arvoltaan NULL. Huomioi, että tällaisia arvoja ei ole **orders** -taulussa vaan NULL tulee tulosjoukkoon LEFT JOIN -liitoksen vuoksi.
@@ -208,8 +200,7 @@ Kun esimerkin mukainen kysely suoritetaan niin tulosjoukosta huomataan, että ny
 
 Liitoksista RIGHT JOIN ei ole kovin yleinen. Usein huomataan, että tämänkaltaiset liitokset voidaan kuvata myös LEFT JOIN -ehtoina. Periaate kummassakin on samanlainen. Tällöin olemme kiinnostuneet vain B joukon sisällöstä.
 
-{% code-tabs %}
-{% code-tabs-item title="right\_join\_esimerkki" %}
+{% code title="right\_join\_esimerkki" %}
 ```sql
 SELECT asiakkaat.customernumber, 
        tilaukset.ordernumber, 
@@ -220,8 +211,7 @@ FROM   customers AS `asiakkaat`
                ON asiakkaat.customernumber = tilaukset.customernumber 
 ORDER  BY `customernumber` ASC;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 Ainoa ero LEFT JOIN esimerkkiin on rivin 6 muutos, jossa on määritetty RIGHT JOIN.
@@ -233,8 +223,7 @@ Kun esimerkin kaltainen kysely suoritetaan harjoitustietokantaan, saadaan tulosj
 
 **Orders** -taulu on siitä syystä "oikeanpuolimmainen", koska se esiintyy JOIN kyselyssä. FROM kyselyssä on siis ensin mainittu **customers** taulu. SQL suorittaa kyselyt vasemmalta oikealle järjestäen eli tässä tilanteessa juurikin aina ensin mainittu taulu on vasemmanpuoleinen.
 
-{% code-tabs %}
-{% code-tabs-item title="right\_outer\_join\_esimerkki" %}
+{% code title="right\_outer\_join\_esimerkki" %}
 ```sql
 SELECT asiakkaat.customernumber, 
        tilaukset.ordernumber, 
@@ -246,15 +235,13 @@ FROM   customers AS `asiakkaat`
 WHERE  asiakkaat.customernumber IS NULL 
 ORDER  BY `customernumber` ASC;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **RIGHT OUTER JOIN** -variaatio muodostetaan ylläolevan esimerkin mukaisesti. Muistuttaa tilannetta LEFT JOIN kohdalla. Huomaa kuitenkin rivillä 8, että nyt ehtona on, että **customers** \(asiakkaat\) -taulun asiakastunniste on tyhjä. Tällaista tilannetta ei kuitenkaan löydy harjoitustietokannasta ja tulosjoukko on tyhjä. 
 
 Alla on esitelty esimerkki käyttäen **employees \(työntekijät\)** -taulua, jossa voidaan esitellä paremmin RIGHT JOIN -liitos.
 
-{% code-tabs %}
-{% code-tabs-item title="right\_join\_esimerkki\_02" %}
+{% code title="right\_join\_esimerkki\_02" %}
 ```sql
 SELECT tyontekijat.employeenumber, 
        asiakkaat.customernumber 
@@ -263,8 +250,7 @@ FROM   customers AS `asiakkaat`
                ON asiakkaat.salesrepemployeenumber = tyontekijat.employeenumber 
 ORDER  BY tyontekijat.employeenumber;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ![Right join tulosjoukon esimerkki 02](../.gitbook/assets/screenshot-2019-09-14-at-1.24.51.png)
 
@@ -272,8 +258,7 @@ Customers -taulu on esitetty ensimmäisenä, joten siitä tulee vasemmanpuoleine
 
  Jos muutamme hakua seuraavan esimerkin mukaisesti niin saamme muodostettua **RIGHT OUTER JOIN** -ehdon ja tällöin tulosjoukko kertoo suoraan ne työntekijät, joilla ei ole laskutettuja asiakkaita.
 
-{% code-tabs %}
-{% code-tabs-item title="right\_outer\_join\_esimerkki\_02" %}
+{% code title="right\_outer\_join\_esimerkki\_02" %}
 ```sql
 SELECT tyontekijat.employeenumber, 
        asiakkaat.customernumber 
@@ -283,8 +268,7 @@ FROM   customers AS `asiakkaat`
 WHERE  asiakkaat.salesrepemployeenumber IS NULL 
 ORDER  BY tyontekijat.employeenumber;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ![Right join tulosjoukon esimerkki 03](../.gitbook/assets/screenshot-2019-09-14-at-1.34.39.png)
 
@@ -294,8 +278,7 @@ ORDER  BY tyontekijat.employeenumber;
 
 Liitos on harvinaisempi eikä siihen usein törmää. Liitosta on vaikea esittää Vennin diagrammia käyttäen, joten esitetään suoraan esimerkki.
 
-{% code-tabs %}
-{% code-tabs-item title="cross\_join\_esimerkki" %}
+{% code title="cross\_join\_esimerkki" %}
 ```sql
 SELECT tyontekijat.employeenumber, 
        tyontekijat.firstname, 
@@ -305,8 +288,7 @@ FROM   customers AS `asiakkaat`
        CROSS JOIN employees AS `tyontekijat` 
 ORDER  BY tyontekijat.employeenumber;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 Huomaa, että rivillä 6 CROSS JOIN kanssa ei tule käyttää ON -avainsanaa kuten muissa liitoksissa. Tätä ei siis tarvita tämän liitoksen toimintatavan vuoksi.
@@ -328,8 +310,7 @@ Yritä muista seuraavat säännöt:
 * Esimerkiksi, jos kyselyssä on mainittu **FROM customers** ja sen jälkeen myöhemmin **LEFT JOIN orders** niin tällöin customers -taulu on vasemmanpuoleinen.
 * SQL -tietokanta, joka tulkitsee kyselyn, suorittaa JOIN -lauseet siinä järjestyksessä kun ne on esitelty.
 
-{% code-tabs %}
-{% code-tabs-item title="useampi-join-esimerkki" %}
+{% code title="useampi-join-esimerkki" %}
 ```sql
 -- Hakulauseke hakee Suomessa asuvien asiakkaiden tilausrivit ja 
 -- ilmoittaa kuinka paljon on yksittäisten tilausrivien ostosten
@@ -349,8 +330,7 @@ FROM   customers c
        LEFT JOIN orderdetails od USING (ordernumber) 
 WHERE  Lower(c.country) LIKE 'finland';
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Ylläoleva esimerkki sisältää useamman JOIN lauseen ja käymme läpi seuraavaksi vaiheittain kuinka se suoriutuu. Kun kysely ajetaan harjoitustietokantaan niin siitä saadaan alla oleva tulosjoukko.
 
@@ -380,15 +360,13 @@ Tämän tulos eli käytännössä koko **customers** taulu on nyt nimetty joukok
 
 Seuraavassa vaiheessa SQL tietokanta tulkitsee esimerkin rivillä 15 olevan INNER JOIN lauseen. INNER JOIN -tarkoitti, että tulosjoukkoon tulee vain ne rivit, jotka esiintyvät kahdessa liitettävässä taulussa.
 
-{% code-tabs %}
-{% code-tabs-item title="useampi-join-esimerkki-toinen-vaihe-01" %}
+{% code title="useampi-join-esimerkki-toinen-vaihe-01" %}
 ```sql
 -- Esimerkissä USING on vain lyhenne merkinnälle:
 -- ON c.customerNumner = o.customerNumber
 INNER JOIN orders o USING (customernumber)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Voimme nimetä tämän liitettävän taulun B:ksi. Eli nyt tiedossa on A ja B joukko tämän toiseen vaiheen aikana.
 
@@ -396,8 +374,7 @@ Voimme nimetä tämän liitettävän taulun B:ksi. Eli nyt tiedossa on A ja B jo
 
 Tässä kohdin teemme kuten normaalisti INNER JOIN -ehdon toteutuessa. Kun suoritamme tämän vaiheen niin voimme ajatella suorittavan seuraavanlaisen kyselyn:
 
-{% code-tabs %}
-{% code-tabs-item title="useampi-join-esimerkki-toinen-vaihe-02" %}
+{% code title="useampi-join-esimerkki-toinen-vaihe-02" %}
 ```sql
 SELECT c.customernumber, 
        c.contactfirstname, 
@@ -407,8 +384,7 @@ SELECT c.customernumber,
 FROM   customers c 
        INNER JOIN orders o USING (customernumber);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ![Tulosjoukko vaiheen 2 j&#xE4;lkeen.](../.gitbook/assets/screenshot-2019-09-14-at-2.55.40.png)
 
@@ -420,13 +396,11 @@ Tämä tarkoittaa nyt sitä, että ensimmäisen vaiheen joukko A ei enää ole o
 
 Seuraavassa vaiheessa jatkamme SQL kyselyn suorittamista. Nyt meillä on muistissa toisen vaiheen aikana syntynyt tulosjoukko. Esimerkissä rivillä 16 on seuraava JOIN:
 
-{% code-tabs %}
-{% code-tabs-item title="useampi-join-esimerkki-kolmas-vaihe-01" %}
+{% code title="useampi-join-esimerkki-kolmas-vaihe-01" %}
 ```sql
 LEFT JOIN orderdetails od USING (ordernumber)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Nyt tästä **orderdetails** taulusta tulee B joukko, koska se esiintyy aiempien vaiheiden jälkeen JOIN kyselyssä. Tällöin A joukko on juuri toisen vaiheen lopputulos eli jälleen kerran voimme noudattaa normaalia LEFT JOIN -ehdon sääntöä.
 
@@ -434,8 +408,7 @@ Nyt tästä **orderdetails** taulusta tulee B joukko, koska se esiintyy aiempien
 
 Seuraavaksi voimme ajatella, että suoritetaan alla olevan mukainen SQL kysely, joka muistuttaa jo hyvin alkuperäistä esimerkin kyselyä:
 
-{% code-tabs %}
-{% code-tabs-item title="useampi-join-esimerkki-kolmas-vaihe-02" %}
+{% code title="useampi-join-esimerkki-kolmas-vaihe-02" %}
 ```sql
 SELECT c.customernumber, 
        c.contactfirstname, 
@@ -451,8 +424,7 @@ FROM   customers c
        INNER JOIN orders o USING (customernumber) 
        LEFT JOIN orderdetails od USING (ordernumber);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Kun kysely on suoritettu, saamme seuraavan tulosjoukon mikä muistuttaa alla olevaa tulostetta. Tämän kolmannen vaiheen lopussa on taas jäljellä vain yksi tulosjoukko eli voimme jälleen kerran tästä tulevan joukko A.
 
@@ -462,13 +434,11 @@ Kun kysely on suoritettu, saamme seuraavan tulosjoukon mikä muistuttaa alla ole
 
 Kun meillä on edellsen vaiheen tulosjoukko tiedossa, siirrymme SQL kyselyssä eteenpäin. Seuraavaksi ei ole enää jäljellä kuin hakuehtoa rajaava määritys:
 
-{% code-tabs %}
-{% code-tabs-item title="useampi-join-esimerkki-neljas-vaihe-01" %}
+{% code title="useampi-join-esimerkki-neljas-vaihe-01" %}
 ```sql
 WHERE Lower(c.country) LIKE 'finland';
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 SQL on tässä kohdin suorittanut siis kaikki JOIN -ehdot ja WHERE ehtoa sovelletaan viimeiseen tulosjoukkoon. Tulosjoukko sisältää kaikki **customers** taulun sarakkeet vaikka niitä ei esiteltäisi SELECT lauseen alussa. Tässä esimerkissä lopputulosta on suodatettu siis vielä maan nimen mukaisesti.
 
