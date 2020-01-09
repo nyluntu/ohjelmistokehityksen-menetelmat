@@ -83,6 +83,7 @@
 ## Mysql 2020
 
 * [Johdanto](mysql-2020/johdanto.md)
+* [Mysql perusteet -videosarja](mysql-2020/mysql-perusteet-videosarja.md)
 * [Esimerkkitietokannan käyttöönotto](mysql-2020/esimerkkitietokannan-kaeyttoeoenotto.md)
 * [Mysql perusteet 101](mysql-2020/mysql-perusteet-101.md)
 * [Mysql perusteet 102](mysql-2020/mysql-perusteet-102.md)
