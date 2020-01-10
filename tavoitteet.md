@@ -21,7 +21,7 @@ Osallistujat tullaan jakamaan pienempiin kehitystiimeihin, jotka toteuttavat par
 
 Asenna ja testaa seuraavien työkalujen toimivuus:
 
-* Visual Studio 2017 \(community riittää\)
+* Visual Studio 2019 \(community riittää\)
 * Git -versionhallinta, lataa osoitteesta [https://git-scm.com/](https://git-scm.com/)
 
 Ohjelmoimme C\#-kielellä.
