@@ -38,3 +38,7 @@ Tämä tulee tehdä ilman `git commit`–komentoa. Esimerkiksi sinulla voi olla 
 
 Git–versionhallintaa ei tarvitse aina käyttää komentojen avulla. Tutustu yhteen monista graafisista työkaluista ja tee sillä muutamia aikaisemmin läpikäytyjä komentoja. Työkalu voi olla myös integroitu IDE –ohjelmistoon. Ota lopuksi pari kuvakaappausta todisteeksi, että näin on tapahtunut ja olet tutustunut vähintään yhteen työkaluun.
 
+Suosituimpia graafisia käyttöliittymiä versionhallinnan käyttöön on listattu seuraavassa osoitteessa, joista voit hyvin valita sopivimman. [https://acodez.in/git-gui-clients/](https://acodez.in/git-gui-clients/)
+
+
+
