@@ -1,10 +1,10 @@
 # Git perusteet 102
 
 {% hint style="warning" %}
-Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi, joten etsi oikea komento. Virheitä voi olla esimerkiksi väliviivojen kanssa, joiden edestä puuttuu tyhjä välilyönti.
-{% endhint %}
+Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi. Yksittäisten väliviivojen tilalle voi tulla kaksi väliviivaa tai niiden edestä puuttuu tyhjä välilyönti.
 
-Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi, joten etsi oikea komento. Virheitä voi olla esimerkiksi väliviivojen kanssa, joiden edestä puuttuu tyhjä välilyönti.
+Komennot kannattaa silti vielä kirjoittaa, koska kopioidessa joskus väliviivat eivät kopioidu oikein.
+{% endhint %}
 
 **Etätietovarastonviittauksienlisääminen ja poistaminen**
 
@@ -14,7 +14,7 @@ Paikallinen tietovarasto osoittaa useimmiten myös yhteen etätietovarastooon, j
 
 Millä komennoilla näiden osoitteiden ja viittausten hallinta onnistuu,kun ei käytetä `git clone` –komentoa?
 
-Anna lopuksi komento `git remote –v` ja ota kuvakaappaus, josta näkyy vähintään kaksi eri viittausta etätietovarastoon.
+Anna lopuksi komento `git remote -v` ja ota kuvakaappaus, josta näkyy vähintään kaksi eri viittausta etätietovarastoon.
 
 #### Etätietovaraston kehityshaaran hakeminen paikalliseen tietovarastoon <a id="et%C3%A4tietovaraston-kehityshaaran-hakeminen-paikalliseen-tietovarastoon"></a>
 

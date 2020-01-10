@@ -1,10 +1,10 @@
 # Git perusteet 103
 
 {% hint style="warning" %}
-Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi, joten etsi oikea komento. Virheitä voi olla esimerkiksi väliviivojen kanssa, joiden edestä puuttuu tyhjä välilyönti.
-{% endhint %}
+Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi. Yksittäisten väliviivojen tilalle voi tulla kaksi väliviivaa tai niiden edestä puuttuu tyhjä välilyönti. 
 
-#### Luo uusi kehityshaara paikalliseen tietovarastoon <a id="luo-uusi-kehityshaara-paikalliseen-tietovarastoon"></a>
+Komennot kannattaa silti vielä kirjoittaa, koska kopioidessa joskus väliviivat eivät kopioidu oikein.uo uusi kehityshaara paikalliseen tietovarastoon
+{% endhint %}
 
 Kerro millä eri tavoin voit luoda haaroja paikallisessa tietovarastossa? Kerro tarvittavat komennot ja anna lopuksi seuraava komento
 

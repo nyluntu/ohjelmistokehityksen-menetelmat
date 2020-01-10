@@ -1,7 +1,9 @@
 # Git perusteet 104
 
 {% hint style="warning" %}
-Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi, joten etsi oikea komento. Virheitä voi olla esimerkiksi väliviivojen kanssa, joiden edestä puuttuu tyhjä välilyönti.
+Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi. Yksittäisten väliviivojen tilalle voi tulla kaksi väliviivaa tai niiden edestä puuttuu tyhjä välilyönti.
+
+Komennot kannattaa silti vielä kirjoittaa, koska kopioidessa joskus väliviivat eivät kopioidu oikein.
 {% endhint %}
 
 #### Git login tarkastelu <a id="git-login-tarkastelu"></a>
@@ -10,7 +12,7 @@ Git sisältää tehokkaan `git log` komennon.
 
 Kerro miten saat komennon avulla listattua edellisen 1 viikon aikana tehdyt pysyvät muutokset?
 
-`Log` komentoa on käytetty jo aikaisemmin, joten tutustu sen parametreihin ja myös muihin vaihtoehtoihin.
+`log` komentoa on käytetty jo aikaisemmin, joten tutustu sen parametreihin ja myös muihin vaihtoehtoihin.
 
 #### Muutosten tarkastelu eri versioiden välillä <a id="muutosten-tarkastelu-eri-versioiden-v%C3%A4lill%C3%A4"></a>
 
