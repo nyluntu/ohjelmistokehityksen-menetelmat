@@ -4,9 +4,13 @@ description: >-
   tarkistettu, joten niissä voi olla joitakin virheitä.
 ---
 
-# SQL hakukyselyjä
+# SQL hakukyselyjä \(VANHAT\)
 
 ## Esimerkkikyselyjä
+
+{% hint style="warning" %}
+**Huom!** Seuraavat esimerkkikyselyt ovat tehty [https://www.mysqltutorial.org/mysql-sample-database.aspx](https://www.mysqltutorial.org/mysql-sample-database.aspx) harjoitustietokantaa kohden vanhemmissa harjoituksissa. Uudemmissa tehtävissä käytetään Sakila tietokantaa.
+{% endhint %}
 
 Kuinka monta kertaa asiakkaat ovat tehneet tilauksia keskimäärin koko tilaushistorian ajalta?
 
