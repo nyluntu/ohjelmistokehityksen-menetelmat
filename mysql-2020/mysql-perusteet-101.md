@@ -1,7 +1,3 @@
----
-description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
----
-
 # Mysql perusteet 101
 
 **Selitä omin sanoin alla olevat tietokantoihin liittyvät käsitteet.**
@@ -15,7 +11,7 @@ description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
 * Uniikki/Yksilöllinen avain \(Unique key\)
 * Kooste avain \(compound key, composite key\)
 * Viiteavain \(Foreign key, lue myös [_viiteavaimista_](../relaatiotietokannat/paeae-ja-viiteavaimet.md#viiteavain).\)
-* Indeksi \(Index, lue myös [indeksoinnista](../relaatiotietokannat/indeksointi/).\)
+* Indeksi \(Index, lue myös [indeksoinnista](../relaatiotietokannat/indeksointi.md).\)
 * Viite-eheys \(Referential Integrity\)
 * Asiakas-Palvelin arkkitehtuuri \(Client/Server Architecture\)
 * ER -kaavio \(Entity–Relationship model, lue myös [_ER-kaavioista_](../relaatiotietokannat/er-kaaviot.md).\) 

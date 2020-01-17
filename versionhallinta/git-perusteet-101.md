@@ -1,9 +1,7 @@
 # Git perusteet 101
 
 {% hint style="warning" %}
-Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi. Yksittäisten väliviivojen tilalle voi tulla kaksi väliviivaa tai niiden edestä puuttuu tyhjä välilyönti.
-
-Komennot kannattaa silti vielä kirjoittaa, koska kopioidessa joskus väliviivat eivät kopioidu oikein.
+Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi, joten etsi oikea komento. Virheitä voi olla esimerkiksi väliviivojen kanssa, joiden edestä puuttuu tyhjä välilyönti.
 {% endhint %}
 
 **Asenna Git tietokoneellesi**
@@ -12,11 +10,11 @@ Asentamisen jälkeen anna komento `git --version` ja ota kuvakaappaus.
 
 #### Konfiguroi Git ensimmäistä käyttökertaa varten <a id="konfiguroi-git-ensimm%C3%A4ist%C3%A4-k%C3%A4ytt%C3%B6kertaa-varten"></a>
 
-Konfiguroinnin jälkeen anna komento `git config --list` ja ota kuvakaappaus.
+Konfiguroinnin jälkeen anna komento `git config –list` ja ota kuvakaappaus.
 
 #### Luo uusi paikallinentietovarastoja ensimmäisen pysyvän muutoksen tekeminen <a id="luo-uusi-paikallinentietovarastoja-ensimm%C3%A4isen-pysyv%C3%A4n-muutoksen-tekeminen"></a>
 
-Tietovaraston luonnin jälkeen lisää muutama tiedosto versionhallinnan jäljitettäväksi ja sen jälkeen tee muutoksista pysyviä. Anna tämän jälkeen komento `git log --stat` ja ota kuvakaappaus.
+Tietovaraston luonnin jälkeen lisää muutama tiedosto versionhallinnan jäljitettäväksi ja sen jälkeen tee muutoksista pysyviä. Anna tämän jälkeen komento `git log –stat` ja ota kuvakaappaus.
 
 #### Luo paikallinen tietovarasto olemassa olevasta etätietovarastosta <a id="luo-paikallinen-tietovarasto-olemassa-olevasta-et%C3%A4tietovarastosta"></a>
 
@@ -60,7 +58,7 @@ Kerro mitä otsikossa mainittu komento tekee ja miksi käyttäisit tai et käytt
 
 #### Luo oma etätietovarasto ja työnnä sinne muutoksesi <a id="luo-oma-et%C3%A4tietovarasto-ja-ty%C3%B6nn%C3%A4-sinne-muutoksesi"></a>
 
-Voit luoda etätietovaraston haluamaasi palveluun. Kun olet muutokset työntänyt tietovarastoon, ota kuva palvelun Git historia-näkymästä sekä sinun paikallisesta historiasta komennolla `git log -10 --oneline`
+Voit luoda etätietovaraston haluamaasi palveluun. Kun olet muutokset työntänyt tietovarastoon, ota kuva palvelun Git historia-näkymästä sekä sinun paikallisesta historiasta komennolla `git log -10 -oneline`
 
 
 

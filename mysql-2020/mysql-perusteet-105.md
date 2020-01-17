@@ -1,7 +1,3 @@
----
-description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
----
-
 # Mysql perusteet 105
 
 Kirjoita SQL kyselyt ja komennot, jotka vastaavat alla oleviin kysymyksiin. Yhteen kysymykseen voi liittyä yksi tai useampia SQL komentoja, joten ratkaisutavalla ei sinällään ole väliä kunhan ratkaisut on esitelty SQL kielellä.

@@ -8,6 +8,7 @@ Kirjoittamattomat aiheet:
 
 * SQL injektiot
 * [http://www.mysqltutorial.org/mysql-full-text-search.aspx](http://www.mysqltutorial.org/mysql-full-text-search.aspx)
+* harjoitustietokantojen käyttöönotto
 
 
 

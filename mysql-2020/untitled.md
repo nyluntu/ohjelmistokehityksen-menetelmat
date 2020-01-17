@@ -1,7 +1,3 @@
----
-description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
----
-
 # Mysql perusteet 104
 
 Kirjoita SQL kyselyt, jotka vastaavat alla oleviin kysymyksiin. Yhteen kysymykseen voi liittyä yksi tai useampia SQL lauseita, joten ratkaisutavalla ei sinällään ole väliä kunhan siinä on käytetty SQL -kyselyitä.
