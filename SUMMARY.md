@@ -4,6 +4,13 @@
 * [Tavoitteet](tavoitteet.md)
 * [Työkalut](tyoekalut.md)
 
+## Toimeksiannot \(2020/01\)
+
+* [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
+* [Kilometrikorvaus](toimeksiannot-2020-01/kilometrikorvaus.md)
+* [Laskutus](toimeksiannot-2020-01/laskutus.md)
+* [Toimeksiannon rajaukset](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
+
 ## Toimeksiannot \(2019/02\)
 
 * [Toimeksianto 2019/02](toimeksiannot-2019-02/untitled.md)
