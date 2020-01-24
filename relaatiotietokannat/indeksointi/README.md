@@ -6,7 +6,7 @@ description: Mitä tarkoitetaan tietokantojen indeksoinnilla.
 
 Indeksillä tarkoitetaan tiedon rakennetta, jonka tarkoituksena on nopeuttaa relaatiotietokantojen hakuja, jotta järjestelmä palauttaa haetut tiedot nopeammin. Vaikuttaa myös tietokannan suorituskykyyn. Käytännössä indeksi on uudelleen järjestettyä tietoa, joka vastaa paremmin haluttuun hakuun. Tietokanta ei kuitenkaan tallenna samaa tietoa uudelleen vaan käyttää viittauksia alkuperäiseen tietoon.
 
-![https://d117h1jjiq768j.cloudfront.net/images/default-source/default-album/tutorialimages-album/odbc-album/ruseindxa.gif?sfvrsn=1](../.gitbook/assets/ruseindxa.gif)
+![https://d117h1jjiq768j.cloudfront.net/images/default-source/default-album/tutorialimages-album/odbc-album/ruseindxa.gif?sfvrsn=1](../../.gitbook/assets/ruseindxa.gif)
 
 ## Esimerkki
 
@@ -18,7 +18,7 @@ Indeksillä tarkoitetaan tiedon rakennetta, jonka tarkoituksena on nopeuttaa rel
 
 ### B-tree \(B-puu\)
 
-![https://en.wikipedia.org/wiki/B-tree\#/media/File:B-tree.svg](../.gitbook/assets/b-tree.svg)
+![https://en.wikipedia.org/wiki/B-tree\#/media/File:B-tree.svg](../../.gitbook/assets/b-tree.svg)
 
 ## Käytännön esimerkki
 
@@ -39,7 +39,7 @@ WHERE TABLE_SCHEMA = 'employees' -- employees on siis tietokannan nimi tässä.
 SHOW INDEX FROM employees;
 ```
 
-![Employees tietokannan indeksit](../.gitbook/assets/employees_indeksit.png)
+![Employees tietokannan indeksit](../../.gitbook/assets/employees_indeksit.png)
 
 Kun käytetään `SELECT` hakua, se suoritetaan yksi komento kerrallaan. Hakujen nopeuteen vaikuttavat useat siinä esiintyvät avainsanat. `(join order, group, where jne)` Mysql pyrkii käyttämään apuna indeksejä, joilla se voi rajata jo alussa pois rivejä mitä ei tarvitse käydä läpi. Usein `WHERE` ehdossa esitellyt ehdot ovat tärkeimpiä haun nopeuteen liittyen. Väärällä tavalla kirjoitetut haut voivat olla raskaita tietokannalle ja niiden suorittaminen vie aikaa.
 

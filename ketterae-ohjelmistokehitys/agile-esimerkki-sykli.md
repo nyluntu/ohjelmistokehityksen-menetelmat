@@ -68,6 +68,8 @@ SOLID säännöstä ei ole muuta kirjoitettua materiaalia tässä kirjassa. Läh
 
 Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominaisuuksia, jotka tarvittaessa tuotteen omistajan hyväksymisen jälkeen voidaan julkaista. Julkaisu ei ole pakollinen vaan isompi julkaisu voidaan tehdä useammassa syklissä. Tärkeintä on, että tuote on aina julkaisuvalmis tarvittaessa, koska välttämättä kaikkien ominaisuuksien ei tarvitse olla valmiita. Tämä on ketterän ohjelmistokehityksen tavoite. Tehdä vähän, julkaista ja oppia tuotteesta. Tällöin riskit voidaan rajat esimerkiksi 2 viikon jaksoihin kuukausien sijasta.
 
+![](../.gitbook/assets/communication.jpeg)
+
 ## Lähteet
 
 \[1\] [https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/](https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/)
