@@ -39,6 +39,7 @@
 
 ## Versionhallinta
 
+* [Opas Gitin perusteisiin](versionhallinta/opas-gitin-perusteisiin.md)
 * [Sanasto](versionhallinta/sanasto.md)
 * [Git perusteet 101](versionhallinta/git-perusteet-101.md)
 * [Git perusteet 102](versionhallinta/git-perusteet-102.md)
