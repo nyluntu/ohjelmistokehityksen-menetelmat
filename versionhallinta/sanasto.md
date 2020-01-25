@@ -17,10 +17,18 @@ Sanastossa käytetyt suomenkieliset käännökset eivät ole virallisia käänn�
 | Reference, remote reference | viittaus | Viittauksella tarkoitetaan Gitin käyttämää tunnistetta, toisinsanoen viittausta esimerkiksi versioihin muutoshistoriassa. Voidaan myös puhua etätietovarastojen viittauksista, joilla tarkoitetaan mihin etätietovarastoon nykyinen paikallinen tietovarasto viittaa. \(Kts. komento `remote`\) |
 | Branch | haara, kehityshaara | Tarkoitetaan versionhallinnassa päähaarasta tehtyä sivuhaaraa. Haara voi olla esimerkiksi toisen ominaisuuden takia tehty kopio nykyisestä versiosta, jota kehitetään itsenäisenä kokonaisuutena. Haara voidaan yhdistää takaisin päähaaraan. |
 | Tag | Tagi | Tagi on versionhallinnassa käytettävä tunniste, jostakin tietystä versiosta. Tagi voidaan nimetä, joten sen sijaan, että version tunniste on pelkkä SHA1 tunniste, voidaan sille antaa merkittävämpi nimi. |
-| Commit | _"Pysyvä muutos"_ | Tarkoitetaan muutosten vahvistamista, jotta ne tulevat voimaan ja näkyvät muutoshistoriassa omalla tunnisteella. |
 | Conflict | Konflikti | Tarkoittaa sellaista tilannetta kun työkalu ei osaa yhdistää haluttuja muutoksia esimerkiksi kahden eri kehityshaaran kohdalla. Tällöin syntyy konflikti, jonka kehittäjän on selvitettävä itse ja muokattava alkuperäinen tiedosto haluttuun lopputilaan, joka vahvistetaan. |
 | stash | - | Tarkoitetaan Gitin komentoa stash, jolla voidaan kätkeä tai piilottaa hetkellisesti nykyiset voimassa olevat muutokset. |
 | staging area | valmistelualue | Yksi Gitin käyttämä tekniikka. Halutut muutokset lisätään aina ennen vahvistamista valmistelualueelle. Kun halutut muutokset ovat koossa, voidaan tehdä pysyvä muutos versionhallinan muutoshistoriaan. |
+| master | - | Termi tarkoittaa tietovaraston päähaaraa, joka oletuksena syntyy aina kun Git -versionhallinta otetaan käyttöön. Usein se mitä pääosan ajasta käytetään mutta riippuu työtavoista. _\(Katso myös kehityshaara\)_ |
+| clone | klooni | Tarkoitetaan usein tietovaraston kopiointia. Tarkalleen ottaen `clone` on myös Gitin komento, joka kopioi etätietovaraston paikalliselle koneelle kun se otetaan käyttöön ensimmäistä kertaa. |
+| commit | _"Pysyvä muutos"_ | Tarkoitetaan muutosten vahvistamista, jotta ne tulevat voimaan ja näkyvät versiohistoriassa omalla tunnisteella. Muutokset on ensin pitänyt lisätä valmistelualueelle `add` komennolla. |
+| fetch | - | Tietojen "vetäminen" tai "päivittäminen" etätietovarastosta paikalliseen. Kyseessä on siis tarkalleen ottaen Gitin komento. |
+| pull | - | _Katso fetch._ Tekee saman asian mutta yhdistää muutokset paikallisen tietovaraston kanssa. |
+| push | - | Pull komennon vastakohta eli työntää paikallisessa tietovarastossa olevat uudet pysyvät muutokset etätietovarastoon. |
+| remote | - | Komento etätietovarastojen viittauksien hallintaan. |
+| SHA | - | [https://fi.wikipedia.org/wiki/SHA](https://fi.wikipedia.org/wiki/SHA) |
+| HEAD | - | Tarkoittaa viittausta nykyiseen ja uusimpaan muutokseen paikallisessa tietovarastossa. Aina kun uusi pysyvä muutos tehdään niin siitä tulee uusi HEAD.  |
 
 ## Lähteet
 
