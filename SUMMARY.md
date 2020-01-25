@@ -39,6 +39,7 @@
 
 ## Versionhallinta
 
+* [Sanasto](versionhallinta/sanasto.md)
 * [Git perusteet 101](versionhallinta/git-perusteet-101.md)
 * [Git perusteet 102](versionhallinta/git-perusteet-102.md)
 * [Git perusteet 103](versionhallinta/git-perusteet-103.md)
