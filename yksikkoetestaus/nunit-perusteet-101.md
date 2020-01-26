@@ -25,8 +25,18 @@ Harjoittele siis luomalla yksittäisiä testejä lisää. Videolla luodaan yksin
 Videolla Console Application projektia ei lisätty. Tee se kuitenkin samaan tapaan kuin videolla muutoin tehtiin projekti. Kun olet luomassa uutta projektia, sinun pitäisi pystyä siinä kohdin valitsemaan, että se lisätään olemassa olevaan Solution projektiin.
 
 {% hint style="info" %}
+Kun olet palauttanut tehtävän niin pidä lopputulos tallessa. Se kuvastaa hyvin paljon lähtötilannetta muihin harjoituksiin tai töihin.
+{% endhint %}
+
+{% hint style="info" %}
 Visual Studiossa on kahdenlaisia projektityyppejä. Solution ja Project. Solution on eräänlainen kokoava projektimuoto, jossa voi olla useita projekteja. Alla kuva joka havainnollistaa rakennetta mutta sinun voi olla nimetty eri tavoin.
 {% endhint %}
 
 ![Esimerkki Visual Studion projektirakenteesta.](../.gitbook/assets/vs-solution.png)
+
+## Lähteitä
+
+Lisätietoja Visual Studion projektirakenteesta: [https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019)
+
+
 
