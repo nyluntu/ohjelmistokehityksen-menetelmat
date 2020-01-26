@@ -1,38 +1,32 @@
 # NUnit perusteet 101
 
-## **Katso ensin video** 
+## **Tavoite**
+
+Osaat luoda Visual Studio projektin, jossa käytössä on NUnit yksikkötestauskirjasto.
+
+## **Katso ensin video** malliksi
 
 {% embed url="https://www.youtube.com/watch?v=f2NrKazjWes" %}
 
 ## **Videon katsomisen jälkeen**
 
-* Luo Visual Studiolla C\# konsoliprojekti
-* Nimeä projekti haluamallasi tavalla.
+Tee Visual Studio projekti, jossa on tehty seuraavat toimenpiteet.
 
-### Luo toinen Library projekti Visual Studio solutioniin
+### Luo NUnit kirjastoa käyttävä projekti videon mukaisesti
 
-Luo edellisen projektin rinnalle toinen Library tyyppinen projekti. Nimeä projekti samoin kuten konsoliprojekti mutta siten, että sen nimi päätyy sanoihin Tests tai Test. Projekti sisältää aluksi vain yhden luokan.
+Kokeile siis päästä samaan tilanteeseen kuin videon lopussa, että työkalu tulee tutuksi. Sinun pitäisi pystyä ajamaan siis muutama testi malliksi. Voit käyttää videolla tehtyä esimerkkiä.
 
-{% hint style="info" %}
-Miksi projekti on nimetty edellä mainitulla tavalla?
-{% endhint %}
+### Lisää aiemmin luotuu projektiin muutamia eri testejä lisää
 
-**Lisää Library projektiin Nuget Package Manageria käyttäen NUnit -kirjasto**
+Harjoittele siis luomalla yksittäisiä testejä lisää. Videolla luodaan yksinkertainen laskin. Voit esimerkiksi lisätä laskimeen metodin kertolaskulle, jakolaskulle, jakojäännökselle jne. Voit myös luoda muunlaisen metodin millä vain pystyt kokeilemaan testien epäonnistumista ja ajoa.
 
-* Asenna NUnit 3 versio
-* Lisää Library projektiin Nuget Package Manageria käyttäen NUnit Test Adapter
+### Lisää samaan Solutioniin toinen projekti, joka on tyypiltään Console Application
+
+Videolla Console Application projektia ei lisätty. Tee se kuitenkin samaan tapaan kuin videolla muutoin tehtiin projekti. Kun olet luomassa uutta projektia, sinun pitäisi pystyä siinä kohdin valitsemaan, että se lisätään olemassa olevaan Solution projektiin.
 
 {% hint style="info" %}
-Mikä on nuget pakettien tarkoitus?
-
-Mikä on NUnit Test Adapter ja miksi se asennettiin?
+Visual Studiossa on kahdenlaisia projektityyppejä. Solution ja Project. Solution on eräänlainen kokoava projektimuoto, jossa voi olla useita projekteja. Alla kuva joka havainnollistaa rakennetta mutta sinun voi olla nimetty eri tavoin.
 {% endhint %}
 
-### **Tee ensimmäinen testi**
-
-Luo videon mukainen testi. Videolla kerrataan myös NUnit käyttöönotto. Yritä saada testit toimimaan siten, että sinulla on itselläsi käsitys miten virheellinen ja virheetön testi erottuvat kun ne ajetaan Visual Studion kautta.
-
-### **Lisää testiprojektiin vähintään 5 sinun itsesi luomaa testiä**
-
-Laajenna alkuperäistä projektia siten, että teet vähintään 5 omaa testiä, jotka testaavat videossa esiteltyä luokkaa. Voit päättää itse lisäätkö esimerkiksi luokkaan ominaisuuksia tai uusia laskutoimituksia, joita testaat.
+![Esimerkki Visual Studion projektirakenteesta.](../.gitbook/assets/vs-solution.png)
 
