@@ -12,7 +12,7 @@ Vältä katsomasta esimerkkejä vaan keskity seuraavan tehtävänannon ohjeistuk
 
 Oppia hyödyntämään yksikkötestausta sekä testivetoista kehitystä.
 
-Pyri kirjoittamaan seuraava testi aina valmiiksi ja sitten vasta sitä vastaava tuotantokoodi.
+Pyri kirjoittamaan seuraava testi aina valmiiksi ja sitten vasta sen läpäisevä tuotantokoodi.
 
 ### **Laskimen määritys**
 
