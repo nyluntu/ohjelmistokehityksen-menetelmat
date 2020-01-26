@@ -311,6 +311,53 @@ git add README.md
 git commit -m "Konflikti korjattu, onnistuin."
 ```
 
+### Tiedostojen sivuuttaminen versionhallinnassa
+
+Usein tulee tarpeita tiedostojen sivuuttamisen kanssa. Sivuuttamisella \(ignore\) tarkoitetaan tässä tilannetta, että tietyn tiedoston muutoksia ei huomioida versionhallinnan näkökulmasta. Se ei ole siis koskaan osa muutoshistoriaa. Useimmat tilanteet, joissa sivuuttamista tarvitaan, liittyvät työkalujen luomiin omiin konfiguraatio hakemistoihin tai kehittävän ohjelman paikallisiin asetuksiin. Tilanteita on useita erilaisia.
+
+Esimerkiksi Visual Studio luo aina piilokansion **.vs** projektin yhteydessä. Sinne syntyvät kehittäjälle tarkoitettuja omia tiedostoja sekä ne muuttuvat aina kun Visual Studio esimerkiksi kääntää ohjelman. Usein tällaisia tietoja ei haluta versionhallinnan seurattavaksi, koska aiheuttavat konflikti-tilanteita ja niistä ei ole apua muille kehittäjille. Vain pelkkä lähdekoodi on usein se mitä halutaan pitää versionhallinnassa sekä sitten siihen liittyvät työkalujen projektitiedostot.
+
+Tiedostojen tai hakemistojen merkitseminen sivuutetuksi tapahtuu **.gitignore** nimisellä tiedostolla. Git sisältää joitakin tällaisia piilotettuja tiedostoja, jolla voidaan vaikuttaa versionhallinnan ominaisuuksiin. 
+
+{% hint style="info" %}
+Edellä mainittu **.gitignore** pitää aina luoda itse, jos sitä ei ole ja sen pitää olla versionhallinnan seurattavana
+{% endhint %}
+
+Alla oleva kuva on esimerkki **.gitignore** tiedoston sisällöstä. Tiedoston jokainen rivi on eri sääntö, että mitä tiedostoja ei seurata. **Tiedoston sijaintina on usein paikallisen tietovaraston juuri eli juuri se työhakemisto, missä myös .git kansio sijaitsee**.
+
+Kyseisiä tiedostoja voi olla myös alakansioissa mutta kyse on lähinnä mieltymyksestä miten sitä käyttää. Esimerkissä on paljon erilaisia **"villejä kortteja"** \(eng. wildcards, eräänlaiset merkintätavat kuten \* jne.\) ja muita merkintätapoja. Yksinkertaisimmillaan voit kirjoittaa vain tiedoston nimen tai hakemiston polun mitä et halua seurattavan.
+
+Merkintätavoista voit lukea lisää esimerkiksi täältä [https://www.atlassian.com/git/tutorials/saving-changes/gitignore\#git-ignore-patterns](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns) 
+
+Lisäksi löytyy jo paljon valmiita malleja olemassa oleviin työkaluihin. Niitä löydät täältä [https://github.com/github/gitignore](https://github.com/github/gitignore)
+
+Etsi listalta esimerkiksi Visual Studio ja kopioi tiedoston sisältä sinun omaasi **.gitignore** tiedostoon.
+
+![Esimerkki git ignore tiedostosta, joka on tehty Visual Studiota varten](../.gitbook/assets/gitignore-example.png)
+
+{% hint style="info" %}
+Huomioitavaa kun luot **.gitinore** tiedoston, muutoin se ei toimi:
+
+* Tiedoston nimen pitää alkaa pisteellä ja siinä ei ole tiedostopäätettä. \(windowsin notepad jättää usein .txt päätteen, joten silloin tiedosto ei toimi\)
+* Muista tallentaa tiedosto muutosten jälkeen.
+* Tiedostopolku tai hakemiston nimi kirjoitettu väärin.
+* Sivuutettava hakemisto tai tiedosto on aiemmin lisätty versionhallinnan seurattavaksi. Tällöin tiedosto pitää ensin poistaa versionhallinnan seurattavien tiedostojen piiristä.
+{% endhint %}
+
+Jos tiedosto on aiemmin lisätty versionhallinnan seurantaan ja lisäät sen **.gitignore** tiedostoon, tiedoston sivuutus ei toimi heti. Käytä seuraavia komentoja poistamaan tiedosto ensin seurannasta ja vasta sitten **.gitignore** toimii halutusti.
+
+```bash
+# Poistaa tiedoston versionhallinnan seurannasta. Parametri --cached aiheuttaa
+# sen, että tiedostoa ei poisteta työhakemistosta kokonaan vaan pelkästään
+# käsitteleee versionhallinnan seurattavia tiedostoja.
+git rm --cached <tiedosto>
+
+# Tekee saman kuin yllä mutta annettu lisäksi -r parametri, joka tarkoittaa 
+# rekursiivista poistamista. Tätä käytetään silloin kun kyseessä on jokin 
+# hakemisto eikä yksittäinen tiedosto.
+git rm -r --cached <hakemisto>
+```
+
 ## Lähteet
 
 {% embed url="https://git-scm.com/" %}
