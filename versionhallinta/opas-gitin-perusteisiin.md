@@ -219,9 +219,15 @@ git push origin master
 
 Yksinkertaisesti `push` komento työntää aina muutokset etätietovarastoon. Tämän jälkeen paikalliseen tietovarastoon voidaan tehdä lisää muutoksia ja työntää taas uudelleen kun halutaan.
 
-{% hint style="info" %}
-Push komento voi tietyissä tilanteessa epäonnistua. Todennäköisin tilanne on se kun toinen henkilö on jo ehtinyt työntää uusia muutoksia etätietovarastoon, joita sinun paikallisessa tietovarastossa ei ole. Tässä tilanteessa muutokset pitää ensin vetää omaan tietovarastoon.
-{% endhint %}
+### Muutosten työntämisen aikana tapahtuu virhe
+
+Push komento voi tietyissä tilanteessa epäonnistua. Todennäköisin tilanne on se kun toinen henkilö on jo ehtinyt työntää uusia muutoksia etätietovarastoon, joita sinun paikallisessa tietovarastossa ei ole. Tässä tilanteessa muutokset pitää ensin vetää omaan tietovarastoon. Alla on kuvakaappaus siitä miltä tilanne näyttää komentokehotteessa käytettäessä Gitin komentoja.
+
+![Git push virhe](../.gitbook/assets/git-push-error.png)
+
+Kuvakaappauksessa on ensin navigoitu **dev/saliavustaja/** hakemistoon, joka tässä tilanteessa on paikallinen tietovarasto. Paikalliseen tietovarastoon on tätä ennen tehty yksi muutos. Kun on annettu komento `git push origin master` niin tulostuu viesti **rejected** ja perustelut sille. 
+
+Perustelut kannattaa lukea tarkkaan, koska siinä sanotaan suoraan olevan kyseessä tilanne, jossa joku toinen on jo tehnyt muutoksia etätietovarastoon, joita sinulla ei ole paikallisessa tietovarastossa. Tällöin tulisi tehdä `git pull` komento, joka vetää muutokset etätietovarastosta. 
 
 ### Muutosten vetäminen etätietovarastosta
 
@@ -243,6 +249,67 @@ Pull komento on hyvä tehdä aina ennen töiden aloittamista niin välttää mon
 
 Komento voi aiheuttaa myös niin sanotun konfliktin \(conflict\) tilanteen, jos vedettävät muutokset koskettavat sellaisia paikallisia muutoksia mitkä osuvat samoihin tiedostoihin ja lähdekoodin riveihin.
 {% endhint %}
+
+## Muut työskentelyyn liittyvät tilanteet
+
+Versionhallintaa käytettäessä tulee vastaan joitakin tilanteita ja tarpeita mitä pitää osata selvittää. Nämä ovat hyvin perinteisiä ja kuuluvat melkein jokapäiväiseen työskentelyyn. Erilaiset työskentelytavat vaikuttavat myös näiden tilanteiden syntyyn.
+
+Todennäköisesti ohjelmoijan pitää jossakin tilanteessa selvittää **Gitin konflikti** tai **merkitä tiedostoja, joita ei haluta versionhallinnan seuraavan**. 
+
+### Konfliktin selvittäminen
+
+Konflikti tarkoittaa Gitissä tilannetta, jossa työkalu ei pysty päättelemään muutoksista niitä, jotka pitäisi yhdistämisen aikana säästää. Yhdistämisellä tarkoitetaan tässä ns. _**merge**_ tapahtumaa, joka on Gitin tapa yhdistää muutokset kahdesta eri kehityshaarasta.
+
+Konflikti voi syntyä seuraavissa tilanteissa:
+
+* Ohjelmoija on luonut uuden kehityshaaran ja yhdistää sen siihen mistä se on alunperin luotu.
+* Ohjelmoija vetää etätietovarastosta muutoksia paikalliseen tietovarastoon mutta hänellä on muutoksia samoissa lähdekoodiriveissä kuin etätietovaraston tulevissa muutoksissa.
+
+![Git konflikti pull komennon yhteydess&#xE4;](../.gitbook/assets/git-conflict.png)
+
+Konflikti näyttää ylläolevan kuvan kaltaiselta kun se tapahtuu käytettäessä `git pull` komentoa. Kuvassa paikallinen tietovarasto on **dev/saliavustaja/** -hakemistossa, jossa on yritetty vetää uusia muutoksia etätietovarastosta. Gitin tulosteessa on kohta **CONFLICT**, jossa kerrotaan perässä sen tapahtuneen README.md nimisessä tiedostossa. Lisäksi mainitaan, että automaattinen yhdistäminen \(merge\) on epäonnistunut ja konflikti pitää korjata.
+
+Konflikti korjataan aina manuaalisesti eli ohjelmoija itse korjaa kyseisestä tiedostosta epäselvät rivit. Kun kuvan mukaisessa tilanteessa on tapahtunut konflikti, mitään muutoksia ei varsinaisesti vahvisteta paikallisessa tietovarastossa ennen niiden korjaamista. Jos et tiedä missä tilassa paikallinen tietovarasto on niin `git status` komento auttaa myös selvittämään mikäli on kyseessä konflikti. 
+
+![Git konflikti status komennon n&#xE4;k&#xF6;kulmasta](../.gitbook/assets/git-status-conflict.png)
+
+Yllä olevassa kuvassa tuloste kertoo, että sinulla on konflikti. Tällöin kaksi kehityshaaran historiaa ei ole siis oikein yhdistyneet. Kohdassa **Unmerged paths** olevat tiedostot sinun tulee käydä läpi manuaalisesti. Jos konfliktia ei haluta tapahtuvan, voidaan antaa seuraava komento, joka peruu muutokset siihen tilaan kuin ne olivat ennen konfliktin syntymistä.
+
+```bash
+# Abort parametri peruu muutokset ja on hyödyllinen konflikti tilanteissa, 
+# joka on tullut odottamatta. Usein kuitenkin konflikti on selvitettävissä
+# suht helposti.
+git merge --abort
+```
+
+Kuten edellä on jo mainittu, konflikti selvitetään itse. Kun konflikti on selvitetty, tulee se vielä vahvistaa `commit` komentoa käyttäen. Avaa konfliktin aiheuttanut tiedosto missä tahansa tekstieditorissa \(esim. notepad, visual studio, komentokehotteesa\). Monet ohjelmointiin tehdyt työkalut ymmärtävät konfliktitilanteita ja tarjoavat ohjelmoijalle vaihtoehdot miten toimia. Hyväksytäänkö paikalliset muutokset, etätietovaraston muutokset vai jokin näistä yhdistelmistä.
+
+Seuraava kuva havainnollistaa tilannetta työkalun kanssa, joka ei ymmärrä konflikteja ja miltä se näyttää Gitin näkökulmasta.
+
+![Git konflikti nano tekstieditorissa](../.gitbook/assets/git-conflict-nano.png)
+
+Tiedostossa, jossa on konflikti, tärkein asia on Gitin merkintätapa ja korjaus. Konfliktissa Git lisää lähdekoodiin seuraavanlaiset merkinnät:
+
+```bash
+<<<<<<< HEAD
+[tässä kohdin voi olla useita rivejä lähdekoodia]
+=======
+[tässä kohdin voi olla useita rivejä lähdekoodia]
+>>>>>>> [version sha tunniste (f138cb...]
+```
+
+Ohjelmoijan tulee siis siivoa lopputilanne siten, että poistaa `<<<<, ====, >>>` rivit ja lopputulos on halutun näköinen. Ensimmäinen HEAD osio tarkoittaa, että siinä on nykyiset paikallisessa tietovarastossa olevat muutokset. Yhtäsuuruus-merkkien jälkeen tuleva lohko tarkoittaa etätietovarastosta vedettyjä muutoksia. Muutoksia voi olla useita rivejä, että ohjelmoija voi siistiä lähdekoodin käyttämään vain toista lohkoa tai sitten yhdistellä muutoksia haluamansa tavan mukaisesti. **Lopuksi tallenna tiedosto** sekä **kokeile tietysti ohjelman toimivuus**, jos kyseessä on oikea ohjelma.
+
+Kun konflikti-tiedostot on selvitetty, tee muutokset pysyviksi seuraavilla komennoilla.
+
+```bash
+# Lisää korjattu tiedosto valmistelualueelle. 
+# (vaihtoehtoisesti myös muut mahdollisesti muutokset) 
+git add README.md
+
+# Vahvista muutokset.
+git commit -m "Konflikti korjattu, onnistuin."
+```
 
 ## Lähteet
 
