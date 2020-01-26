@@ -3,8 +3,10 @@
 {% hint style="warning" %}
 Komennoissa on virheitä kun ne on siirretty tekstiin. Huomaa, että osa komennoista ei siis kopioimalla toimi. Yksittäisten väliviivojen tilalle voi tulla kaksi väliviivaa tai niiden edestä puuttuu tyhjä välilyönti. 
 
-Komennot kannattaa silti vielä kirjoittaa, koska kopioidessa joskus väliviivat eivät kopioidu oikein.uo uusi kehityshaara paikalliseen tietovarastoon
+Komennot kannattaa silti vielä kirjoittaa, koska kopioidessa joskus väliviivat eivät kopioidu oikein.
 {% endhint %}
+
+**Luo uusi kehityshaara paikalliseen tietovarastoon**
 
 Kerro millä eri tavoin voit luoda haaroja paikallisessa tietovarastossa? Kerro tarvittavat komennot ja anna lopuksi seuraava komento
 
