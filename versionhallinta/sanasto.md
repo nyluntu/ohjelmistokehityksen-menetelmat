@@ -2,7 +2,7 @@
 description: Sanastoa Git versionhallintaan. Termejä suomeksi ja englanniksi.
 ---
 
-# Sanasto
+# Sanasto Git
 
 {% hint style="info" %}
 Sanastossa käytetyt suomenkieliset käännökset eivät ole virallisia käännöksiä. Termit on haettu käyttäen eri lähteitä sekä sitten työelämässä käytetyistä nimityksistä. Virallisia käännöksiä ei sinällään ole.
