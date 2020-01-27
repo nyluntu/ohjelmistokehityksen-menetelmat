@@ -54,6 +54,7 @@
 ## Yksikkötestaus
 
 * [Ohjelmistotestauksen periaateet](yksikkoetestaus/ohjelmistotestauksen-periaateet.md)
+* [NUnit lisääminen VS2019](yksikkoetestaus/nunit-lisaeaeminen-vs2019.md)
 * [NUnit perusteet 101](yksikkoetestaus/nunit-perusteet-101.md)
 * [NUnit perusteet 102](yksikkoetestaus/nunit-perusteet-102.md)
 * [NUnit perusteet 103](yksikkoetestaus/nunit-perusteet-103.md)
