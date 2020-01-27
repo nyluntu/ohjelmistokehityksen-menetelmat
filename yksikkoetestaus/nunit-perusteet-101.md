@@ -9,7 +9,7 @@ Osaat luoda Visual Studio projektin, jossa käytössä on NUnit yksikkötestausk
 {% embed url="https://www.youtube.com/watch?v=f2NrKazjWes" %}
 
 {% hint style="warning" %}
-Tehty myös kuvakaappauksen Visual Studio 2019 versiosta. Katso sivu [NUnit lisääminen VS2019](nunit-lisaeaeminen-vs2019.md).
+Otettu myös kuvakaappaukset Visual Studio 2019 versiosta. Katso sivu [NUnit lisääminen VS2019](nunit-lisaeaeminen-vs2019.md).
 {% endhint %}
 
 ## **Videon katsomisen jälkeen**
