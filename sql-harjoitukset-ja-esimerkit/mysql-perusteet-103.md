@@ -16,7 +16,7 @@ Kirjoita SQL kyselyt, jotka vastaavat alla oleviin kysymyksiin. Yhteen kysymykse
 
 **5. Listaa kaikki asiakkaiden tiedoista löytyvät kaupunkien nimet aakkosjärjestyksessä, jossa kaupunkien nimi loppuu** _**r**_ **-kirjaimeen.**
 
-**6. Listaa seuraavien lueteltujen maiden tunniste ja nimi sekä järjestä lopputulos aakkosjärjestykseen:  Lithuania, Finland, Austria, Austria \(Käytä IN operaattoria\)**
+**6. Listaa seuraavien lueteltujen maiden tunniste ja nimi sekä järjestä lopputulos aakkosjärjestykseen:  Lithuania, Finland, Austria \(Käytä IN operaattoria\)**
 
 **7. Listaa ne näyttelijät sukunimen mukaan aakkosjärjestyksessä, joiden sukunimi esiintyy kaksi kertaa tai useammin?**
 
