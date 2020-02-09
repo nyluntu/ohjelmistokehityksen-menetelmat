@@ -22,7 +22,7 @@ Kun olet saanut **kehitysjonon \(tehtävälista\)** valmiiksi, priosioi siis tä
 
 SRUM soveltamisessa keskitytään toimintamalliin kuinka harjoitustyön tavoitteet ja tehtävät suunnitellaan.
 
-**Lataa suomenkielinen** versio SCRUM kuvauksesta täältä: [SCRUM opas suomeksi](https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-Finnish.pdf).
+**Lataa suomenkielinen** versio SCRUM oppaasta täältä: [SCRUM opas suomeksi](https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-Finnish.pdf).
 
 [**Versionhallinta**](../versionhallinta/opas-gitin-perusteisiin.md)\*\*\*\*
 
