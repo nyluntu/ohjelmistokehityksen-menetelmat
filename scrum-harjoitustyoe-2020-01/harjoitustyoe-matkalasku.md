@@ -4,10 +4,6 @@ description: Harjoitustyö ohjelmistokehityksen taitojen syventämiseen.
 
 # Harjoitustyö: Matkalasku
 
-{% hint style="danger" %}
-Harjoitustyön aiheen voi tehdä myös haluamastaan aiheesta. Tärkeintä on huomioida **harjoitustyön rajaukset**. 
-{% endhint %}
-
 ## Matkalasku
 
 Kirjanpitäjänä \(jäljempänä _Asiakas_\) toimiva henkilö laskee usealle yritykselle heidän työntekijöiden matkakorvauksia. Työ on alkanut käymään toistuvaksi puurtamiseksi ja asiakas on miettinyt matkalaskujen hoitamista sähköisesti. Ensimmäiseksi asiakas haluaisi päästä kokeilemaan matkalaskujen luomiseen luotua ohjelmaa. Asiakas on antanut seuraavat lähtötiedot ohjelman ensimmäisistä vaatimuksista.
