@@ -57,3 +57,15 @@ Harjoitustyössä ei tarvitse tulostaa laskun kuvaa vaan riittää, että konsol
 
 ![Esimerkki konsoliohjelmasta](../.gitbook/assets/konsolisovellus_01.png)
 
+## Vinkkejä
+
+Lyhyt soittolista, jossa tehdään pieni ohjelma missä hyödynnetään tekstitiedostoja tallennusmekanismina.
+
+{% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE" %}
+
+
+
+
+
+
+
