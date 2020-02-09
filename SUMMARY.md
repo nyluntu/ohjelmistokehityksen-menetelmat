@@ -6,7 +6,7 @@
 
 ## SCRUM harjoitustyö \(2020/01\)
 
-* [Harjoitustyön sisältö](scrum-harjoitustyoe-2020-01/tavoitteet.md)
+* [Harjoitustyön sisältö](scrum-harjoitustyoe-2020-01/harjoitustyon-sisalto.md)
 * [Harjoitustyö: Matkalasku](scrum-harjoitustyoe-2020-01/harjoitustyoe-matkalasku.md)
 
 ## Toimeksiannot \(2020/01\)
