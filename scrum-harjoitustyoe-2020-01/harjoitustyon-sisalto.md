@@ -49,7 +49,7 @@ Ohjaaja tarkistaa seuraavat osa-alueet arvioinnin yhteydessä.
 * Versionhallinnan käyttöä tekemisen aikana.
 * Yksikkötestien soveltamista ohjelman tekemisen aikana.
 
-**Lyhyt kuvaruutuvideo \(Max 10min\),** jossa näytät harjoitustyön aikana syntyneen lopputyön tilanteen. Lisää linkki README tiedostoon, josta videon voi katsoa.
+**Lyhyt video \(Max 10min\),** jossa näytät harjoitustyön aikana syntyneen lopputyön tilanteen. Lisää linkki README tiedostoon, josta videon voi katsoa.
 
 Tuo esille seuraavia asioita:
 
