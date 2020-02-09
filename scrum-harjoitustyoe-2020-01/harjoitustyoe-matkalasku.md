@@ -53,5 +53,7 @@ Ohjelman pitää olla konsoliohjelma \(esimerkki alla mikä on konsoliohjelma\).
 
 Ohjelmointikielenä pitää olla C\#.
 
+Harjoitustyössä ei tarvitse tulostaa laskun kuvaa vaan riittää, että konsoliohjelmasta näkee kaikki tiedot.
+
 ![Esimerkki konsoliohjelmasta](../.gitbook/assets/konsolisovellus_01.png)
 
