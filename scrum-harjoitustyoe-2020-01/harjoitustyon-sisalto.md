@@ -2,7 +2,7 @@
 
 ## Harjoitustyön toimeksianto
 
-**Lue** [**harjoitustyön toimeksianto täältä**](harjoitustyoe-matkalasku.md)\*\*\*\*
+Lue harjoitus työn toimeksianto täältä: [Matkalasku](harjoitustyoe-matkalasku.md)
 
 Sen jälkeen tutustu alla olevaan ohjeistukseen mitä sinun tulee tehdä.
 
