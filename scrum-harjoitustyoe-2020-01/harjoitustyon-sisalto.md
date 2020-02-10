@@ -2,7 +2,7 @@
 
 ## Harjoitustyön toimeksianto
 
-Lue harjoitus työn toimeksianto täältä: [Matkalasku](harjoitustyoe-matkalasku.md)
+**Lue** [**harjoitustyön toimeksianto täältä**](harjoitustyoe-matkalasku.md)\*\*\*\*
 
 Sen jälkeen tutustu alla olevaan ohjeistukseen mitä sinun tulee tehdä.
 
@@ -56,6 +56,7 @@ Tuo esille seuraavia asioita:
 * Missä onnistuit?
 * Mikä oli haastavinta?
 * Miten jatkaisit nykyisestä pisteestä ohjelman tekoa, jos käytössä olisi enemmän aikaa?
+* Saitko hyödynnettyä testejä ohjelman teossa? Jos kyllä niin miten?
 
 Kuvaruutuvideon tekotavalla ei ole väliä. Jos et tiedä mistä lähteä liikkeelle niin ilmainen versio [Screencast O Matic-ohjelmasta](https://screencast-o-matic.com/) on ihan pätevä.
 
