@@ -61,3 +61,11 @@ Lyhyt soittolista, jossa tehdään pieni ohjelma missä hyödynnetään tekstiti
 
 {% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_7GzGYkoO1msZPSLl1vIaz" %}
 
+{% embed url="https://github.com/hamk-ohjelmointi-intip19x6/hamk-development-team-00/issues" caption="Esimerkki Githubin Issues listan käytöstä." %}
+
+{% embed url="https://www.mountaingoatsoftware.com/agile/user-stories" %}
+
+
+
+
+
