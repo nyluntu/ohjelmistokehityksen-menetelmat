@@ -1,6 +1,8 @@
 # Esimerkkitietokannan käyttöönotto
 
-TODO: kirjoita miten tietokanta saadaan käyttöön
+{% embed url="https://www.youtube.com/watch?v=R-oLcggocvM&list=PL3iay\_FdAzV\_DrpXk7csd90fyUitBQEEK&index=2" %}
+
+
 
 
 
