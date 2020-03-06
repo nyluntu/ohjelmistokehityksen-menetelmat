@@ -219,6 +219,10 @@ git push origin master
 
 Yksinkertaisesti `push` komento työntää aina muutokset etätietovarastoon. Tämän jälkeen paikalliseen tietovarastoon voidaan tehdä lisää muutoksia ja työntää taas uudelleen kun halutaan.
 
+{% hint style="danger" %}
+Vältä käyttämästä `git push --force` komentoa. Komento yliajaa muutokset ja sillä tavoin Git -historia muuttuu. Usein johtaa uusiin ongelmiin.
+{% endhint %}
+
 ### Muutosten työntämisen aikana tapahtuu virhe
 
 Push komento voi tietyissä tilanteessa epäonnistua. Todennäköisin tilanne on se kun toinen henkilö on jo ehtinyt työntää uusia muutoksia etätietovarastoon, joita sinun paikallisessa tietovarastossa ei ole. Tässä tilanteessa muutokset pitää ensin vetää omaan tietovarastoon. Alla on kuvakaappaus siitä miltä tilanne näyttää komentokehotteessa käytettäessä Gitin komentoja.
