@@ -16,8 +16,6 @@ Jos vastausta ei silti löydy, niin yritä silloin selittää itsellesi vastauks
 
 **1. Montako riviä on Sakila tietokannan tauluissa? \(jokaisen taulun rivien määrä erikseen, ei tarvitse olla yhteenlaskettua summaa kaikkien taulujen osalta.\)**
 
-Vastaukseksi soveltuu myös yksinkertaisempi SELECT count\(\*\) FROM film tyylinen komento. Silloin jokaisen taulun nimi pitää erikseen määritellä. Alla kuitenkin vaihtoehtoinen tapa selvittää yhden tietokannan kaikkien taulujen rivimäärät.
-
 **2. Keitä eri näyttelijöitä on merkitty tietokantaan? Etu- ja sukunimi riittävät.**
 
 **3. Missä eri kaupunginosissa asiakkaat ovat? Yksilölliset kaupunginosien nimet ovat tärkeitä ja montako kpl yhteensä eri yksilöllisiä kaupunginosia on?** 
