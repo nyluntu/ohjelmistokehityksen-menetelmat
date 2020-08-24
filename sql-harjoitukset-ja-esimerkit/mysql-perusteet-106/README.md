@@ -6,8 +6,6 @@ description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
 
 Kirjoita SQL kyselyt ja komennot, jotka vastaavat alla oleviin kysymyksiin. Yhteen kysymykseen voi liittyä yksi tai useampia SQL komentoja, joten ratkaisutavalla ei sinällään ole väliä kunhan ratkaisut on esitelty SQL kielellä.
 
-{% page-ref page="mysql-perusteet-106-vastaukset.md" %}
-
 #### 1. DVD -formaattien vuokraus on laskemaan päin. Myymälöihin on tarkoitus alkaa ostaa myös Blu-ray sekä 3D Blu-ray elokuvia. Kirjoita komennot mitä tarvitset luodaksesi taulun jakeluformaateille kun sen sisältö ja rakenne on alla kuvatun mukainen.
 
 Taulun nimeksi tulee **format\_type** ja sen sarakkeet ovat:
