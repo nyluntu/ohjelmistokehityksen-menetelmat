@@ -22,8 +22,6 @@ Vastaukseksi soveltuu myös yksinkertaisempi `SELECT count(*) FROM film` tyyline
 {% endtab %}
 {% endtabs %}
 
-#### 
-
 {% tabs %}
 {% tab title="Kysymys" %}
 #### 2. Keitä eri näyttelijöitä on merkitty tietokantaan? Etu- ja sukunimi riittävät.
