@@ -103,12 +103,15 @@
 
 * [Esimerkkitietokannan käyttöönotto](sql-harjoitukset-ja-esimerkit/esimerkkitietokannan-kaeyttoeoenotto.md)
 * [Mysql perusteet 101](sql-harjoitukset-ja-esimerkit/mysql-perusteet-101.md)
-* [Mysql perusteet 102](sql-harjoitukset-ja-esimerkit/mysql-perusteet-102.md)
+* [Mysql perusteet 102](sql-harjoitukset-ja-esimerkit/mysql-perusteet-102/README.md)
+  * [mysql-perusteet-102-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-102/mysql-perusteet-102-vastaukset.md)
 * [Mysql perusteet 103](sql-harjoitukset-ja-esimerkit/mysql-perusteet-103/README.md)
   * [mysql-perusteet-103-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-103/mysql-perusteet-103-vastaukset.md)
 * [Mysql perusteet 104](sql-harjoitukset-ja-esimerkit/mysql-perusteet-104/README.md)
   * [mysql-perusteet-104-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-104/mysql-perusteet-104-vastaukset.md)
-* [Mysql perusteet 105](sql-harjoitukset-ja-esimerkit/mysql-perusteet-105.md)
-* [Mysql perusteet 106](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106.md)
+* [Mysql perusteet 105](sql-harjoitukset-ja-esimerkit/mysql-perusteet-105/README.md)
+  * [mysql-perusteet-105-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-105/mysql-perusteet-105-vastaukset.md)
+* [Mysql perusteet 106](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/README.md)
+  * [mysql-perusteet-106-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/mysql-perusteet-106-vastaukset.md)
 * [SQL hakukyselyjä \(VANHAT\)](sql-harjoitukset-ja-esimerkit/sql-hakukyselyjae.md)
 
