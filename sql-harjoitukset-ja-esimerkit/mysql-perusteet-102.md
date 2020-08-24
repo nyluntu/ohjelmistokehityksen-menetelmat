@@ -6,7 +6,21 @@ description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
 
 Kirjoita SQL kyselyt, jotka vastaavat alla oleviin kysymyksiin. Yhteen kysymykseen voi liittyä yksi tai useampia SQL lauseita, joten ratkaisutavalla ei sinällään ole väliä kunhan siinä on käytetty SQL -kyselyitä.
 
+Vältä vastausten katsomista etukäteen mutta ne auttavat, jos muuten jää jossakin kohdin jumiin.
+
+Jos vastausta ei silti löydy, niin yritä silloin selittää itsellesi vastauksen SQL kysely ja selvittää mitä se varsinaisesti teki. Esimerkiksi vieraat SQL komennot.
+
+{% tabs %}
+{% tab title="Kysymys" %}
 #### 1. Montako riviä on Sakila tietokannan tauluissa? \(jokaisen taulun rivien määrä erikseen, ei tarvitse olla yhteenlaskettua summaa kaikkien taulujen osalta.\)
+{% endtab %}
+
+{% tab title="Vastaus" %}
+Vastaukseksi soveltuu myös yksinkertaisempi `SELECT count(*) FROM film` tyylinen komento. Silloin jokaisen taulun nimi pitää erikseen määritellä. Alla kuitenkin vaihtoehtoinen tapa selvittää yhden tietokannan kaikkien taulujen rivimäärät.
+
+![](../.gitbook/assets/screenshot-2020-08-24-at-15.57.33.png)
+{% endtab %}
+{% endtabs %}
 
 #### 2. Keitä eri näyttelijöitä on merkitty tietokantaan? Etu- ja sukunimi riittävät.
 
