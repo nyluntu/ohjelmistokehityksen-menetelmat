@@ -6,6 +6,10 @@ description: 'Harjoitustietokanta https://dev.mysql.com/doc/sakila/en/'
 
 Kirjoita SQL kyselyt, jotka vastaavat alla oleviin kysymyksiin. Yhteen kysymykseen voi liittyä yksi tai useampia SQL lauseita, joten ratkaisutavalla ei sinällään ole väliä kunhan siinä on käytetty SQL -kyselyitä.
 
+{% page-ref page="mysql-perusteet-103-vastaukset.md" %}
+
+
+
 #### 1. Markkinointia varten tarvitaan lista kaikkien niiden asiakkaiden tunnisteesta, etunimestä, sukunimestä ja sähköpostista, joiden nimessä esiintyy _Angela_.
 
 **2. Tulevaa viikonlopun kampanjaa varten tarvitaan lista niiden elokuvien nimistä, vuokran hinnasta ja luokituksesta, joiden kuvauksessa mainitaan sana** _**amazing**_**? Tee kysely käyttäen LIKE ja REGEXP operaattoreita.**
