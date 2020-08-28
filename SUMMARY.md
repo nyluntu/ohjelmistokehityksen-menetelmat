@@ -4,35 +4,12 @@
 * [Tavoitteet](tavoitteet.md)
 * [Työkalut](tyoekalut.md)
 
-## SCRUM harjoitustyö \(2020/01\)
-
-* [Harjoitustyön sisältö](scrum-harjoitustyoe-2020-01/harjoitustyon-sisalto.md)
-* [Harjoitustyö: Matkalasku](scrum-harjoitustyoe-2020-01/harjoitustyoe-matkalasku.md)
-
 ## Toimeksiannot <a id="toimeksiannot-2020-01"></a>
 
 * [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
 * [Kilometrikorvaus](toimeksiannot-2020-01/kilometrikorvaus.md)
 * [Laskutus](toimeksiannot-2020-01/laskutus.md)
 * [Toimeksiannon rajaukset](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
-
-## Toimeksiannot \(2019/02\)
-
-* [Toimeksianto 2019/02](toimeksiannot-2019-02/untitled.md)
-
-## Toimeksiannot \(2019/01\)
-
-* [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
-* [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
-* [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
-
-## Toimeksiannot \(2018/01\)
-
-* [Projekti 2018/01](toimeksiannot-2018-01/projekti-2018-01.md)
-* [Projekti 2018/01 Perjantaille 14.9](toimeksiannot-2018-01/projekti-2018-01-perjantaille-14.9.md)
-* [Projekti 2018/01 Käyttötapauksesta työtehtäviin](toimeksiannot-2018-01/projekti-2018-01-kaeyttoetapauksesta-tyoetehtaeviin.md)
-* [Projekti 2018/01 Ohjelmoinnin aloittaminen](toimeksiannot-2018-01/projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
-* [Projekti 2018/01 TDD esimerkki](toimeksiannot-2018-01/projekti-2018-01-tdd-esimerkki.md)
 
 ## Ketterä ohjelmistokehitys
 
@@ -41,6 +18,12 @@
 * [Agile, Käyttäjätarina ja käyttötapaus](ketterae-ohjelmistokehitys/agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md)
 * [Agile muu materiaali ja lähteitä](ketterae-ohjelmistokehitys/agile-muu-materiaali-ja-laehteitae.md)
 * [Agile termit \(scrum\)](ketterae-ohjelmistokehitys/agile-termit-scrum.md)
+
+## Toimeksiannot \(2019/01\)
+
+* [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
+* [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
+* [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
 
 ## Versionhallinta
 
@@ -81,10 +64,6 @@
 * [Jatkuva integraatio](harjoitteet/jatkuva-integraatio.md)
 * [Inkrementaalinen dokumentointi](harjoitteet/inkrementaalinen-dokumentointi.md)
 
-## Miten yrittäjänä voin hyötyä ohjelmistokehityksen ostamisesta?
-
-* [TL;DR](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/tl-dr.md)
-
 ## Relaatiotietokannat
 
 * [Johdanto](relaatiotietokannat/johdanto.md)
@@ -114,4 +93,25 @@
 * [Mysql perusteet 106](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/README.md)
   * [mysql-perusteet-106-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/mysql-perusteet-106-vastaukset.md)
 * [SQL hakukyselyjä \(VANHAT\)](sql-harjoitukset-ja-esimerkit/sql-hakukyselyjae.md)
+
+## Miten yrittäjänä voin hyötyä ohjelmistokehityksen ostamisesta?
+
+* [TL;DR](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/tl-dr.md)
+
+## SCRUM harjoitustyö \(2020/01\)
+
+* [Harjoitustyön sisältö](scrum-harjoitustyoe-2020-01/harjoitustyon-sisalto.md)
+* [Harjoitustyö: Matkalasku](scrum-harjoitustyoe-2020-01/harjoitustyoe-matkalasku.md)
+
+## Toimeksiannot \(2019/02\)
+
+* [Toimeksianto 2019/02](toimeksiannot-2019-02/untitled.md)
+
+## Toimeksiannot \(2018/01\)
+
+* [Projekti 2018/01](toimeksiannot-2018-01/projekti-2018-01.md)
+* [Projekti 2018/01 Perjantaille 14.9](toimeksiannot-2018-01/projekti-2018-01-perjantaille-14.9.md)
+* [Projekti 2018/01 Käyttötapauksesta työtehtäviin](toimeksiannot-2018-01/projekti-2018-01-kaeyttoetapauksesta-tyoetehtaeviin.md)
+* [Projekti 2018/01 Ohjelmoinnin aloittaminen](toimeksiannot-2018-01/projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
+* [Projekti 2018/01 TDD esimerkki](toimeksiannot-2018-01/projekti-2018-01-tdd-esimerkki.md)
 
