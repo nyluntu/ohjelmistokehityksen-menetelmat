@@ -9,7 +9,7 @@
 * [Harjoitustyön sisältö](scrum-harjoitustyoe-2020-01/harjoitustyon-sisalto.md)
 * [Harjoitustyö: Matkalasku](scrum-harjoitustyoe-2020-01/harjoitustyoe-matkalasku.md)
 
-## Toimeksiannot \(2020/01\)
+## Toimeksiannot <a id="toimeksiannot-2020-01"></a>
 
 * [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
 * [Kilometrikorvaus](toimeksiannot-2020-01/kilometrikorvaus.md)
