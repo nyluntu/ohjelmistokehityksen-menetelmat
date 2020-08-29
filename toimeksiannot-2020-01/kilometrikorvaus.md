@@ -22,3 +22,5 @@ Sinun tulisi suunnitella pieni sovellus, joka auttaisi asiakasta. Asiakkaalla on
 * Asiakas haluaisi saada myös yhteenvedon tämän hetkisistä maksamattomista korvauksista. 
 * Lisäksi jos mahdollista niin ohjelmasta näkisi, että paljonko myyntiedustajille on maksettu korvauksia ja paljonko on maksamatta.
 
+![Esimerkki matkalaskun / kilometrikorvauksen sis&#xE4;ll&#xF6;st&#xE4;](../.gitbook/assets/matkalaskumalli.png)
+
