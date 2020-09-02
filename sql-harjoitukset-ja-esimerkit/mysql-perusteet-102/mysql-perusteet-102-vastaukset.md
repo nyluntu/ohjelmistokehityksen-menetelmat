@@ -14,6 +14,8 @@ Vastaukseksi soveltuu myös yksinkertaisempi SELECT count\(\*\) FROM film tyylin
 
 **3. Missä eri kaupunginosissa asiakkaat ovat? Yksilölliset kaupunginosien nimet ovat tärkeitä ja montako kpl yhteensä eri yksilöllisiä kaupunginosia on?** 
 
+Kuvan sijaan myös seuraava haku on mahdollinen: `SELECT DISTINCT district FROM address;`
+
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-16.05.14.png)
 
 **4. Elokuvista tarvitaan listaus verkkosivulle, jossa esiintyy niiden nimi, kuvaus, vuokrausajan kesto, vuokran hinta, elokuvan pituus ja luokitus.**
@@ -26,7 +28,9 @@ Vastaukseksi soveltuu myös yksinkertaisempi SELECT count\(\*\) FROM film tyylin
 Vinkki tehtävään 5. Lue sakila tietokannan kuvauksesta mikä on inventory taulun tarkoitus. https://dev.mysql.com/doc/sakila/en/sakila-structure-tables-inventory.html
 {% endhint %}
 
-![](../../.gitbook/assets/screenshot-2020-08-24-at-16.08.35.png)
+Aiemmassa esimerkkivastauksessa ollut tässä virhe. Vastauksen kysymykseen saa esimerkiksi kyselyllä: `SELECT COUNT(*) FROM inventory;`
+
+Vastaus tulee siis siitä, että dokumenttia lukemalla selviää, että inventory taulussa on yksi rivi per vuokrattavan elokuvan kopio. Kopio tässä tarkoittaa fyysistä dvd-levyä.
 
 **6. Montako erilaista kielivaihtoehtoa elokuville on olemassa?**
 
