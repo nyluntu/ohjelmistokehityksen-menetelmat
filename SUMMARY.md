@@ -75,6 +75,7 @@
 * [SQL JOIN -lauseke](relaatiotietokannat/sql-join-lauseke.md)
 * [Normalisointi](relaatiotietokannat/normalisointisaeaennoet.md)
 * [SQL View](relaatiotietokannat/sql-view.md)
+* [Tehtävä 001 Tietokannan suunnittelu](relaatiotietokannat/tehtaevae-001-tietokannan-suunnittelu.md)
 * [Indeksointi](relaatiotietokannat/indeksointi/README.md)
   * [Hitaat hakukyselyt](relaatiotietokannat/indeksointi/hitaat-hakukyselyt.md)
 
