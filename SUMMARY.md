@@ -19,12 +19,6 @@
 * [Agile muu materiaali ja lähteitä](ketterae-ohjelmistokehitys/agile-muu-materiaali-ja-laehteitae.md)
 * [Agile termit \(scrum\)](ketterae-ohjelmistokehitys/agile-termit-scrum.md)
 
-## Toimeksiannot \(2019/01\)
-
-* [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
-* [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
-* [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
-
 ## Versionhallinta
 
 * [Sanasto Git](versionhallinta/sanasto.md)
@@ -98,6 +92,12 @@
 ## Miten yrittäjänä voin hyötyä ohjelmistokehityksen ostamisesta?
 
 * [TL;DR](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/tl-dr.md)
+
+## Toimeksiannot \(2019/01\)
+
+* [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
+* [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
+* [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
 
 ## SCRUM harjoitustyö \(2020/01\)
 
