@@ -2,6 +2,10 @@
 
 Versionhallinnan avulla voidaan seurata lähdekoodin muutoksia ja työskennellä tehokkaammin yhdessä. Yksi suosituimmista versionhallintaan suunnitelluista työkaluista on Git. Seuraavassa artikkelissa käydään läpi perusteet, joiden avulla pääset alkuun.
 
+{% hint style="danger" %}
+Huomio! Joissakin lähteissä **master** branchiin viitataan nimellä **main**. Koskee toistaiseksi lähinnä Github palvelua mutta saattaa yleistyä. Kyseessä on vain teknisesti nimimuutos.
+{% endhint %}
+
 ## Yleiskuva Git työkaluun
 
 Git on monipuolinen työkalu, joka on suunniteltu toimimaan hajautettuna versionhallintana \(_distributed version control_\). Hajautettu versionhallinta tarkoittaa sitä, että jokainen kopio Gitin tietovarastosta toimii itsenäisesti. Verrattuna keskitettyihin versionhallintapalveluihin _\(centralized version control\)_, jotka vaativat toimiakseen eräänlaisen keskitetyn tietovaraston muutosten hallintaan, git toimii myös itsenäisesti. Usein kuitenkin myös Git-työkalua käytettäessä mukana on keskitetty tietovarasto, jota käytetään pääasiallisena lähteenä. Hajautettu malli mahdollistaa kuitenkin sen, että monet asiat voidaan tehdä paikallisesti ilman verkkoyhteyttä.
