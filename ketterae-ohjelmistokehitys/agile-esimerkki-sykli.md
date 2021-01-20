@@ -20,8 +20,7 @@ Usein tarkempi määrittely ja kuvaus voidaan kirjoittaa ennen tarinan toteuttam
 
 * Kts. User Stories linkki
 * [Requirements 1010: User Stories vs. Use Cases](http://www.stellman-greene.com/2009/05/03/requirements-101-user-stories-vs-use-cases/)
-* [User Stories Versus Use Cases](https://www.scrumalliance.org/community/articles/2015/october/user-stories-vs-use-cases)
-* [Basic Use Case template, Alistair Cockburn](http://alistair.cockburn.us/Basic+use+case+template)
+* [User Stories Versus Use Cases](https://www.scrumalliance.org/community/articles/2015/october/user-stories-vs-use-cases) 
 
 Käyttötapaus on dokumentti mikä voidaan kirjoittaa esimerkiksi käyttäjätarinan perusteella. Huomaa lähteissäkin, että ne pyrkivät kertomaan mikä ero on käyttäjätarinalla ja käyttötapauksella. Lyhyesti, käyttötapaus voidaan nähdä tarkempana määritelmänä miten ohjelma kommunikoi eri osapuolten kanssa ja toteuttaa halutun tavoitteen.
 
