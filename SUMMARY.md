@@ -10,6 +10,7 @@
 * [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
 * [Kilometrikorvaus](toimeksiannot-2020-01/kilometrikorvaus.md)
 * [Laskutus](toimeksiannot-2020-01/laskutus.md)
+* [Laskun perintä](toimeksiannot-2020-01/laskun-perintae.md)
 
 ## Ketterä ohjelmistokehitys
 
