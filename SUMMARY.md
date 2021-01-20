@@ -6,10 +6,10 @@
 
 ## Toimeksiannot <a id="toimeksiannot-2020-01"></a>
 
+* [Toimeksiannon rajaukset](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
 * [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
 * [Kilometrikorvaus](toimeksiannot-2020-01/kilometrikorvaus.md)
 * [Laskutus](toimeksiannot-2020-01/laskutus.md)
-* [Toimeksiannon rajaukset](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
 
 ## Ketterä ohjelmistokehitys
 
