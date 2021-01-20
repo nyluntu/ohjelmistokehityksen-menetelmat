@@ -30,6 +30,7 @@ Käyttötapaus on dokumentti mikä voidaan kirjoittaa esimerkiksi käyttäjätar
 * [Backlog](https://www.agilealliance.org/glossary/backlog/)
 * [Product Backlog](http://www.scrumguides.org/scrum-guide.html#artifacts-productbacklog)
 * [Grooming Backlog](https://www.agilealliance.org/glossary/backlog-grooming/)
+* [MoSCoW priorisointi](https://www.agilebusiness.org/page/ProjectFramework_10_MoSCoWPrioritisation)
 
 Tuotteen tehtävälista on dokumentti, joka ohjaa kehitystä. Se muuttuu aika ajoin ja pääasiassa tuotteen omistaja huolehtii siitä. Kehitystiimi kuitenkin osallistuu tähän myös tarvittaessa ja varsinkin kun tehtäviä otetaan seuraavaan sykliin.
 
