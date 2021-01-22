@@ -366,6 +366,240 @@ git rm --cached <tiedosto>
 git rm -r --cached <hakemisto>
 ```
 
+### Aiempaan muutokseen siirtyminen
+
+Versionhallinnassa voidaan siirtyä aiempiin muutoksiin. Voit siis hyppiä muutosten välillä ja katsoa miltä lähdekoodi on kyseisessä tilanteessa näyttänyt. Tämä onnistuu seuraavasti.
+
+```bash
+# Etsi ensin haluttu commit id etätietävarastosta tai git log
+# komentoa käyttäen. Esimerkiksi seuraava komento näyttää 
+# edelliset viisi muutosta.
+git log -5
+
+# Commit id on pitkä merkkijono ja on muodoltaan seuraava:
+# f138cb0b291021ec24ac505e57a1bbff4643ee42
+# Checkout komennolla voit siirtyä haluttuun merkintään.
+# Usein riitää kahdeksan ensimmäistä merkkiä tunnisteesta.
+git checkout f138cb0b
+
+# Takasin nykyiseen versioon pääset myös checkout komennolla.
+# Jos esimerkiksi olit master kehityshaarassa niin seuraavalla
+# komennolla pääset takaisin viimeisimpään muutokseen.
+git checkout master
+
+```
+
+### Keskeneräisten muutosten kätkeminen
+
+// TODO
+
+Lue aiheesta täältä.
+
+[https://www.atlassian.com/git/tutorials/saving-changes/git-stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+
+## Kehityshaarat
+
+Versionhallinnan yhtenä tärkeänä käsitteenä on kehityshaara \(eng. branch\). Kehityshaaralla tarkoitetaan ohjelman lähdekoodissa haarautunutta polkua, jossa kaksi eri kehityshaaraa eroavat. Niiden tarkoituksena on helpottaa yhden tai useamman henkilön työskentelyä saman ohjelman parissa. Git kanssa käytetään termiä kehityshaara ja esimerkissä käytämme sen englanninkielistä vastinetta **branch.** Puhekielessä puhutaan siis "**brancheista"**.
+
+Käsitellään kehityshaarat vielä alla olevalla havainnollistavalla kuvalla. Kuvassa **harmaat ympyrät** ovat muutoksia \(committeja\). Ympyrän alla on osa sen uniikkia tunnistetta, joka syntyy aina `git commit` komennon yhteydessä.  Esimerkissä ei haittaa sisältääkö yksi commit yhden vai useamman tiedoston. **Vihreä ympyrä** kuvastaa sitä mikä on viimeisin muutos. **HEAD** on kuvassa viittaus viimeisimpään muutokseen. **Keltaiset laatikot** ovat kehityshaarojen nimiä. Kuvaa luetaan vasemmalta oikealle eli älä tulkitse nuolia väärin. Nuoli näyttää aina edelliseen muutokseen muutoshistoriassa.
+
+![Esimerkki kahdesta kehityshaarasta.](../.gitbook/assets/git-branches.png)
+
+Tulkitaan kuva läpi yksi muutos kerrallaan käyttäen niiden tunnisteita apuna.
+
+**e137a9b:** Tämä on ensimmäinen muutos ohjelman historiassa, joka on tehty master kehityshaaraan.
+
+**ea57af0:** Toinen muutos ohjelmassa. Edelleen tehty master kehityshaaraan.
+
+**a0ecd99 - 9aeaa06:** Ensimmäisenä mainittu on uusi muutos, joka on tehty kehityshaaraan nimeltä **feature-orders**. Tämän jälkeen siihen on tehty kolme muuta muutosta.
+
+**996af37 - c7fd458:** Nämä kaksi mainittua muutosta on tehty olemassa olevaan **master** kehityshaaraan.
+
+Seuraamalla nuolien mukaisesti oikealta vasemmalle mistä tahansa muutoksesta niin voidaan nähdä koko kyseisen kehityshaaran historia. Esimerkin kuvassa kaksi ensimmäistä muutosta ovat siis yhteisiä **master** ja **feature-orders** kehityshaaroille. Tämän jälkeen tulevat muutokset ovat vain olemassa toisessa näistä kehityshaaroista. Tämä tarkoittaa sitä, että ilman kehityshaarojen yhdistämistä muutokset säilyvät niissä erillään.
+
+Kehityshaarat ovat siis juurikin versionhallinnan tekemää historiaa. Aina on olemassa vähintään yksi kehityshaara, joka on nimetty oletetusta **master** nimiseksi. Gitin `log` komennolla voit aina selata historiaa ja tarvittaessa nähdä kehityshaarat. On kuitenkin suositeltavaa, että käytät tarvittaessa työpöytäohjelmaa, joka visuaalisesti näyttää muutokset.
+
+{% hint style="info" %}
+Seuraavalla komennolla voit komentokehotteella nähdä kehityshaarojen muodostaman historian.
+
+`git log --graph --decorate --oneline`
+{% endhint %}
+
+Tutustutaan tarkemmin kehityshaarojen kanssa työskentelyyn Gitin avulla. Oppimalla käyttämään kehityshaaroja helpotat monia asioita. Työskennelläsi voit luoda esimerkiksi kehityshaaran missä haluat vain kokeilla jotain uutta tapaa ratkaista ongelma tietämättä vielä haluatko säilyttää lopputulosta. Tällöin muutoksia ei ole tarvetta heti vielä **master** kehityshaaraan.
+
+### Uuden kehityshaaran luominen
+
+Ennen kuin voit luoda kehityshaaroja niin sinulla pitää olla tietovarasto \(repository\) mitä haluat käsitellä. Lähtökohtana oletetaan, että sinulla on olemassa vain **master** kehityshaara. Ei haittaa vaikka niitä olisi jo useampi.
+
+Voit aina tarkistaa nykyisessä tietovarastossa olemassa olevat kehityshaarat seuraavalla komennolla:
+
+```bash
+# Listaa kehityshaarat
+git branch
+
+# Listaa vain etätietovaraston kehityshaarat
+git branch -r
+
+# Listaa kaikki kehityshaarat paikallisesta sekä etätietovarastosta.
+git branch -a
+```
+
+Luodaan uusi kehityshaara. Huomioi, että sinulla pitää olla vähintään yksi aikaisempi muutos \(commit\) tehtynä. Muuten uuden branchin luominen ei onnistu.
+
+```bash
+# Komento luo uuden feature-orders nimisen kehityshaaran.
+# Komento on muotoa: git branch <kehityshaaran-nimi>
+git branch feature-orders
+```
+
+Kun olet luonut kehityshaaran, voit käyttää kehityshaaroja listaavia komentoja. Huomaa, että tähti kehityshaaran nimen edessä kertoo nykyisen valitun branchin. Nykyinen kehityshaara selviää myös `git status` komennolla, joka kertoo mikä on valittuna.
+
+Kehityshaaran luominen tapahtuu esimerkissä sinun paikallisella koneella. Ne eivät näy etätietovarastossa, esimerkiksi Githubissa, jos sinulla on sellainen käytössä. Muutokset pitää sinne työntää erikseen.
+
+{% hint style="info" %}
+Kehityshaaran voi luoda mistä tahansa muutoksesta eli niitä ei ole pakko tehdä aina master kehityshaarasta alkaen.
+{% endhint %}
+
+### Kehityshaarojen välillä vaihtaminen
+
+Uuden kehityshaaran jälkeen sinun pitää vaihtaa se aktiiviseksi. Aktiivinen kehityshaara tarkoittaa sitä, että kun annan `git commit` komennon niin muutokset merkitään siihen.
+
+```bash
+# Kehityshaarojen välillä vaihtaminen.
+# git checkout <kehityshaaran-nimi>
+git checkout feature-orders
+
+# Jos haluat vaihtaa takaisin master kehityshaaraan niin komento on seuraava.
+# Kokeile myös minkälaisen tekstin saat kun koitat vaihtaa kehityshaaraan, 
+# jonka nimistä ei ole olemassa.
+git checkout master
+```
+
+Kehityshaarojen vaihtamisen jälkeen voit työskennelllä normaalisti käyttäen `git add` ja `git commit` komentoja. Työskentely ei siis eroa **master** kehityshaaran käytöstä.
+
+{% hint style="info" %}
+On myös mahdollista käyttää uudempaa **switch** komentoa. Komento on luotu sen vuoksi, että **checkout** komento on alunperin monipuolinen ominaisuuksiltaan ja mahdollisesti aiheuttanut sekaannuksia.
+
+`git switch <kehityshaaran-nimi>` 
+
+Kehityshaaran voi luoda myös seuraavilla komennolla mikä välittömästi vaihtaa siihen.
+
+`git checkout -b <kehityshaaran-nimi>`
+{% endhint %}
+
+### Kehityshaarojen yhdistäminen
+
+Uuden kehityshaaran luomisen jälkeen tulee usein tarve yhdistää kaksi kehityshaaraa yhtenäiseksi. Git tarjoaa tähän helpon tavan ja huolehtii, että muutokset menevät oikein eri lähdetiedostoissa. Ominaisuutta kutsutaan termillä **merge**. Havainnollistetaan kehityshaarojen yhdistämistä seuraavalla kuvalla käyttäen taas muutosten tunnisteita.
+
+![Esimerkki kahden kehityshaaran yhdist&#xE4;misest&#xE4;](../.gitbook/assets/git-branches-merge.png)
+
+**ea57af0:** Vasemmalta toinen muutos. Tämä on viimeinen yhteinen muutos esimerkin kahdella kehityshaaralla. Tämän jälkeen seuraavat muutokset ovat eri kehityshaaroissa.
+
+**a0ecd99 - 9aeaa06:** Muutokset ovat **feature-orders** kehityshaaraan tehtyjä ja niitä ei vielä ole **master** kehityshaarassa.
+
+**508e807:** Kyseessä on muutosmerkintä, joka on tullut kehityshaarojen yhdistämisestä. Tässä on tapahtunut ns. **merge** ja sisältää kaikki **feature-orders** \(a0ecd99 - 9aeaa06\) kehityshaaran muutokset.
+
+**8e5362e:** Muutos, joka on taas tehty master kehityshaaraan edellisen haarojen yhdistämisen jälkeen.
+
+Käydään komentojen avulla läpi miten esimerkin tilanne on tapahtunut.
+
+```bash
+# Esimerkin kuvassa feature-orders haara on yhdistetty takaisin
+# master haaraan. Tämä tarkoittaa sitä, että aktiivisena 
+# kehityshaarana on aluksi ollut masters. Vaihdetaan tarvittaessa
+# siihen.
+git checkout master
+
+# Haaran yhdistäminen onnistuu merge komennolla.
+# git merge <kehityshaaran-nimi>
+git merge --no-ff feature-orders
+
+# Yllä oleva --no-ff parametri ei ole pakollinen. Parametri on kuitenkin
+# hyödyllinen siitä syystä, että se luo erillinen muutosmerkinnän
+# haarojen yhdistämisestä. Näin on helpompi myöhemmin nähdä historiasta
+# kohdat, joissa yhdistäminen on tapahtunut.
+```
+
+{% hint style="warning" %}
+Merge komennon yhteydessä on mahdollista, että syntyy konflikti. Sen selvittämiseen toimivat jo aiemmin mainitut tavat. Katso oppaasta kohta **Konfliktin selvittäminen.**
+{% endhint %}
+
+Kehityshaarojen yhdistämisen jälkeen yhdistetty haara ei katoa. Esimerkissä feature-orders jää olemaan ellei sitä erikseen poisteta. Poistaminen on käsitelty tässä oppaassa myöhemmin.
+
+### Kehityshaarojen käsitteleminen etätietovarastossa
+
+Ohjelmoidessa tulee vastaan tilanne, että muutokset halutaan työntää etätietovarastoon. Käsitellään tilanne kehityshaarojen kanssa. Samoin myös tietojen päivittäminen voi tulla ajankohtaiseksi useamman ohjelmoijan kohdalla. 
+
+Muutosten käsittely etätietovaraston kanssa onnistuu jo aiemmin kuvatulla tavalla mutta käydään tässä vielä esimerkin mukaiset komennot läpi.
+
+```bash
+# Kehityshaaran työntäminen etätietovarastoon. Seuraava komento toimii
+# tietoja päivittäessä mutta myös uuden kehityshaaran työntämisessä.
+# Ei haittaa siis vaikka kehityshaaraa ei ole etätietovarastossa.
+git push origin feature-orders
+
+# Vastaavasti uudet muutokset etätietovarastosta voidaan hakea.
+git pull origin feature-orders
+
+# Edellä mainitut komennot toimivat samalla tapaa kuin master 
+# kehityshaaran kohdalla. Jälleen kerran pull komennon aikana voi
+# syntyä mahdollinen konflikti tilanne.
+```
+
+Etätietovaraston kautta voit myös nähdä sinne työnnetyt kehityshaarat ja niiden historian. Alla oleva kuva esittää mistä tieto kehityshaaroista löytyy Githubin kohdalla. Ulkoasu vaihtelee aina eri palveluissa, joten ota tarvittaessa selvää näistä ominaisuuksista.
+
+![Github palvelussa olevat branchit](../.gitbook/assets/github-branches.png)
+
+Lähtökohta voi olla myös toinen. Käydään vielä läpi esimerkki, jossa kehityshaaraa ei ole omalla paikallisessa tietovarastossa vaan pelkästään etätietovarastossa. Tilanteena voisi olla, että toinen ohjelmoija on sen luonut ja laittanut etätietovarastoon.
+
+```bash
+# Luodaan etätietovarastossa olevasta kehityshaarasta paikallinen
+# versio. Komento on muotoa: 
+# git fetch origin <kehityshaaran-nimi>:<kehityshaaran-nimi>
+git fetch origin feature-orders:feature-orders
+
+# Tämän jälkeen voidaan vielä vaihtaa äskettäin haettuun kehityshaaraan.
+git checkout feature-orders
+
+# Tämän jälkeen voidaan taas työskennellä normaaliin tapaan. Push ja
+# pull komennot toimivat tämän jälkeen. Fetch komentoa ei tarvitse
+# enää sellaisenaan käyttää.
+```
+
+### Kehityshaaran poistaminen
+
+Kehityshaara voi jäädä turhaksi monesta syystä. Syitä voivat olla esimerkiksi:
+
+* Kehityshaaran yhdistäminen ja siihen ei enää haluta tehdä muutoksia.
+* Kehityshaarassa on kokeiltu uusia asioita mutta niitä ei haluta yhdistää muun historian kanssa.
+* Kehityshaara jää muusta syystä käyttämättömäksi.
+
+Kehityshaaran poistamisen jälkeen sitä ei saa enää takaisin. Jos siis kehityshaaraa ei ole yhdistety siihen kehityshaaraan, josta se on alunperin luotu niin muutokset eivät säily. Git osaa huomauttaa tällaisesta tilanteesta. Mikäli kehityshaara on taas yhdistetty toiseen niin silloin siinä olleet muutokset säilyvät.
+
+```bash
+# Voit ensin tarkistaa mitä kehityshaaroja sinulla on paikallisella
+# tietovarastolla. Muista myös katsoa mikä on nykyinen aktiivinen
+# kehityshaara, että se ei ole sama mitä olet poistamassa.
+git branch
+
+# Komento poistaa kehityshaaran, jos se on yhdistetty siihen kehityshaaraan,
+# josta se on alunperin luotu ja yhdistämisen jälkeen siihen ei ole tullut
+# uusia muutoksia.
+git branch -d feature-orders
+
+# Edellinen komento antaa ilmoituksen, jos kehityshaaraa ei ole yhdistetty vielä.
+# Näin vahingossa ei poistu mistään. Voit kuitenkin kiertää tämän ja silti
+# poistaa kehityshaaran käyttämällä -D parametria. Tällöin sinun pitää
+# vain itse huolehtia, että olet tarkoituksenmukaisesti poistamassa haaran.
+git branch -D feature-orders
+
+# Edelliset komennot poistavat kehityshaaran vain paikallisesti. Jos haluat
+# poistaa sen vielä etätietovarastosta niin se onnistuu seuraavalla komennolla.
+# Joskus voi olla kuitenkin tarpeen säilyttää kehityshaaroja etätietovarastoissa
+# ja poistaa niitä vain paikallisesta tietotavastosta.
+git push -d origin feature-orders
+```
+
 ## Lähteet
 
 {% embed url="https://git-scm.com/" %}
