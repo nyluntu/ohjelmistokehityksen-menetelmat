@@ -54,11 +54,33 @@ Muutoshistoria on eräänlainen ketju muutoksia ja sisältää aina tiedon edell
 Git ei tallenna kopiota koko työhakemistosta \(kuten osa versionhallintaan tehdyistä työkaluista\) kun pysyvä muutos tehdään. Puhutaan enemmän tiedon lisäämisestä eli jokainen muutos kertoo mikä on muuttunut edelliseen versioon nähden. 
 {% endhint %}
 
-## Asennus
+## Asentaminen
 
-Asenna Git sen kotisivuilla annettujen ohjeiden mukaisesti. [https://git-scm.com/downloads](https://git-scm.com/downloads)
+Gitin voi asentaa koneelleen usealla eri tavoilla. Tässä oppaassa käymme läpi näistä vain yhden. Lataa uusin versio [Gitin kotisivuilta](https://git-scm.com/) ja käy asennusvaiheet läpi oletusasetuksin.
 
-Esimerkit tehdään käyttäen Git komentoja, jotka suoritetaan komentokehotteen tai terminaalin avulla.
+![](../.gitbook/assets/git-lataaminen.png)
+
+Asennuksen jälkeen käynnistä ohjelma. Oppaassa sekä näissä harjoituksia käytämme Git -työkalua komentokehotteen kautta. Käyttöjärjestelmällä ei ole harjoitusten kanssa väliä, koska samat komennot toimivat. Eroja voi olla ainoastaan käyttöjärjestelmien omissa komentokehotteiden tukemissa komennoissa. Harjoituksissa esiintyy siis muutamia Linux pohjaisia komentoja, jotka toimivat Macissa sekä myös käytettävässä Git Bash -komentokehotteessa Windowsilla.
+
+{% hint style="info" %}
+Erilaisia yleisimpiä komentoja on käyty läpi [tällä videolla](https://www.youtube.com/watch?v=LAtX5h4py3I).
+{% endhint %}
+
+### Aukaise komentokehote tietokoneeltasi. 
+
+**Windowsilla** aukaise kotivalikko ja hae komentokehotse **Git Bash** nimellä. Sinulle aukeaa tumma ruutu. Halutessasi voit myös käyttää **CMD** tai **Powershell** komentokehotteita mutta niiden eri komentoja ei harjoitteissa käydä läpi. Gitin komennot ovat samoja.
+
+MacOS käyttöjärjestelmässä aukaise terminaali. Nopeiten tämä onnistuu painamalla `CMD+välilyönti`ja kirjoittamalla hakuun **Terminal**.
+
+Kun komentokehote aukeaa niin kokeile Gitin toimivuus seuraavalla komennolla.
+
+```bash
+# Komento tulostaa gitin version ja komennon ei tulisi ilmoitta virheestä.
+git --version
+
+# Esimerkki tulosteesta:
+# git version 2.23.0
+```
 
 ### Ensimmäinen käyttökerta
 
