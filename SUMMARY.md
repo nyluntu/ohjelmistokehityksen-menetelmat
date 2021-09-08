@@ -89,6 +89,8 @@
 * [Mysql perusteet 106](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/README.md)
   * [mysql-perusteet-106-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/mysql-perusteet-106-vastaukset.md)
 * [SQL hakukyselyjä \(VANHAT\)](sql-harjoitukset-ja-esimerkit/sql-hakukyselyjae.md)
+* [SQL harjoitukset syksy 2021](sql-harjoitukset-ja-esimerkit/sql-harjoitukset-syksy-2021/README.md)
+  * [Vastaukset SQL harjoitukset syksy 2021](sql-harjoitukset-ja-esimerkit/sql-harjoitukset-syksy-2021/vastaukset-sql-harjoitukset-syksy-2021.md)
 
 ## Miten yrittäjänä voin hyötyä ohjelmistokehityksen ostamisesta?
 
