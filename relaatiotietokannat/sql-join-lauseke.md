@@ -8,7 +8,7 @@ description: >-
 
 ## Mikä on JOIN -lausekkeen tarkoitus?
 
-SQL -kielissä JOIN -lauseke esiintyy vahvasti osana hakukyselyjä. JOIN voi esiintyä myös tietoja lisättäessa \(INSERT\), päivittäessä \(UPDATE\) tai poistaessa \(UPDATE\). Alla esimerkki perinteisestä JOIN -ehdon sisältämästä kyselystä.
+SQL -kielissä JOIN -lauseke esiintyy vahvasti osana hakukyselyjä. JOIN voi esiintyä myös tietoja lisättäessa \(INSERT\), päivittäessä \(UPDATE\) tai poistaessa \(DELETE\). Alla esimerkki perinteisestä JOIN -ehdon sisältämästä kyselystä.
 
 {% code title="JOIN\_esimerkki\_01" %}
 ```sql
