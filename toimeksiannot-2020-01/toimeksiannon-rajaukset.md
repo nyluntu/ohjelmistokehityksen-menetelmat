@@ -11,9 +11,12 @@ Kehitystiimin tulee myös käyttää tehdessä versionhallintaa.
 ## Tekniset rajaukset toimeksiannon ohjelmalle
 
 * Ohjelmointikielenä C\#.
-* Ohjelmoinnissa kokeiltava käyttää olio-ohjelmointiin liittyviä tapoja ja sisältöjä.
-* Ohjelmasta ei tehdä työpöytäsovellusta vaan se tulisi toteuttaa konsolisovelluksena. Alla kuva konsolisovelluksesta. 
-* Konsolisovelluksen käyttöliittymän toteuttaminen on ryhmän päätettävissä. Ei tarvitse olla kuvan mukainen numeroilla valittu käyttöliittymä vaan se voi tarvittaessa toimia myös toisin.
+* Ohjelman toteutusmuoto on konsolisovellus.
+* Ohjelmoinnissa tulisi hyödyntää olio-ohjelmointiin liittyviä tapoja ja käsitteitä.
+* Ohjelmalle tulisi tehdä yksinkertainen tallennusratkaisu. Yksi vaihtoehto on esimerkiksi [JSON muotoinen ](https://en.wikipedia.org/wiki/JSON)sisältö tekstitiedostossa.
+  * [https://www.newtonsoft.com/json/help/html/SerializingJSON.htm](https://www.newtonsoft.com/json/help/html/SerializingJSON.htm)
+  * [https://www.youtube.com/watch?v=Yzfj69kA1Es&list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE&index=6](https://www.youtube.com/watch?v=Yzfj69kA1Es&list=PL3iay_FdAzV_EDcg7lLR1iJgZf6ObTsfE&index=6)
+* Ohjelmalle tulisi tehdä yksinkertainen käyttöliittymä, joka toimisi valintojen tekemisessä.
 
 ![Esimerkki: K&#xE4;ytt&#xE4;j&#xE4;n valinta](../.gitbook/assets/konsolisovellus_01.png)
 
