@@ -1,10 +1,10 @@
 # Agile esimerkki, sykli
 
-Esimerkissä on kuvattu yksittäisen syklin \(sprintti, vaihe, sykli, iteraatio jne.\) kierto ja mitä se sisältää. Syklin sisältö on kerätty omien kokemusten perusteella ja se saattaa yhdistellä useita eri menetelmiä. Tarkoituksena on kuitenkin antaa esimerkki ja sen kautta harjoitusprojektin yhteydessä noudattaa ohjeistettua tapaa.
+Esimerkissä on kuvattu yksittäisen syklin (sprintti, vaihe, sykli, iteraatio jne.) kierto ja mitä se sisältää. Syklin sisältö on kerätty omien kokemusten perusteella ja se saattaa yhdistellä useita eri menetelmiä. Tarkoituksena on kuitenkin antaa esimerkki ja sen kautta harjoitusprojektin yhteydessä noudattaa ohjeistettua tapaa.
 
 ![Viitattu 1.2.2019, Smashing Magazine, Fitting Big-Picture UX Into Agile Development \[1\]](../.gitbook/assets/designsprint.png)
 
-### Vaatimusmäärittely <a id="vaatimusm%C3%A4%C3%A4rittely"></a>
+### Vaatimusmäärittely <a href="#vaatimusm-c3-a4-c3-a4rittely" id="vaatimusm-c3-a4-c3-a4rittely"></a>
 
 **Käyttäjätarina -kuvaus**
 
@@ -20,7 +20,7 @@ Usein tarkempi määrittely ja kuvaus voidaan kirjoittaa ennen tarinan toteuttam
 
 * Kts. User Stories linkki
 * [Requirements 1010: User Stories vs. Use Cases](http://www.stellman-greene.com/2009/05/03/requirements-101-user-stories-vs-use-cases/)
-* [User Stories Versus Use Cases](https://www.scrumalliance.org/community/articles/2015/october/user-stories-vs-use-cases) 
+* [User Stories Versus Use Cases](https://www.scrumalliance.org/community/member-articles/1246)&#x20;
 
 Käyttötapaus on dokumentti mikä voidaan kirjoittaa esimerkiksi käyttäjätarinan perusteella. Huomaa lähteissäkin, että ne pyrkivät kertomaan mikä ero on käyttäjätarinalla ja käyttötapauksella. Lyhyesti, käyttötapaus voidaan nähdä tarkempana määritelmänä miten ohjelma kommunikoi eri osapuolten kanssa ja toteuttaa halutun tavoitteen.
 
@@ -28,18 +28,18 @@ Käyttötapaus on dokumentti mikä voidaan kirjoittaa esimerkiksi käyttäjätar
 
 * [Backlog](https://www.agilealliance.org/glossary/backlog/)
 * [Product Backlog](http://www.scrumguides.org/scrum-guide.html#artifacts-productbacklog)
-* [Grooming Backlog](https://www.agilealliance.org/glossary/backlog-grooming/)
-* [MoSCoW priorisointi](https://www.agilebusiness.org/page/ProjectFramework_10_MoSCoWPrioritisation)
+* [Grooming Backlog](https://www.agilealliance.org/glossary/backlog-refinement/)
+* [MoSCoW priorisointi](https://www.agilebusiness.org/page/ProjectFramework\_10\_MoSCoWPrioritisation)
 
 Tuotteen tehtävälista on dokumentti, joka ohjaa kehitystä. Se muuttuu aika ajoin ja pääasiassa tuotteen omistaja huolehtii siitä. Kehitystiimi kuitenkin osallistuu tähän myös tarvittaessa ja varsinkin kun tehtäviä otetaan seuraavaan sykliin.
 
-**Syklin \(sprintin\) -backlog**
+**Syklin (sprintin) -backlog**
 
 * [Sprint Backlog](http://www.scrumguides.org/scrum-guide.html#artifacts-sprintbacklog)
 
 Syklin tehtävälista on dokumentti, johon on valittu ne tehtävät mitkä kehitystiimi "lupaa" tehdä. Tarkoitus on, ettei valita liikaa vaan voidaan melko tarkasti sanoa, että ne toteutuvat. Tehtäviä katsotaan läpi aina syklien lopussa ja siivotaan sekä korjataan olettamuksia.
 
-### Ohjelmointi <a id="ohjelmointi"></a>
+### Ohjelmointi <a href="#ohjelmointi" id="ohjelmointi"></a>
 
 **Versionhallinta**
 
@@ -52,15 +52,15 @@ Syklin tehtävälista on dokumentti, johon on valittu ne tehtävät mitkä kehit
 
 **SOLID -sääntö/ohje**
 
-* [Wikipedia: SOLID](https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29)
-* [SOLID architecture principles using simple C\# examples](https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp)
-* [Robert Martin SOLID Principles of Object Oriented and Agile Design \(video\)](https://www.youtube.com/watch?v=TMuno5RZNeE)
+* [Wikipedia: SOLID](https://en.wikipedia.org/wiki/SOLID\_\(object-oriented\_design\))
+* [SOLID architecture principles using simple C# examples](https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp)
+* [Robert Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
 
 SOLID säännöstä ei ole muuta kirjoitettua materiaalia tässä kirjassa. Lähteet auttavat sinua tutustumaan aiheeseen ja varsinkin Robert Martinin video on valaiseva. Kyseinen henkilö on säännön luonut eri kokemuksien pohjalta. Säännön tarkoitus on koostaa hyviä tapoja olio-ohjelmoinnin luokkien ohjelmointiin ja parantaa koodin laatua. Käytännössä on kyse ohjelmoinnista ja vain vinkata mitä huomioida kun ohjelman koodia tuotetaan ja kuinka se auttaa myöhemmin muutosten tekemisessä.
 
-### Syklin lopetus <a id="syklin-lopetus"></a>
+### Syklin lopetus <a href="#syklin-lopetus" id="syklin-lopetus"></a>
 
-**Tuoteversio \(Increment\)**
+**Tuoteversio (Increment)**
 
 * Kts. Scrum guide ja etsi sana increment.
 * [Sprint Review](http://www.scrumguides.org/scrum-guide.html#events-review)
@@ -72,5 +72,4 @@ Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominais
 
 ## Lähteet
 
-\[1\] [https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/](https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/)
-
+\[1] [https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/](https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/)
