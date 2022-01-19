@@ -73,3 +73,5 @@ Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominais
 ## Lähteet
 
 \[1] [https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/](https://www.smashingmagazine.com/2012/11/design-spikes-fit-big-picture-ux-agile-development/)
+
+\[2] [http://www.agilenutshell.com/](http://www.agilenutshell.com)
