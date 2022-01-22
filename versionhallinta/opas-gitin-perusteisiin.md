@@ -8,27 +8,27 @@ Huomio! Joissakin lähteissä **master** branchiin viitataan nimellä **main**. 
 
 ## Yleiskuva Git työkaluun
 
-Git on monipuolinen työkalu, joka on suunniteltu toimimaan hajautettuna versionhallintana \(_distributed version control_\). Hajautettu versionhallinta tarkoittaa sitä, että jokainen kopio Gitin tietovarastosta toimii itsenäisesti. Verrattuna keskitettyihin versionhallintapalveluihin _\(centralized version control\)_, jotka vaativat toimiakseen eräänlaisen keskitetyn tietovaraston muutosten hallintaan, git toimii myös itsenäisesti. Usein kuitenkin myös Git-työkalua käytettäessä mukana on keskitetty tietovarasto, jota käytetään pääasiallisena lähteenä. Hajautettu malli mahdollistaa kuitenkin sen, että monet asiat voidaan tehdä paikallisesti ilman verkkoyhteyttä.
+Git on monipuolinen työkalu, joka on suunniteltu toimimaan hajautettuna versionhallintana (_distributed version control_). Hajautettu versionhallinta tarkoittaa sitä, että jokainen kopio Gitin tietovarastosta toimii itsenäisesti. Verrattuna keskitettyihin versionhallintapalveluihin _(centralized version control)_, jotka vaativat toimiakseen eräänlaisen keskitetyn tietovaraston muutosten hallintaan, git toimii myös itsenäisesti. Usein kuitenkin myös Git-työkalua käytettäessä mukana on keskitetty tietovarasto, jota käytetään pääasiallisena lähteenä. Hajautettu malli mahdollistaa kuitenkin sen, että monet asiat voidaan tehdä paikallisesti ilman verkkoyhteyttä.
 
-![L&#xE4;hde: Pro Git, Distributed version control.](../.gitbook/assets/image%20%282%29.png)
+![Lähde: Pro Git, Distributed version control.](<../.gitbook/assets/image (2).png>)
 
-Etätietovarasto kannattaa ajatella vain kopiona lähdekoodista. Usein sellainen on sijoitettu palvelimelle tai  kolmannen osapuolen palveluun, kuten esimerkiksi Github -palveluun. Etätietovarasto toimii pääosin keskitettynä lähteenä, jossa pidetään lähdekoodin tuorein  versio. Muutoksia ei suoraan tehdä etätietovarastoihin vaan ensin muutokset vahvistetaan paikallisessa tietovarastossa, josta ne sitten työnnetään _\(push\) ****_etätietovarastoon ja ovat koko kehitystiimin saatavilla, joilla vain on pääsy kyseiseen palveluun.
+Etätietovarasto kannattaa ajatella vain kopiona lähdekoodista. Usein sellainen on sijoitettu palvelimelle tai  kolmannen osapuolen palveluun, kuten esimerkiksi Github -palveluun. Etätietovarasto toimii pääosin keskitettynä lähteenä, jossa pidetään lähdekoodin tuorein  versio. Muutoksia ei suoraan tehdä etätietovarastoihin vaan ensin muutokset vahvistetaan paikallisessa tietovarastossa, josta ne sitten työnnetään _(push) ****_ etätietovarastoon ja ovat koko kehitystiimin saatavilla, joilla vain on pääsy kyseiseen palveluun.
 
 Hajautettu versionhallinta tuo mukanaan myös sellaisen edun, että mikä tahansa tietovaraston kopio voi toimia toisen paikallisen tietovaraston etätietovarastona. Tilanteessa, jossa alkuperäinen etätietovarasto menee vikatilaan tai sitä ei saataisi korjattua, voisi yksi nykyisistä paikallisista tietovarastoista toimia uutena etätietovarastona. Käytännössä tämä tarkoittaa sitä, että yksi kehittäjistä perustaisi uuden etätietovaraston, jonne hän oman muutoshistoriansa työntää. Tällöin kannattaa valita sellainen, jolla on mahdollisimman tuorein muutoshistoria. Tämä toimii siksi, että jokainen tietovaraston kopio sisältää koko päähaaran historian kun se kopioidaan.
 
-Git työkalu käsittelee kaikki muutokset paikallisesti. Muutokset voidaan myös työntää etätietovarastoon _\(remote repository\)_ kun ne tahdotaan jakaa muiden ohjelmoijien kanssa tai sitten muutoin pistää talteen. Karkeasti ottaen Gitin käyttö voidaan jakaa kahteen osa-alueeseen: **paikalliseen tapahtuvaan työskentelyyn** ja **etätietovarastoihin liittyvään työskentelyyn**.
+Git työkalu käsittelee kaikki muutokset paikallisesti. Muutokset voidaan myös työntää etätietovarastoon _(remote repository)_ kun ne tahdotaan jakaa muiden ohjelmoijien kanssa tai sitten muutoin pistää talteen. Karkeasti ottaen Gitin käyttö voidaan jakaa kahteen osa-alueeseen: **paikalliseen tapahtuvaan työskentelyyn** ja **etätietovarastoihin liittyvään työskentelyyn**.
 
 ## Gitin kolme tilaa
 
-Ennen tutustumista paikalliseen työskentelyyn, pitää ymmärtää miten Git toimii paikallisesti ja kuinka se käsittelee tiedostojen muutokset. Puhutaan niin sanotusti kolmesta eri tilasta: **työhakemistosta** _\(working directory, workspace\)_, **valmistelualueesta** _\(staging area\)_ ja Git-hakemistosta eli **paikallisesta tietovarastosta** _\(repository\)_. 
+Ennen tutustumista paikalliseen työskentelyyn, pitää ymmärtää miten Git toimii paikallisesti ja kuinka se käsittelee tiedostojen muutokset. Puhutaan niin sanotusti kolmesta eri tilasta: **työhakemistosta** _(working directory, workspace)_, **valmistelualueesta** _(staging area)_ ja Git-hakemistosta eli **paikallisesta tietovarastosta** _(repository)_.&#x20;
 
-![L&#xE4;hde: Pro Git, Working tree, staging area, and Git directory.](../.gitbook/assets/image%20%281%29.png)
+![Lähde: Pro Git, Working tree, staging area, and Git directory.](<../.gitbook/assets/image (1).png>)
 
 ### Työhakemisto
 
-Kun työskentelet Git -työkalulla, se käsittelee tietojärjestelmän kansioita ja tiedostoja. Työhakemistolla tarkoitetaan sitä kansiota \(hakemistoa\) mikä on alustettu käyttäen Gitin komentoa tai kloonattu etätietovarastosta. Työhakemistona voi siis toimia mikä tahansa kansio ja komentokehotetta käyttäessä, sillä tarkoitetaan usein juurikin sitä kansiota missä sillä hetkellä on.
+Kun työskentelet Git -työkalulla, se käsittelee tietojärjestelmän kansioita ja tiedostoja. Työhakemistolla tarkoitetaan sitä kansiota (hakemistoa) mikä on alustettu käyttäen Gitin komentoa tai kloonattu etätietovarastosta. Työhakemistona voi siis toimia mikä tahansa kansio ja komentokehotetta käyttäessä, sillä tarkoitetaan usein juurikin sitä kansiota missä sillä hetkellä on.
 
-Työhakemisto, joka on Gitin seurannassa, toimii kuten normaali kansio. Kun lisäät, muutat tai poistat tiedoston niin Git seuraa näit eroja. Työkalu kertoo missä tilassa tiedostot ovat. Työhakemistossa, jossa Git on käytössä, löytyy aina piilotettu **.git** -niminen kansio \(huomaa piste nimen edessä\) ja sisältää työkalun tarvittavia tiedostoja. Kyseiseen kansioon ei tulisi koskea.
+Työhakemisto, joka on Gitin seurannassa, toimii kuten normaali kansio. Kun lisäät, muutat tai poistat tiedoston niin Git seuraa näit eroja. Työkalu kertoo missä tilassa tiedostot ovat. Työhakemistossa, jossa Git on käytössä, löytyy aina piilotettu **.git** -niminen kansio (huomaa piste nimen edessä) ja sisältää työkalun tarvittavia tiedostoja. Kyseiseen kansioon ei tulisi koskea.
 
 Lähdekoodeihin tehdyt muutokset eivät automaattisesti säily versionhallinnassa vaan Gitin kohdalla pitää kertoa mitkä muutokset halutaan lisätä eli valmistella seuraavaa versiota varten. Tässä termillä versio tarkoitetaan pysyvää muutosta, joka on Gitin lokissa eli muutoshistoriassa. Muutoksen tilalle ei ole väliä vaan lisättiin, poistettiin tai muutettiin tiedostoa niin se tulee aina viedä niin sanotulle valmistelualueelle.
 
@@ -38,25 +38,25 @@ Git ei käsittele itseasiassa kansioita vaan pelkkiä tiedostoja. Jos luot siis 
 
 ### Valmistelualue
 
-Valmistelualue on eräänlainen välitila ennen pysyvän muutoksen vahvistamista. Valmistelualueelle voidaan lisätä halutut muutokset. Työskentelyn aikana tulee tilanteita, kun ohjelmoija on koskenut useaan tiedostoon mutta haluaa vain lisätä tietyt yksittäiset muutokset eikä kaikkia muutoksia. 
+Valmistelualue on eräänlainen välitila ennen pysyvän muutoksen vahvistamista. Valmistelualueelle voidaan lisätä halutut muutokset. Työskentelyn aikana tulee tilanteita, kun ohjelmoija on koskenut useaan tiedostoon mutta haluaa vain lisätä tietyt yksittäiset muutokset eikä kaikkia muutoksia.&#x20;
 
 Kun tiedosto lisätään valmistelualueelle, siitä otetaan viimeisin kopio talteen. Tiedoston muuttuessa tämän jälkeen, se pitää lisätä uudelleen valmistelualueelle, joten usein tämä tehdään siinä vaiheessa kun halutut muutokset on tehty. Valmistelualueella ei ole kovin tärkeää osaa päivittäisessä työskentelyssä mutta sen rooli on hyvä tuntea.
 
-Seuraava vaihe on tehdä valmistelualueen tiedostojen kopioista pysyvä versio muutoshistoriaan. Tätä tilannetta kutsutaan _**commitiksi** \(commit\)_, jolloin muutokset vahvistetaan paikalliseen tietovarastoon.
+Seuraava vaihe on tehdä valmistelualueen tiedostojen kopioista pysyvä versio muutoshistoriaan. Tätä tilannetta kutsutaan _**commitiksi** (commit)_, jolloin muutokset vahvistetaan paikalliseen tietovarastoon.
 
 ### Paikallinen tietovarasto
 
-Paikallinen tietovarasto on viimeisin kolmesta vaiheesta. Kun pysyvä muutos on tehty, se kirjataan paikalliseen tietovarastoon uutena versiona. Voidaan siis puhua niin sanotusti pysyvästä muutoksesta, josta tulee osa muutoshistoriaa. Samalla kun muutos vahvistuu niin Git merkitsee uusimman muutoksen nykyiseksi version _**"pääksi"**_ _\(HEAD\)_, joka siis viittaa tuoreimpaan versioon.
+Paikallinen tietovarasto on viimeisin kolmesta vaiheesta. Kun pysyvä muutos on tehty, se kirjataan paikalliseen tietovarastoon uutena versiona. Voidaan siis puhua niin sanotusti pysyvästä muutoksesta, josta tulee osa muutoshistoriaa. Samalla kun muutos vahvistuu niin Git merkitsee uusimman muutoksen nykyiseksi version _**"pääksi"**_ _(HEAD)_, joka siis viittaa tuoreimpaan versioon.
 
-Muutoshistoria on eräänlainen ketju muutoksia ja sisältää aina tiedon edellisestä versiosta. Eri lähteissä versioista puhutaan myös termillä _snapshot_ eli eräänlaisesta sen hetkisestä tiedostojen tilasta. Pääosin Gitin komennot käsittelevät tätä paikallista tietovarastoa ja etätietovarastojen käsittelyyn varten on omat komentonsa. 
+Muutoshistoria on eräänlainen ketju muutoksia ja sisältää aina tiedon edellisestä versiosta. Eri lähteissä versioista puhutaan myös termillä _snapshot_ eli eräänlaisesta sen hetkisestä tiedostojen tilasta. Pääosin Gitin komennot käsittelevät tätä paikallista tietovarastoa ja etätietovarastojen käsittelyyn varten on omat komentonsa.&#x20;
 
 {% hint style="info" %}
-Git ei tallenna kopiota koko työhakemistosta \(kuten osa versionhallintaan tehdyistä työkaluista\) kun pysyvä muutos tehdään. Puhutaan enemmän tiedon lisäämisestä eli jokainen muutos kertoo mikä on muuttunut edelliseen versioon nähden. 
+Git ei tallenna kopiota koko työhakemistosta (kuten osa versionhallintaan tehdyistä työkaluista) kun pysyvä muutos tehdään. Puhutaan enemmän tiedon lisäämisestä eli jokainen muutos kertoo mikä on muuttunut edelliseen versioon nähden.&#x20;
 {% endhint %}
 
 ## Asentaminen
 
-Gitin voi asentaa koneelleen usealla eri tavoilla. Tässä oppaassa käymme läpi näistä vain yhden. Lataa uusin versio [Gitin kotisivuilta](https://git-scm.com/) ja käy asennusvaiheet läpi oletusasetuksin.
+Gitin voi asentaa koneelleen usealla eri tavoilla. Tässä oppaassa käymme läpi näistä vain yhden. Lataa uusin versio [Gitin kotisivuilta](https://git-scm.com) ja käy asennusvaiheet läpi oletusasetuksin.
 
 ![](../.gitbook/assets/git-lataaminen.png)
 
@@ -66,7 +66,7 @@ Asennuksen jälkeen käynnistä ohjelma. Oppaassa sekä näissä harjoituksia k�
 Erilaisia yleisimpiä komentoja on käyty läpi [tällä videolla](https://www.youtube.com/watch?v=LAtX5h4py3I).
 {% endhint %}
 
-### Aukaise komentokehote tietokoneeltasi. 
+### Aukaise komentokehote tietokoneeltasi.&#x20;
 
 **Windowsilla** aukaise kotivalikko ja hae komentokehotse **Git Bash** nimellä. Sinulle aukeaa tumma ruutu. Halutessasi voit myös käyttää **CMD** tai **Powershell** komentokehotteita mutta niiden eri komentoja ei harjoitteissa käydä läpi. Gitin komennot ovat samoja.
 
@@ -183,7 +183,7 @@ Gitin kanssa ei ole pakko käyttää etätietovarastoja mutta usein ne ovat muka
 
 ### Etätietovaraston kopiointi paikalliseen tietovarastoon
 
-**Tämä vaihe tehdään vain kerran** siinä tilanteessa, että etätietovarasto on jo olemassa ja sitä ei ole nykyisellä työasemalla \(työkoneella\) olemassa vielä. Etätietovarasto on siis perustettu jo toisen henkilön toimesta.
+**Tämä vaihe tehdään vain kerran** siinä tilanteessa, että etätietovarasto on jo olemassa ja sitä ei ole nykyisellä työasemalla (työkoneella) olemassa vielä. Etätietovarasto on siis perustettu jo toisen henkilön toimesta.
 
 ```bash
 # Esimerkissä voidaan olettaa, että työhakemiston polku on:
@@ -199,7 +199,7 @@ git clone <osoite git repositoryyn>
 # cd kansion_nimi
 ```
 
-Kun etätietovarasto on kopioitu \(kloonattu\) niin `clone`  komento luo etätietovaraston mukaan nimisen kansion työhakemistoon. Se ei siis kopioi tietovarastoa nykyiseen työhakemistoon vaan luo sille alakansion.
+Kun etätietovarasto on kopioitu (kloonattu) niin `clone`  komento luo etätietovaraston mukaan nimisen kansion työhakemistoon. Se ei siis kopioi tietovarastoa nykyiseen työhakemistoon vaan luo sille alakansion.
 
 {% hint style="info" %}
 Clone kopiointi tekee useita vaiheita jo valmiiksi. Esimerkiksi sen jälkeen ei tule enää antaa `git init` komentoa tai tehdä muutoksia etätietovaraston viittaamiseen, koska ne on jo tehty.
@@ -207,7 +207,7 @@ Clone kopiointi tekee useita vaiheita jo valmiiksi. Esimerkiksi sen jälkeen ei 
 
 ### Etätietovarastoon viittaaminen paikallisessa tietovarastossa
 
-**Tämä vaihe tehdään vain kerran siinä tilanteessa**, että etätietovarastoa ei kopioida \(kloonata\) vaan on kyseessä paikallinen tietovarasto. Tässä tilantessa usein halutaan kertoa mihin etätietovarastoon olemassaoleva paikallinen tietovarasto halutaan työntää. 
+**Tämä vaihe tehdään vain kerran siinä tilanteessa**, että etätietovarastoa ei kopioida (kloonata) vaan on kyseessä paikallinen tietovarasto. Tässä tilantessa usein halutaan kertoa mihin etätietovarastoon olemassaoleva paikallinen tietovarasto halutaan työntää.&#x20;
 
 Muita tilanteita ovat esimerkiksi sellaiset, että paikallinen tietovarasto muutoshistorian kanssa halutaan työntää toiseen uuteen etätietovarastoon. Käyttötapauksia on monenlaisia.
 
@@ -228,7 +228,7 @@ git remote -v
 
 ### Muutosten työntäminen etätietovarastoon
 
-Kun työskentelyssä on tultu siihen pisteeseen, että muutokset halutaan jakaa muiden kehittäjien kanssa tai muutoin talteen eri sijaintiin niin tarvitsee ne työntää \(push\) etätietovarastoon. Tätä vaihetta tehdään niin usein kun on tarve mutta usein päivän päätteeksi.
+Kun työskentelyssä on tultu siihen pisteeseen, että muutokset halutaan jakaa muiden kehittäjien kanssa tai muutoin talteen eri sijaintiin niin tarvitsee ne työntää (push) etätietovarastoon. Tätä vaihetta tehdään niin usein kun on tarve mutta usein päivän päätteeksi.
 
 On hyvä huomioida, että edelliset komennot ovat pääasiassa käsitelleet paikallista tietovarastoa ja seuraavat komennot käsittelevät etätietovarastoa.
 
@@ -255,13 +255,13 @@ Push komento voi tietyissä tilanteessa epäonnistua. Todennäköisin tilanne on
 
 ![Git push virhe](../.gitbook/assets/git-push-error.png)
 
-Kuvakaappauksessa on ensin navigoitu **dev/saliavustaja/** hakemistoon, joka tässä tilanteessa on paikallinen tietovarasto. Paikalliseen tietovarastoon on tätä ennen tehty yksi muutos. Kun on annettu komento `git push origin master` niin tulostuu viesti **rejected** ja perustelut sille. 
+Kuvakaappauksessa on ensin navigoitu **dev/saliavustaja/** hakemistoon, joka tässä tilanteessa on paikallinen tietovarasto. Paikalliseen tietovarastoon on tätä ennen tehty yksi muutos. Kun on annettu komento `git push origin master` niin tulostuu viesti **rejected** ja perustelut sille.&#x20;
 
-Perustelut kannattaa lukea tarkkaan, koska siinä sanotaan suoraan olevan kyseessä tilanne, jossa joku toinen on jo tehnyt muutoksia etätietovarastoon, joita sinulla ei ole paikallisessa tietovarastossa. Tällöin tulisi tehdä `git pull` komento, joka vetää muutokset etätietovarastosta. 
+Perustelut kannattaa lukea tarkkaan, koska siinä sanotaan suoraan olevan kyseessä tilanne, jossa joku toinen on jo tehnyt muutoksia etätietovarastoon, joita sinulla ei ole paikallisessa tietovarastossa. Tällöin tulisi tehdä `git pull` komento, joka vetää muutokset etätietovarastosta.&#x20;
 
 ### Muutosten vetäminen etätietovarastosta
 
-Työskentelyyn saattaa usein liittyä useampi ohjelmoija, jotka tekevät muutoksia. Tuoreet muutokset pitää vetää \(pull\) etätietovarastosta paikalliseen tietovarastoon siinä tilanteessa kun pitää saada muiden muutokset työasemalle. 
+Työskentelyyn saattaa usein liittyä useampi ohjelmoija, jotka tekevät muutoksia. Tuoreet muutokset pitää vetää (pull) etätietovarastosta paikalliseen tietovarastoon siinä tilanteessa kun pitää saada muiden muutokset työasemalle.&#x20;
 
 ```bash
 # Esimerkissä voidaan olettaa, että työhakemiston polku on:
@@ -277,14 +277,14 @@ git pull origin master
 {% hint style="info" %}
 Pull komento on hyvä tehdä aina ennen töiden aloittamista niin välttää monia ongelmatilanteita vanhentuneen lähdekoodin vuoksi.
 
-Komento voi aiheuttaa myös niin sanotun konfliktin \(conflict\) tilanteen, jos vedettävät muutokset koskettavat sellaisia paikallisia muutoksia mitkä osuvat samoihin tiedostoihin ja lähdekoodin riveihin.
+Komento voi aiheuttaa myös niin sanotun konfliktin (conflict) tilanteen, jos vedettävät muutokset koskettavat sellaisia paikallisia muutoksia mitkä osuvat samoihin tiedostoihin ja lähdekoodin riveihin.
 {% endhint %}
 
 ## Muut työskentelyyn liittyvät tilanteet
 
 Versionhallintaa käytettäessä tulee vastaan joitakin tilanteita ja tarpeita mitä pitää osata selvittää. Nämä ovat hyvin perinteisiä ja kuuluvat melkein jokapäiväiseen työskentelyyn. Erilaiset työskentelytavat vaikuttavat myös näiden tilanteiden syntyyn.
 
-Todennäköisesti ohjelmoijan pitää jossakin tilanteessa selvittää **Gitin konflikti** tai **merkitä tiedostoja, joita ei haluta versionhallinnan seuraavan**. 
+Todennäköisesti ohjelmoijan pitää jossakin tilanteessa selvittää **Gitin konflikti** tai **merkitä tiedostoja, joita ei haluta versionhallinnan seuraavan**.&#x20;
 
 ### Konfliktin selvittäminen
 
@@ -295,13 +295,13 @@ Konflikti voi syntyä seuraavissa tilanteissa:
 * Ohjelmoija on luonut uuden kehityshaaran ja yhdistää sen siihen mistä se on alunperin luotu.
 * Ohjelmoija vetää etätietovarastosta muutoksia paikalliseen tietovarastoon mutta hänellä on muutoksia samoissa lähdekoodiriveissä kuin etätietovaraston tulevissa muutoksissa.
 
-![Git konflikti pull komennon yhteydess&#xE4;](../.gitbook/assets/git-conflict.png)
+![Git konflikti pull komennon yhteydessä](../.gitbook/assets/git-conflict.png)
 
-Konflikti näyttää ylläolevan kuvan kaltaiselta kun se tapahtuu käytettäessä `git pull` komentoa. Kuvassa paikallinen tietovarasto on **dev/saliavustaja/** -hakemistossa, jossa on yritetty vetää uusia muutoksia etätietovarastosta. Gitin tulosteessa on kohta **CONFLICT**, jossa kerrotaan perässä sen tapahtuneen README.md nimisessä tiedostossa. Lisäksi mainitaan, että automaattinen yhdistäminen \(merge\) on epäonnistunut ja konflikti pitää korjata.
+Konflikti näyttää ylläolevan kuvan kaltaiselta kun se tapahtuu käytettäessä `git pull` komentoa. Kuvassa paikallinen tietovarasto on **dev/saliavustaja/** -hakemistossa, jossa on yritetty vetää uusia muutoksia etätietovarastosta. Gitin tulosteessa on kohta **CONFLICT**, jossa kerrotaan perässä sen tapahtuneen README.md nimisessä tiedostossa. Lisäksi mainitaan, että automaattinen yhdistäminen (merge) on epäonnistunut ja konflikti pitää korjata.
 
-Konflikti korjataan aina manuaalisesti eli ohjelmoija itse korjaa kyseisestä tiedostosta epäselvät rivit. Kun kuvan mukaisessa tilanteessa on tapahtunut konflikti, mitään muutoksia ei varsinaisesti vahvisteta paikallisessa tietovarastossa ennen niiden korjaamista. Jos et tiedä missä tilassa paikallinen tietovarasto on niin `git status` komento auttaa myös selvittämään mikäli on kyseessä konflikti. 
+Konflikti korjataan aina manuaalisesti eli ohjelmoija itse korjaa kyseisestä tiedostosta epäselvät rivit. Kun kuvan mukaisessa tilanteessa on tapahtunut konflikti, mitään muutoksia ei varsinaisesti vahvisteta paikallisessa tietovarastossa ennen niiden korjaamista. Jos et tiedä missä tilassa paikallinen tietovarasto on niin `git status` komento auttaa myös selvittämään mikäli on kyseessä konflikti.&#x20;
 
-![Git konflikti status komennon n&#xE4;k&#xF6;kulmasta](../.gitbook/assets/git-status-conflict.png)
+![Git konflikti status komennon näkökulmasta](../.gitbook/assets/git-status-conflict.png)
 
 Yllä olevassa kuvassa tuloste kertoo, että sinulla on konflikti. Tällöin kaksi kehityshaaran historiaa ei ole siis oikein yhdistyneet. Kohdassa **Unmerged paths** olevat tiedostot sinun tulee käydä läpi manuaalisesti. Jos konfliktia ei haluta tapahtuvan, voidaan antaa seuraava komento, joka peruu muutokset siihen tilaan kuin ne olivat ennen konfliktin syntymistä.
 
@@ -312,7 +312,7 @@ Yllä olevassa kuvassa tuloste kertoo, että sinulla on konflikti. Tällöin kak
 git merge --abort
 ```
 
-Kuten edellä on jo mainittu, konflikti selvitetään itse. Kun konflikti on selvitetty, tulee se vielä vahvistaa `commit` komentoa käyttäen. Avaa konfliktin aiheuttanut tiedosto missä tahansa tekstieditorissa \(esim. notepad, visual studio, komentokehotteesa\). Monet ohjelmointiin tehdyt työkalut ymmärtävät konfliktitilanteita ja tarjoavat ohjelmoijalle vaihtoehdot miten toimia. Hyväksytäänkö paikalliset muutokset, etätietovaraston muutokset vai jokin näistä yhdistelmistä.
+Kuten edellä on jo mainittu, konflikti selvitetään itse. Kun konflikti on selvitetty, tulee se vielä vahvistaa `commit` komentoa käyttäen. Avaa konfliktin aiheuttanut tiedosto missä tahansa tekstieditorissa (esim. notepad, visual studio, komentokehotteesa). Monet ohjelmointiin tehdyt työkalut ymmärtävät konfliktitilanteita ja tarjoavat ohjelmoijalle vaihtoehdot miten toimia. Hyväksytäänkö paikalliset muutokset, etätietovaraston muutokset vai jokin näistä yhdistelmistä.
 
 Seuraava kuva havainnollistaa tilannetta työkalun kanssa, joka ei ymmärrä konflikteja ja miltä se näyttää Gitin näkökulmasta.
 
@@ -343,11 +343,11 @@ git commit -m "Konflikti korjattu, onnistuin."
 
 ### Tiedostojen sivuuttaminen versionhallinnassa
 
-Usein tulee tarpeita tiedostojen sivuuttamisen kanssa. Sivuuttamisella \(ignore\) tarkoitetaan tässä tilannetta, että tietyn tiedoston muutoksia ei huomioida versionhallinnan näkökulmasta. Se ei ole siis koskaan osa muutoshistoriaa. Useimmat tilanteet, joissa sivuuttamista tarvitaan, liittyvät työkalujen luomiin omiin konfiguraatio hakemistoihin tai kehittävän ohjelman paikallisiin asetuksiin. Tilanteita on useita erilaisia.
+Usein tulee tarpeita tiedostojen sivuuttamisen kanssa. Sivuuttamisella (ignore) tarkoitetaan tässä tilannetta, että tietyn tiedoston muutoksia ei huomioida versionhallinnan näkökulmasta. Se ei ole siis koskaan osa muutoshistoriaa. Useimmat tilanteet, joissa sivuuttamista tarvitaan, liittyvät työkalujen luomiin omiin konfiguraatio hakemistoihin tai kehittävän ohjelman paikallisiin asetuksiin. Tilanteita on useita erilaisia.
 
 Esimerkiksi Visual Studio luo aina piilokansion **.vs** projektin yhteydessä. Sinne syntyvät kehittäjälle tarkoitettuja omia tiedostoja sekä ne muuttuvat aina kun Visual Studio esimerkiksi kääntää ohjelman. Usein tällaisia tietoja ei haluta versionhallinnan seurattavaksi, koska aiheuttavat konflikti-tilanteita ja niistä ei ole apua muille kehittäjille. Vain pelkkä lähdekoodi on usein se mitä halutaan pitää versionhallinnassa sekä sitten siihen liittyvät työkalujen projektitiedostot.
 
-Tiedostojen tai hakemistojen merkitseminen sivuutetuksi tapahtuu **.gitignore** nimisellä tiedostolla. Git sisältää joitakin tällaisia piilotettuja tiedostoja, jolla voidaan vaikuttaa versionhallinnan ominaisuuksiin. 
+Tiedostojen tai hakemistojen merkitseminen sivuutetuksi tapahtuu **.gitignore** nimisellä tiedostolla. Git sisältää joitakin tällaisia piilotettuja tiedostoja, jolla voidaan vaikuttaa versionhallinnan ominaisuuksiin.&#x20;
 
 {% hint style="info" %}
 Edellä mainittu **.gitignore** pitää aina luoda itse, jos sitä ei ole ja sen pitää olla versionhallinnan seurattavana
@@ -355,9 +355,9 @@ Edellä mainittu **.gitignore** pitää aina luoda itse, jos sitä ei ole ja sen
 
 Alla oleva kuva on esimerkki **.gitignore** tiedoston sisällöstä. Tiedoston jokainen rivi on eri sääntö, että mitä tiedostoja ei seurata. **Tiedoston sijaintina on usein paikallisen tietovaraston juuri eli juuri se työhakemisto, missä myös .git kansio sijaitsee**.
 
-Kyseisiä tiedostoja voi olla myös alakansioissa mutta kyse on lähinnä mieltymyksestä miten sitä käyttää. Esimerkissä on paljon erilaisia **"villejä kortteja"** \(eng. wildcards, eräänlaiset merkintätavat kuten \* jne.\) ja muita merkintätapoja. Yksinkertaisimmillaan voit kirjoittaa vain tiedoston nimen tai hakemiston polun mitä et halua seurattavan.
+Kyseisiä tiedostoja voi olla myös alakansioissa mutta kyse on lähinnä mieltymyksestä miten sitä käyttää. Esimerkissä on paljon erilaisia **"villejä kortteja"** (eng. wildcards, eräänlaiset merkintätavat kuten \* jne.) ja muita merkintätapoja. Yksinkertaisimmillaan voit kirjoittaa vain tiedoston nimen tai hakemiston polun mitä et halua seurattavan.
 
-Merkintätavoista voit lukea lisää esimerkiksi täältä [https://www.atlassian.com/git/tutorials/saving-changes/gitignore\#git-ignore-patterns](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns) 
+Merkintätavoista voit lukea lisää esimerkiksi täältä [https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns)&#x20;
 
 Lisäksi löytyy jo paljon valmiita malleja olemassa oleviin työkaluihin. Niitä löydät täältä [https://github.com/github/gitignore](https://github.com/github/gitignore)
 
@@ -368,7 +368,7 @@ Etsi listalta esimerkiksi Visual Studio ja kopioi tiedoston sisältä sinun omaa
 {% hint style="info" %}
 Huomioitavaa kun luot **.gitinore** tiedoston, muutoin se ei toimi:
 
-* Tiedoston nimen pitää alkaa pisteellä ja siinä ei ole tiedostopäätettä. \(windowsin notepad jättää usein .txt päätteen, joten silloin tiedosto ei toimi\)
+* Tiedoston nimen pitää alkaa pisteellä ja siinä ei ole tiedostopäätettä. (windowsin notepad jättää usein .txt päätteen, joten silloin tiedosto ei toimi)
 * Muista tallentaa tiedosto muutosten jälkeen.
 * Tiedostopolku tai hakemiston nimi kirjoitettu väärin.
 * Sivuutettava hakemisto tai tiedosto on aiemmin lisätty versionhallinnan seurattavaksi. Tällöin tiedosto pitää ensin poistaa versionhallinnan seurattavien tiedostojen piiristä.
@@ -421,9 +421,9 @@ Lue aiheesta täältä.
 
 ## Kehityshaarat
 
-Versionhallinnan yhtenä tärkeänä käsitteenä on kehityshaara \(eng. branch\). Kehityshaaralla tarkoitetaan ohjelman lähdekoodissa haarautunutta polkua, jossa kaksi eri kehityshaaraa eroavat. Niiden tarkoituksena on helpottaa yhden tai useamman henkilön työskentelyä saman ohjelman parissa. Git kanssa käytetään termiä kehityshaara ja esimerkissä käytämme sen englanninkielistä vastinetta **branch.** Puhekielessä puhutaan siis "**brancheista"**.
+Versionhallinnan yhtenä tärkeänä käsitteenä on kehityshaara (eng. branch). Kehityshaaralla tarkoitetaan ohjelman lähdekoodissa haarautunutta polkua, jossa kaksi eri kehityshaaraa eroavat. Niiden tarkoituksena on helpottaa yhden tai useamman henkilön työskentelyä saman ohjelman parissa. Git kanssa käytetään termiä kehityshaara ja esimerkissä käytämme sen englanninkielistä vastinetta **branch.** Puhekielessä puhutaan siis "**brancheista"**.
 
-Käsitellään kehityshaarat vielä alla olevalla havainnollistavalla kuvalla. Kuvassa **harmaat ympyrät** ovat muutoksia \(committeja\). Ympyrän alla on osa sen uniikkia tunnistetta, joka syntyy aina `git commit` komennon yhteydessä.  Esimerkissä ei haittaa sisältääkö yksi commit yhden vai useamman tiedoston. **Vihreä ympyrä** kuvastaa sitä mikä on viimeisin muutos. **HEAD** on kuvassa viittaus viimeisimpään muutokseen. **Keltaiset laatikot** ovat kehityshaarojen nimiä. Kuvaa luetaan vasemmalta oikealle eli älä tulkitse nuolia väärin. Nuoli näyttää aina edelliseen muutokseen muutoshistoriassa.
+Käsitellään kehityshaarat vielä alla olevalla havainnollistavalla kuvalla. Kuvassa **harmaat ympyrät** ovat muutoksia (committeja). Ympyrän alla on osa sen uniikkia tunnistetta, joka syntyy aina `git commit` komennon yhteydessä.  Esimerkissä ei haittaa sisältääkö yksi commit yhden vai useamman tiedoston. **Vihreä ympyrä** kuvastaa sitä mikä on viimeisin muutos. **HEAD** on kuvassa viittaus viimeisimpään muutokseen. **Keltaiset laatikot** ovat kehityshaarojen nimiä. Kuvaa luetaan vasemmalta oikealle eli älä tulkitse nuolia väärin. Nuoli näyttää aina edelliseen muutokseen muutoshistoriassa.
 
 ![Esimerkki kahdesta kehityshaarasta.](../.gitbook/assets/git-branches.png)
 
@@ -451,7 +451,7 @@ Tutustutaan tarkemmin kehityshaarojen kanssa työskentelyyn Gitin avulla. Oppima
 
 ### Uuden kehityshaaran luominen
 
-Ennen kuin voit luoda kehityshaaroja niin sinulla pitää olla tietovarasto \(repository\) mitä haluat käsitellä. Lähtökohtana oletetaan, että sinulla on olemassa vain **master** kehityshaara. Ei haittaa vaikka niitä olisi jo useampi.
+Ennen kuin voit luoda kehityshaaroja niin sinulla pitää olla tietovarasto (repository) mitä haluat käsitellä. Lähtökohtana oletetaan, että sinulla on olemassa vain **master** kehityshaara. Ei haittaa vaikka niitä olisi jo useampi.
 
 Voit aina tarkistaa nykyisessä tietovarastossa olemassa olevat kehityshaarat seuraavalla komennolla:
 
@@ -466,7 +466,7 @@ git branch -r
 git branch -a
 ```
 
-Luodaan uusi kehityshaara. Huomioi, että sinulla pitää olla vähintään yksi aikaisempi muutos \(commit\) tehtynä. Muuten uuden branchin luominen ei onnistu.
+Luodaan uusi kehityshaara. Huomioi, että sinulla pitää olla vähintään yksi aikaisempi muutos (commit) tehtynä. Muuten uuden branchin luominen ei onnistu.
 
 ```bash
 # Komento luo uuden feature-orders nimisen kehityshaaran.
@@ -502,7 +502,7 @@ Kehityshaarojen vaihtamisen jälkeen voit työskennelllä normaalisti käyttäen
 {% hint style="info" %}
 On myös mahdollista käyttää uudempaa **switch** komentoa. Komento on luotu sen vuoksi, että **checkout** komento on alunperin monipuolinen ominaisuuksiltaan ja mahdollisesti aiheuttanut sekaannuksia.
 
-`git switch <kehityshaaran-nimi>` 
+`git switch <kehityshaaran-nimi>`&#x20;
 
 Kehityshaaran voi luoda myös seuraavilla komennolla mikä välittömästi vaihtaa siihen.
 
@@ -513,13 +513,13 @@ Kehityshaaran voi luoda myös seuraavilla komennolla mikä välittömästi vaiht
 
 Uuden kehityshaaran luomisen jälkeen tulee usein tarve yhdistää kaksi kehityshaaraa yhtenäiseksi. Git tarjoaa tähän helpon tavan ja huolehtii, että muutokset menevät oikein eri lähdetiedostoissa. Ominaisuutta kutsutaan termillä **merge**. Havainnollistetaan kehityshaarojen yhdistämistä seuraavalla kuvalla käyttäen taas muutosten tunnisteita.
 
-![Esimerkki kahden kehityshaaran yhdist&#xE4;misest&#xE4;](../.gitbook/assets/git-branches-merge.png)
+![Esimerkki kahden kehityshaaran yhdistämisestä](../.gitbook/assets/git-branches-merge.png)
 
 **ea57af0:** Vasemmalta toinen muutos. Tämä on viimeinen yhteinen muutos esimerkin kahdella kehityshaaralla. Tämän jälkeen seuraavat muutokset ovat eri kehityshaaroissa.
 
 **a0ecd99 - 9aeaa06:** Muutokset ovat **feature-orders** kehityshaaraan tehtyjä ja niitä ei vielä ole **master** kehityshaarassa.
 
-**508e807:** Kyseessä on muutosmerkintä, joka on tullut kehityshaarojen yhdistämisestä. Tässä on tapahtunut ns. **merge** ja sisältää kaikki **feature-orders** \(a0ecd99 - 9aeaa06\) kehityshaaran muutokset.
+**508e807:** Kyseessä on muutosmerkintä, joka on tullut kehityshaarojen yhdistämisestä. Tässä on tapahtunut ns. **merge** ja sisältää kaikki **feature-orders** (a0ecd99 - 9aeaa06) kehityshaaran muutokset.
 
 **8e5362e:** Muutos, joka on taas tehty master kehityshaaraan edellisen haarojen yhdistämisen jälkeen.
 
@@ -550,7 +550,7 @@ Kehityshaarojen yhdistämisen jälkeen yhdistetty haara ei katoa. Esimerkissä f
 
 ### Kehityshaarojen käsitteleminen etätietovarastossa
 
-Ohjelmoidessa tulee vastaan tilanne, että muutokset halutaan työntää etätietovarastoon. Käsitellään tilanne kehityshaarojen kanssa. Samoin myös tietojen päivittäminen voi tulla ajankohtaiseksi useamman ohjelmoijan kohdalla. 
+Ohjelmoidessa tulee vastaan tilanne, että muutokset halutaan työntää etätietovarastoon. Käsitellään tilanne kehityshaarojen kanssa. Samoin myös tietojen päivittäminen voi tulla ajankohtaiseksi useamman ohjelmoijan kohdalla.&#x20;
 
 Muutosten käsittely etätietovaraston kanssa onnistuu jo aiemmin kuvatulla tavalla mutta käydään tässä vielä esimerkin mukaiset komennot läpi.
 
@@ -629,8 +629,6 @@ git push -d origin feature-orders
 {% embed url="https://fi.wikipedia.org/wiki/Versiohallinta" %}
 
 {% embed url="https://git-scm.com/book/en/v2" %}
-
-
 
 
 

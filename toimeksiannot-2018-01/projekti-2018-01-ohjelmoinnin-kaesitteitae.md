@@ -13,9 +13,11 @@ Soittolista, joka sisältää muutaman videon ohjelman rakenteesta. Videoissa k�
 
 Lähdekoodit löytyvät alla olevasta liitetiedostosta. Kyseessä on ohjelman viimeinen versio, joten se näyttää erilaiselta kuin alussa.
 
-{% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_EDcg7lLR1iJgZf6ObTsfE" %}
+{% embed url="https://www.youtube.com/playlist?list=PL3iay_FdAzV_EDcg7lLR1iJgZf6ObTsfE" %}
 
-{% file src="../.gitbook/assets/projekti-2018-01-esimerkit-master.zip" caption="Videossa esiintyvän ohjelman lähdekoodit" %}
+{% file src="../.gitbook/assets/projekti-2018-01-esimerkit-master.zip" %}
+Videossa esiintyvän ohjelman lähdekoodit
+{% endfile %}
 
 ## Konsoliohjelman rakenne ja elinkaari
 
@@ -44,7 +46,7 @@ Ohjelmoinnissa on muutamia perusrakenteita, joilla vaikutetaan ohjelman kulkuun 
 * WHILE
 * DO-WHILE
 * FOR
-* FOREACH \(ei kaikissa\)
+* FOREACH (ei kaikissa)
 
 Rakenteiden hallinta on elintärkeää ohjelmoinnin kanssa. Niiden hahmottamista auttavat esimerkiksi vuokaaviot. Jos et tunne miten edellä mainitut ohjausrakenteet vaikuttavat ohjelman toimintaan, ota ensin niistä selvää eri esimerkkien kanssa.
 
@@ -58,7 +60,7 @@ Edellä mainittu tilanne on vain yksi esimerkki ja tilanne voi vaihdella ohjelmo
 
 Alla olevassa esimerkissä on huomioitava myös se, että muuttujat ovat olemassa aina koko ohjelman elinkaaren ajan. Tällöin niihin tallennettu tieto pysyy tallessa niin kauan kunnes ne alustetaan uudelleen tai ohjelma loppuu.
 
-{% code title="Paaohjelma\_esimerkki" %}
+{% code title="Paaohjelma_esimerkki" %}
 ```csharp
 class MainClass
     {
@@ -228,4 +230,3 @@ public static void Main(string[] args)
 }
 ```
 {% endcode %}
-

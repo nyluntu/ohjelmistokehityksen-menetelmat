@@ -4,7 +4,7 @@
 * [Tavoitteet](tavoitteet.md)
 * [Työkalut](tyoekalut.md)
 
-## Toimeksiannot <a id="toimeksiannot-2020-01"></a>
+## Toimeksiannot <a href="#toimeksiannot-2020-01" id="toimeksiannot-2020-01"></a>
 
 * [Toimeksiannon rajaukset](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
 * [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
@@ -18,7 +18,7 @@
 * [Agile, Tuotteen tehtävälista](ketterae-ohjelmistokehitys/agile-tuotteen-tehta-va-lista.md)
 * [Agile, Käyttäjätarina ja käyttötapaus](ketterae-ohjelmistokehitys/agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md)
 * [Agile muu materiaali ja lähteitä](ketterae-ohjelmistokehitys/agile-muu-materiaali-ja-laehteitae.md)
-* [Agile termit \(scrum\)](ketterae-ohjelmistokehitys/agile-termit-scrum.md)
+* [Agile termit (scrum)](ketterae-ohjelmistokehitys/agile-termit-scrum.md)
 
 ## Versionhallinta
 
@@ -50,14 +50,9 @@
 * [TDD perusteet 103](yksikkoetestaus/tdd-perusteet-103.md)
 * [TDD muu materiaali ja lähteitä](yksikkoetestaus/tdd-muu-materiaali-ja-laehteitae.md)
 
-## Harjoitteet \(keskeneräiset\) <a id="harjoitteet"></a>
+***
 
-* [Käyttäjätarinat](harjoitteet/kaeyttaejaetarinat.md)
-* [Pariohjelmointi](harjoitteet/pariohjelmointi.md)
-* [Versionhallinta](harjoitteet/versionhallinta.md)
-* [Testivetoinen kehitys](harjoitteet/testivetoinen-kehitys.md)
-* [Jatkuva integraatio](harjoitteet/jatkuva-integraatio.md)
-* [Inkrementaalinen dokumentointi](harjoitteet/inkrementaalinen-dokumentointi.md)
+* [UML -kaaviot](uml-kaaviot.md)
 
 ## Relaatiotietokannat
 
@@ -88,7 +83,7 @@
   * [mysql-perusteet-105-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-105/mysql-perusteet-105-vastaukset.md)
 * [Mysql perusteet 106](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/README.md)
   * [mysql-perusteet-106-vastaukset](sql-harjoitukset-ja-esimerkit/mysql-perusteet-106/mysql-perusteet-106-vastaukset.md)
-* [SQL hakukyselyjä \(VANHAT\)](sql-harjoitukset-ja-esimerkit/sql-hakukyselyjae.md)
+* [SQL hakukyselyjä (VANHAT)](sql-harjoitukset-ja-esimerkit/sql-hakukyselyjae.md)
 * [SQL harjoitukset syksy 2021](sql-harjoitukset-ja-esimerkit/sql-harjoitukset-syksy-2021/README.md)
   * [Vastaukset SQL harjoitukset syksy 2021](sql-harjoitukset-ja-esimerkit/sql-harjoitukset-syksy-2021/vastaukset-sql-harjoitukset-syksy-2021.md)
 
@@ -96,22 +91,22 @@
 
 * [TL;DR](miten-yrittaejaenae-voin-hyoetyae-ohjelmistokehityksen-ostamisesta/tl-dr.md)
 
-## Toimeksiannot \(2019/01\)
+## Toimeksiannot (2019/01)
 
 * [Toimeksianto 2019/01](toimeksiannot-2019-01/toimeksianto-2019-01.md)
 * [Käytänteet ja menetelmät](toimeksiannot-2019-01/projekti-2018-01-kaeytaenteet.md)
 * [Konsoliohjelman refaktorointia](toimeksiannot-2019-01/konsoliohjelman-refaktorointia.md)
 
-## SCRUM harjoitustyö \(2020/01\)
+## SCRUM harjoitustyö (2020/01)
 
 * [Harjoitustyön sisältö](scrum-harjoitustyoe-2020-01/harjoitustyon-sisalto.md)
 * [Harjoitustyö: Matkalasku](scrum-harjoitustyoe-2020-01/harjoitustyoe-matkalasku.md)
 
-## Toimeksiannot \(2019/02\)
+## Toimeksiannot (2019/02)
 
 * [Toimeksianto 2019/02](toimeksiannot-2019-02/untitled.md)
 
-## Toimeksiannot \(2018/01\)
+## Toimeksiannot (2018/01)
 
 * [Projekti 2018/01](toimeksiannot-2018-01/projekti-2018-01.md)
 * [Projekti 2018/01 Perjantaille 14.9](toimeksiannot-2018-01/projekti-2018-01-perjantaille-14.9.md)
@@ -119,3 +114,11 @@
 * [Projekti 2018/01 Ohjelmoinnin aloittaminen](toimeksiannot-2018-01/projekti-2018-01-ohjelmoinnin-kaesitteitae.md)
 * [Projekti 2018/01 TDD esimerkki](toimeksiannot-2018-01/projekti-2018-01-tdd-esimerkki.md)
 
+## Harjoitteet (keskeneräiset) <a href="#harjoitteet" id="harjoitteet"></a>
+
+* [Käyttäjätarinat](harjoitteet/kaeyttaejaetarinat.md)
+* [Pariohjelmointi](harjoitteet/pariohjelmointi.md)
+* [Versionhallinta](harjoitteet/versionhallinta.md)
+* [Testivetoinen kehitys](harjoitteet/testivetoinen-kehitys.md)
+* [Jatkuva integraatio](harjoitteet/jatkuva-integraatio.md)
+* [Inkrementaalinen dokumentointi](harjoitteet/inkrementaalinen-dokumentointi.md)

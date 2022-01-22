@@ -12,7 +12,7 @@ _**Huom! Opiskelijoille suunnatuissa projekteissa heidän arviointinsa ja palaut
 
 ## Vaatimukset toimeksiannon ohjelmalle
 
-Ohjelmointikieli on C\#.
+Ohjelmointikieli on C#.
 
 Ohjelman pitää olla konsolisovellus. Ei tehdä niin sanottua "graafista käyttöliittymää". Konsolisovelluksen käyttöliittymä saa puolestaan olla niin monipuolinen kuin kehitystiimi itse tahtoo.
 
@@ -22,9 +22,11 @@ Ohjelman ominaisuudet liittyvät erilaisia tuotteita myyvän asiakkaan tilausjä
 
 Esimerkkinä tilausjärjestelmästä voidaan pitää verkkokauppaa. Verkkokaupassa tuotteen tilaaja voi luoda tilauksen. Tilausjärjestelmän omistaja puolestaan voi käsitellä vastaanotetun tilauksen.
 
-Ennen toimeksiannon aloittamista kannattaa tutustua vanhaan projektitoimeksiantoon, jossa on samankaltaista sisältöä. 
+Ennen toimeksiannon aloittamista kannattaa tutustua vanhaan projektitoimeksiantoon, jossa on samankaltaista sisältöä.&#x20;
 
-{% page-ref page="../toimeksiannot-2018-01/projekti-2018-01.md" %}
+{% content-ref url="../toimeksiannot-2018-01/projekti-2018-01.md" %}
+[projekti-2018-01.md](../toimeksiannot-2018-01/projekti-2018-01.md)
+{% endcontent-ref %}
 
 **Tilausjärjestelmän minimivaatimukset:**
 
@@ -46,7 +48,9 @@ Ennen toimeksiannon aloittamista kannattaa tutustua vanhaan projektitoimeksianto
 
 Katso alla mainittu sivu, jossa kerrottu käytänteistä ja menetelmistä, joita toimeksiannon aikana harjoitellaan.
 
-{% page-ref page="projekti-2018-01-kaeytaenteet.md" %}
+{% content-ref url="projekti-2018-01-kaeytaenteet.md" %}
+[projekti-2018-01-kaeytaenteet.md](projekti-2018-01-kaeytaenteet.md)
+{% endcontent-ref %}
 
 ## Tarvittavat ohjelmistot
 
@@ -56,13 +60,17 @@ Osa työkaluista on voitu määrittää pakollisiksi työskentelyn seuraamista v
 
 ### Palvelut ja ohjelmistot
 
-{% embed url="https://git-scm.com/" caption="Versionhallintatyökalu" %}
+{% embed url="https://git-scm.com/" %}
+Versionhallintatyökalu
+{% endembed %}
 
-{% embed url="https://gitlab.com" caption="Projektinhallintaan sekä versionhallintaan tarkoitettu palvelu" %}
+{% embed url="https://gitlab.com" %}
+Projektinhallintaan sekä versionhallintaan tarkoitettu palvelu
+{% endembed %}
 
 ### Muut palvelut ja ohjelmistot
 
-{% embed url="https://visualstudio.microsoft.com/vs/" caption="C\# ohjelman tekemiseen" %}
-
-
+{% embed url="https://visualstudio.microsoft.com/vs/" %}
+C# ohjelman tekemiseen
+{% endembed %}
 

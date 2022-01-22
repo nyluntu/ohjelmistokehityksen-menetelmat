@@ -24,7 +24,7 @@ VALUES
 (  NULL, '3D Blu-ray', 'https://en.wikipedia.org/wiki/List_of_Blu-ray_3D_releases' );
 ```
 
-**2. Muuta taulun film -rakennetta siten, että lisäät siihen alla olevan kuvan mukaisen kentän. Kirjoita tarvittavat komennot. Selitä myös minkä tyyppinen viittaus \(relaatio\) tässä on kyseessä. \(lue myös** [**ER -kaaviosta**](../../relaatiotietokannat/er-kaaviot.md)**\)**
+**2. Muuta taulun film -rakennetta siten, että lisäät siihen alla olevan kuvan mukaisen kentän. Kirjoita tarvittavat komennot. Selitä myös minkä tyyppinen viittaus (relaatio) tässä on kyseessä. (lue myös** [**ER -kaaviosta**](../../relaatiotietokannat/er-kaaviot.md)**)**
 
 * uusi kenttä on nimeltään **type\_id**.
 * kentän pitää toimia viiteavaimena edellisessä vaiheessa luomaasi "format\_type" tauluun.
@@ -49,7 +49,7 @@ UPDATE film SET type_id = 2 WHERE film_id = 1003
 UPDATE film SET type_id = 3 WHERE film_id = 1
 ```
 
-**3. Kehittäjänä huomaat ongelman, että elokuville voi asettaa vain yhden jakeluformaatin. yhdellä elokuvalla voi kuitenkin olla useita eri jakeluformaatteja, joten tarvitsemme liitostaulun. Kirjoita tarvittavat komennot taulun luomista varten. Selitä myös minkä tyyppinen viittaus \(relaatio\) tässä on kyseessä. \(lue myös** [**ER -kaaviosta**](../../relaatiotietokannat/er-kaaviot.md)**\)**
+**3. Kehittäjänä huomaat ongelman, että elokuville voi asettaa vain yhden jakeluformaatin. yhdellä elokuvalla voi kuitenkin olla useita eri jakeluformaatteja, joten tarvitsemme liitostaulun. Kirjoita tarvittavat komennot taulun luomista varten. Selitä myös minkä tyyppinen viittaus (relaatio) tässä on kyseessä. (lue myös** [**ER -kaaviosta**](../../relaatiotietokannat/er-kaaviot.md)**)**
 
 Taulun nimeksi tulee **film\_types** ja sen sarakkeet ovat:
 
@@ -66,7 +66,7 @@ CONSTRAINT FK_type1_id FOREIGN KEY (type_id) REFERENCES format_type(type_id) on 
 
 ```
 
-**4. Liitostaulun myötä edellä luotua** _**film**_ **taulun** _**type\_id**_ **-saraketta ei enää tarvita. Kirjoita komennot, jolla voit poistaa kyseisen sarakkeen ja sitä ennen päivittää uuteen** _**film\_types**_ **-tarvittavat tiedot.**
+**4. Liitostaulun myötä edellä luotua **_**film**_** taulun **_**type\_id**_** -saraketta ei enää tarvita. Kirjoita komennot, jolla voit poistaa kyseisen sarakkeen ja sitä ennen päivittää uuteen **_**film\_types**_** -tarvittavat tiedot.**
 
 ```sql
 -- Film-taulusta poistetaan ensin viitevain, joka on luotu edellisissä vaiheissa.
@@ -89,7 +89,7 @@ INSERT INTO film_types (film_id) VALUES (3),(4);
 INSERT INTO film_types (film_id, type_id) VALUES (5,3),(5,2);
 ```
 
-**5. Millä komennoilla saat kumottua edellisissä vaiheissa tehdyt muutokset? Kirjoita siis komennot, joilla voit poistaa** _**format\_type**_ **ja** _**film\_types**_ **taulut kaikkine tietoineen.**
+**5. Millä komennoilla saat kumottua edellisissä vaiheissa tehdyt muutokset? Kirjoita siis komennot, joilla voit poistaa **_**format\_type**_** ja **_**film\_types**_** taulut kaikkine tietoineen.**
 
 ```sql
 -- Poistetaan film_types taulu.
@@ -98,4 +98,3 @@ DROP TABLE film_types;
 -- Poistetaan format_type taulu.
 DROP TABLE format_type;
 ```
-

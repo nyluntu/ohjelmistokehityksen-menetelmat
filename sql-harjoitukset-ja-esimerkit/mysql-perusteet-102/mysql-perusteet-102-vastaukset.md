@@ -2,9 +2,9 @@
 
 Jos vastausta ei silti löydy, niin yritä silloin selittää itsellesi vastauksen SQL kysely ja selvittää mitä se varsinaisesti teki. Esimerkiksi vieraat SQL komennot.
 
-**1. Montako riviä on Sakila tietokannan tauluissa? \(jokaisen taulun rivien määrä erikseen, ei tarvitse olla yhteenlaskettua summaa kaikkien taulujen osalta.\)**
+**1. Montako riviä on Sakila tietokannan tauluissa? (jokaisen taulun rivien määrä erikseen, ei tarvitse olla yhteenlaskettua summaa kaikkien taulujen osalta.)**
 
-Vastaukseksi soveltuu myös yksinkertaisempi SELECT count\(\*\) FROM film tyylinen komento. Silloin jokaisen taulun nimi pitää erikseen määritellä. Alla kuitenkin vaihtoehtoinen tapa selvittää yhden tietokannan kaikkien taulujen rivimäärät.
+Vastaukseksi soveltuu myös yksinkertaisempi SELECT count(\*) FROM film tyylinen komento. Silloin jokaisen taulun nimi pitää erikseen määritellä. Alla kuitenkin vaihtoehtoinen tapa selvittää yhden tietokannan kaikkien taulujen rivimäärät.
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-15.57.33.png)
 
@@ -12,7 +12,7 @@ Vastaukseksi soveltuu myös yksinkertaisempi SELECT count\(\*\) FROM film tyylin
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-16.03.10.png)
 
-**3. Missä eri kaupunginosissa asiakkaat ovat? Yksilölliset kaupunginosien nimet ovat tärkeitä ja montako kpl yhteensä eri yksilöllisiä kaupunginosia on?** 
+**3. Missä eri kaupunginosissa asiakkaat ovat? Yksilölliset kaupunginosien nimet ovat tärkeitä ja montako kpl yhteensä eri yksilöllisiä kaupunginosia on?**&#x20;
 
 Kuvan sijaan myös seuraava haku on mahdollinen: `SELECT DISTINCT district FROM address;`
 
@@ -22,7 +22,7 @@ Kuvan sijaan myös seuraava haku on mahdollinen: `SELECT DISTINCT district FROM 
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-16.07.04.png)
 
-**5. Inventaariota varten tarvitaan tieto montako kopiota \(inventory taulu\) elokuvista on yhteensä olemassa? Ei tarvitse erotella sitä onko elokuva tällä hetkellä vuokrattu vai ei. Riittää kokonaismäärä.**
+**5. Inventaariota varten tarvitaan tieto montako kopiota (inventory taulu) elokuvista on yhteensä olemassa? Ei tarvitse erotella sitä onko elokuva tällä hetkellä vuokrattu vai ei. Riittää kokonaismäärä.**
 
 {% hint style="info" %}
 Vinkki tehtävään 5. Lue sakila tietokannan kuvauksesta mikä on inventory taulun tarkoitus. https://dev.mysql.com/doc/sakila/en/sakila-structure-tables-inventory.html
@@ -52,5 +52,4 @@ Vastaus tulee siis siitä, että dokumenttia lukemalla selviää, että inventor
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-16.14.38.png)
 
-\*\*\*\*
-
+****

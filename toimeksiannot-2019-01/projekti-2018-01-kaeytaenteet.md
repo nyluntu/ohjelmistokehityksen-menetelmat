@@ -12,7 +12,7 @@ Menetelmät on pyritty kuvaamaan siinä järjestyksessä kuin ne toistuisi ajall
 
 ## Sprintin aikana tapahtuvat tehtävät
 
-Sprintti on termi, joka tulee Agile sanastosta. Alla on lueteltu niitä tehtävänosia, joita tuotteen kehittämisen aikana tulisi noudattaa. Lista on tehty vain tämän tuotteen kehittämistä varten ja on hyvä muistaa, että se ei ole kiveen lyöty ratkaisu. 
+Sprintti on termi, joka tulee Agile sanastosta. Alla on lueteltu niitä tehtävänosia, joita tuotteen kehittämisen aikana tulisi noudattaa. Lista on tehty vain tämän tuotteen kehittämistä varten ja on hyvä muistaa, että se ei ole kiveen lyöty ratkaisu.&#x20;
 
 Tarvittaessa kehitystiimi saa muuttaa työskentelytapojaan mutta ne tulee perustella hyvin miksi jokin vaihe jää pois tai mitä uutta on tullut tilalle. Pääsääntönä on, että vähintään seuraavat vaiheet tulisi käydä läpi tuotteen kehittämisen aikana.
 
@@ -76,7 +76,7 @@ Alla on lueteltu niitä kohtia, joita olisi hyvä ottaa huomioon ohjelmoinnin ai
 
 Kts. Versionhallinan perusteet
 
-### TDD \(testivetoinen kehitys\)
+### TDD (testivetoinen kehitys)
 
 Kts. yksikkötestauksen perusteet
 
@@ -94,7 +94,7 @@ Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominais
 
 * ​[Sprint Review](http://www.scrumguides.org/scrum-guide.html#events-review)​
 
-### Tuoteversio \(Increment\)
+### Tuoteversio (Increment)
 
 * Kts. Scrum guide ja etsi sana increment.
 
@@ -102,7 +102,7 @@ Lyhyesti tarkoitetaan sitä, että kehitystiimi on lisännyt tuotteeseen ominais
 
 * [Sprint Retrospective](http://www.scrumguides.org/scrum-guide.html#events-retro)​
 
-**Tuoteversio \(Increment\)**
+**Tuoteversio (Increment)**
 
 * Kts. Scrum guide ja etsi sana increment.
 * ​[Sprint Review](http://www.scrumguides.org/scrum-guide.html#events-review)​
@@ -127,32 +127,42 @@ Muita hyödyllisiä tapoja, menetelmiä tai käsitteitä, jotka auttavat työske
 
 Ajankäyttöä parantava tekniikka. Suosittelen kokeilemaan ja ottamaan käyttöön omaan tekemiseen. Lyhyen opettelun ja tutustumisen jälkeen huomaat paljon paremmin keskittyväsi työskentelyyn ja et häiriinny keskeytyksistä.
 
-{% embed url="https://en.wikipedia.org/wiki/Pomodoro\_Technique" caption="Wikipedian artikkeli aiheesta" %}
+{% embed url="https://en.wikipedia.org/wiki/Pomodoro_Technique" %}
+Wikipedian artikkeli aiheesta
+{% endembed %}
 
-{% embed url="https://pomodoro-tracker.com/" caption="Pomodoro ajastin" %}
+{% embed url="https://pomodoro-tracker.com/" %}
+Pomodoro ajastin
+{% endembed %}
 
 ### SOLID -periaatteet
 
 SOLID on akronyymi viidelle tekniikalle, joiden avulla voit kirjoittaa laadullisempaa lähdekoodia. Kyseinen aihe ei liity projektin suorittamiseen mutta on isossa osassa aidoissa asiakasprojekteissa. Hyvä lähtökohta ohjelmoijille, jotka haluavat kehittyä kirjoittamaan laadukkaampaa lähdekoodia. Kyseiset tekniikat ovat vain yksi monista taidoista, joiden kautta taidot kehittyvät.
 
-{% embed url="https://en.wikipedia.org/wiki/SOLID" caption="Yleinen kuvaus tekniikoista." %}
+{% embed url="https://en.wikipedia.org/wiki/SOLID" %}
+Yleinen kuvaus tekniikoista.
+{% endembed %}
 
-{% embed url="https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp" caption="Esimerkkejä C\# ohjelmointikielellä." %}
+{% embed url="https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp" %}
+Esimerkkejä C# ohjelmointikielellä.
+{% endembed %}
 
-{% embed url="https://www.youtube.com/watch?v=TMuno5RZNeE" caption="Robert C. Martinin luento SOLID säännöistä. Henkilö on nämä tekniikat alunperin kerännyt yhteen." %}
+{% embed url="https://www.youtube.com/watch?v=TMuno5RZNeE" %}
+Robert C. Martinin luento SOLID säännöistä. Henkilö on nämä tekniikat alunperin kerännyt yhteen.
+{% endembed %}
 
-{% embed url="https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/" caption="SOLID sääntöjä esittelevä artikkeli." %}
+{% embed url="https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/" %}
+SOLID sääntöjä esittelevä artikkeli.
+{% endembed %}
 
-  
-
-
-
-
-  
-
-
-  
+\
 
 
+
+
+\
+
+
+\
 
 

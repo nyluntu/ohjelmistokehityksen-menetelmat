@@ -12,7 +12,5 @@ Muut linkit:
 
 * [https://docs.microsoft.com/en-us/dotnet/csharp/how-to/concatenate-multiple-strings](https://docs.microsoft.com/en-us/dotnet/csharp/how-to/concatenate-multiple-strings)
 
-{% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_zYBOdDv1zqLqkuRXCu5Bo" %}
-
-
+{% embed url="https://www.youtube.com/playlist?list=PL3iay_FdAzV_zYBOdDv1zqLqkuRXCu5Bo" %}
 

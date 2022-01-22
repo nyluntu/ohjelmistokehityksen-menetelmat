@@ -16,13 +16,13 @@ Indeksillä tarkoitetaan tiedon rakennetta, jonka tarkoituksena on nopeuttaa rel
 
 {% embed url="https://dev.mysql.com/doc/refman/5.5/en/index-btree-hash.html" %}
 
-### B-tree \(B-puu\)
+### B-tree (B-puu)
 
-![https://en.wikipedia.org/wiki/B-tree\#/media/File:B-tree.svg](../../.gitbook/assets/b-tree.svg)
+![https://en.wikipedia.org/wiki/B-tree#/media/File:B-tree.svg](../../.gitbook/assets/b-tree.svg)
 
 ## Käytännön esimerkki
 
-Testitietokanta ladattavissa [https://github.com/nyluntu/test\_db](https://github.com/nyluntu/test_db) ja siihen liittyvää dokumentointia [https://dev.mysql.com/doc/employee/en/](https://dev.mysql.com/doc/employee/en/).
+Testitietokanta ladattavissa [https://github.com/nyluntu/test\_db](https://github.com/nyluntu/test\_db) ja siihen liittyvää dokumentointia [https://dev.mysql.com/doc/employee/en/](https://dev.mysql.com/doc/employee/en/).
 
 Seuraavia asioita voit kokeilla, jos luot itsellesi testitietokannan githubissa olevien ohjeiden mukaisesti. Testitietokannassa on miljoonia rivejä, joten se on hieman suurempi kuin muut esimerkit.
 
@@ -39,7 +39,7 @@ WHERE TABLE_SCHEMA = 'employees' -- employees on siis tietokannan nimi tässä.
 SHOW INDEX FROM employees;
 ```
 
-![Employees tietokannan indeksit](../../.gitbook/assets/employees_indeksit.png)
+![Employees tietokannan indeksit](../../.gitbook/assets/employees\_indeksit.png)
 
 Kun käytetään `SELECT` hakua, se suoritetaan yksi komento kerrallaan. Hakujen nopeuteen vaikuttavat useat siinä esiintyvät avainsanat. `(join order, group, where jne)` Mysql pyrkii käyttämään apuna indeksejä, joilla se voi rajata jo alussa pois rivejä mitä ei tarvitse käydä läpi. Usein `WHERE` ehdossa esitellyt ehdot ovat tärkeimpiä haun nopeuteen liittyen. Väärällä tavalla kirjoitetut haut voivat olla raskaita tietokannalle ja niiden suorittaminen vie aikaa.
 
@@ -82,9 +82,7 @@ ALTER TABLE `employees`.`employees` ADD INDEX `ix_employees_lastname` (`last_nam
 
 ## Lähteet
 
-{% embed url="https://en.wikipedia.org/wiki/Database\_index" %}
+{% embed url="https://en.wikipedia.org/wiki/Database_index" %}
 
 {% embed url="https://www.essentialsql.com/what-is-a-database-index/" %}
-
-
 

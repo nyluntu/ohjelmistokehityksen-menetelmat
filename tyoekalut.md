@@ -4,7 +4,5 @@
 
 Katso perusteet Visual Studio -kehitystyökalun käytöstä.
 
-{% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV9HJV76tTfwWJLzgeysHTLd" %}
-
-
+{% embed url="https://www.youtube.com/playlist?list=PL3iay_FdAzV9HJV76tTfwWJLzgeysHTLd" %}
 

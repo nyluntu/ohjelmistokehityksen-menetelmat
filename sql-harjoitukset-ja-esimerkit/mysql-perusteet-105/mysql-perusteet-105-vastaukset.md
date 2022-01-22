@@ -4,7 +4,7 @@
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-17.29.29.png)
 
-#### 2. Lisää tietokantaan yksi uusi elokuva, __[_Teit meistä kauniin_](https://fi.wikipedia.org/wiki/Teit_meist%C3%A4_kauniin_%28elokuva%29)_._ Ota mallia lähdetiedoista ja lisää niitä käyttäen elokuva listalle, tarvittaessa luo sitä varten eri riippuvuudet. Sisällytä kaikki vaiheet mitä tarvitset ratkaisun selvittämiseksi sekä todentamiseksi.
+#### 2. Lisää tietokantaan yksi uusi elokuva, __ [_Teit meistä kauniin_](https://fi.wikipedia.org/wiki/Teit\_meist%C3%A4\_kauniin\_\(elokuva\))_._ Ota mallia lähdetiedoista ja lisää niitä käyttäen elokuva listalle, tarvittaessa luo sitä varten eri riippuvuudet. Sisällytä kaikki vaiheet mitä tarvitset ratkaisun selvittämiseksi sekä todentamiseksi.
 
 Ensiksi pitää luoda uusi rivi `languages` tauluun, jotta se voidaan lisätä elokuvaan viitteeksi.
 
@@ -12,7 +12,7 @@ Ensiksi pitää luoda uusi rivi `languages` tauluun, jotta se voidaan lisätä e
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-17.47.26.png)
 
-#### 
+####
 
 #### 3. Lisää Teit meistä kauniin -elokuvaan liittyvät pääosien näyttelijät. Sisällytä kaikki vaiheet mitä tarvitset ratkaisun selvittämiseksi sekä todentamiseksi.
 
@@ -22,7 +22,7 @@ Ensin lisätään näyttelijät. Kun nämä on lisätty niin hae tietokannan tau
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-17.52.45.png)
 
-**4. Teit meistä kauniin -elokuvan kopioita on ostettu yhteensä 15 kappaletta siten, että 9 niistä on lähetetty**  _**Lethbridgen**_ **myymälään. Loput kopiot sijaitsevat** _**Woodridgen**_ **myymälässä. Kirjoita kaikki vaiheet millä tavoin saat lisättyä kopiot tietokantaan sekä ratkaisun todentamiseksi.** 
+**4. Teit meistä kauniin -elokuvan kopioita on ostettu yhteensä 15 kappaletta siten, että 9 niistä on lähetetty  **_**Lethbridgen**_** myymälään. Loput kopiot sijaitsevat **_**Woodridgen**_** myymälässä. Kirjoita kaikki vaiheet millä tavoin saat lisättyä kopiot tietokantaan sekä ratkaisun todentamiseksi.**&#x20;
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-17.57.51.png)
 
@@ -34,7 +34,7 @@ Ensin lisätään näyttelijät. Kun nämä on lisätty niin hae tietokannan tau
 
 ![](../../.gitbook/assets/screenshot-2020-08-24-at-18.03.24.png)
 
-**7. Kotikaupunkiisi avataan uusi elokuvavuokraamo. Lisää tämä uusi myymälä tietokantaan sekä sille uusi myymälävastaava \(manageri\). Sisällytä kaikki vaiheet mitä tarvitset ratkaisun selvittämiseksi sekä todentamiseksi.**
+**7. Kotikaupunkiisi avataan uusi elokuvavuokraamo. Lisää tämä uusi myymälä tietokantaan sekä sille uusi myymälävastaava (manageri). Sisällytä kaikki vaiheet mitä tarvitset ratkaisun selvittämiseksi sekä todentamiseksi.**
 
 Tässä vastaus on monivaiheinen, joten mieti ensin, että mitä tietokantaan pitää lisätä ja mihinkä tauluihin. Tässä vaiheittain mitä pitää hoitaa.
 
@@ -44,17 +44,16 @@ Tässä vastaus on monivaiheinen, joten mieti ensin, että mitä tietokantaan pi
 * _Luodaan kauppa ja määritetään sinne juuri luotu kauppias_
 * _Varmistetaan että kauppiaalla on oikea myymälä vastuulla_
 
-**8. Päivitä edellä luomasi asiakkaan asiakastietoihin, että hänen pääasiallinen myymälänsä on edellisessä kohdassa luotu myymälä. Lisää myös 5 kappaletta** _**Teit meistä kauniin**_ **-elokuvan kopioita tälle uudelle myymälälle.**
+**8. Päivitä edellä luomasi asiakkaan asiakastietoihin, että hänen pääasiallinen myymälänsä on edellisessä kohdassa luotu myymälä. Lisää myös 5 kappaletta **_**Teit meistä kauniin**_** -elokuvan kopioita tälle uudelle myymälälle.**
 
 Katso mallia aiemmasta tehtävästä, jossa jo lisättiin vuokrattavia elokuvia myymälään.
 
-**9. Vuokraat** _**Teit meistä kauniin**_ **-elokuvan asiakkaana, jona sinut on merkitty tietokantaan. Katso malli elokuvan vuokraamisesta seuraavasta lähteestä ja muokkaa komentoja siten, että ne soveltuvat tähän esimerkkiin:** [**https://dev.mysql.com/doc/sakila/en/sakila-usage.html\#sakila-usage-rent-a-dvd**](https://dev.mysql.com/doc/sakila/en/sakila-usage.html#sakila-usage-rent-a-dvd)\*\*\*\*
+**9. Vuokraat **_**Teit meistä kauniin**_** -elokuvan asiakkaana, jona sinut on merkitty tietokantaan. Katso malli elokuvan vuokraamisesta seuraavasta lähteestä ja muokkaa komentoja siten, että ne soveltuvat tähän esimerkkiin:** [**https://dev.mysql.com/doc/sakila/en/sakila-usage.html#sakila-usage-rent-a-dvd**](https://dev.mysql.com/doc/sakila/en/sakila-usage.html#sakila-usage-rent-a-dvd)****
 
 Tässä katso linkin esimerkki ja kokeile miten se toimii.
 
-**10.** _**Teit meistä kauniin**_ **täytti kaikki odotuksesi. Palautat elokuvan. Katso esimerkki elokuvan palauttamisesta seuraavasta lähteestä ja muokkaa komentoja siten, että ne soveltuvat tähän esimerkkiin:** [**https://dev.mysql.com/doc/sakila/en/sakila-usage.html\#sakila-usage-return-a-dvd**](https://dev.mysql.com/doc/sakila/en/sakila-usage.html#sakila-usage-return-a-dvd)\*\*\*\*
+**10. **_**Teit meistä kauniin**_** täytti kaikki odotuksesi. Palautat elokuvan. Katso esimerkki elokuvan palauttamisesta seuraavasta lähteestä ja muokkaa komentoja siten, että ne soveltuvat tähän esimerkkiin:** [**https://dev.mysql.com/doc/sakila/en/sakila-usage.html#sakila-usage-return-a-dvd**](https://dev.mysql.com/doc/sakila/en/sakila-usage.html#sakila-usage-return-a-dvd)****
 
 Tässä katso linkin esimerkki ja kokeile miten se toimii.
 
-\*\*\*\*
-
+****

@@ -53,25 +53,25 @@ Eri rooleille tai käyttäjäryhmille on tehty oma listauksensa heille tarkoitet
 
 #### Yritysasiakkaan käyttäjätarinat
 
-| As a/an | I want to... | so that |
-| :--- | :--- | :--- |
-| Yritysasiakkaana | tahdon pystyä poimimaan tilaukseen haluamani tuotteita | voin luoda haluamani tilauksen. |
-| Yritysasiakkaana | tahdon pystyä poistamaan tilauksestani tuotteita ennen sen vahvistamista | voin välttyä tilaamasta varaosia, joita en tarvitse. |
+| As a/an          | I want to...                                                                                                          | so that                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Yritysasiakkaana | tahdon pystyä poimimaan tilaukseen haluamani tuotteita                                                                | voin luoda haluamani tilauksen.                             |
+| Yritysasiakkaana | tahdon pystyä poistamaan tilauksestani tuotteita ennen sen vahvistamista                                              | voin välttyä tilaamasta varaosia, joita en tarvitse.        |
 | Yritysasiakkaana | tahdon nähdä tilauksen yhteenvedon yhteydessä maininnan toimitusajasta tuotteiden osalta joita ei ole heti saatavilla | voin tietää tulevatko kaikki tuotteet samassa lähetyksessä. |
-| Yritysasiakkaana | tahdon saada tilauksesta tilausvahvistuksen |  |
-| Yritysasiakkaana | tahdon saada tilauksesta lähetysvahvistuksen | voin tietää milloin toimitus on lähetetty toimittajalta. |
-| Yritysasiakkaana | tahdon nähdä tilauksen kokonaissumman ennen sen vahvistamista |  |
+| Yritysasiakkaana | tahdon saada tilauksesta tilausvahvistuksen                                                                           |                                                             |
+| Yritysasiakkaana | tahdon saada tilauksesta lähetysvahvistuksen                                                                          | voin tietää milloin toimitus on lähetetty toimittajalta.    |
+| Yritysasiakkaana | tahdon nähdä tilauksen kokonaissumman ennen sen vahvistamista                                                         |                                                             |
 
-#### Verkkokaupan ylläpitäjän \(toimittaja eli tässä varsinainen projektin asiakas\) käyttäjätarinat
+#### Verkkokaupan ylläpitäjän (toimittaja eli tässä varsinainen projektin asiakas) käyttäjätarinat
 
-| As a | I want to... | so that |
-| :--- | :--- | :--- |
-| Toimittajana | tahdon nähdä listan uusista käsittelemättömistä tilauksista | voin tietää mitkä tilaukset minun tulisi käsitellä ja lähettää. |
-| Toimittajana | tahdon saada tilauksesta keräilylistan | voin pakata yhden tilauksen tuotteet. |
-| Toimittajana | tahdon pystyä vaihtamaan tilattujen tuotteiden yksikkömääriä | voin korjata inventaarivirheistä johtuvat virhetilanteet. |
-| Toimittajana | tahdon nähdä listan kaikista tehdyistä tilauksista | voin tarkistaa tilauksien tiedot myöhemmin sen lähettämisen jälkeen. |
+| As a         | I want to...                                                                                | so that                                                              |
+| ------------ | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Toimittajana | tahdon nähdä listan uusista käsittelemättömistä tilauksista                                 | voin tietää mitkä tilaukset minun tulisi käsitellä ja lähettää.      |
+| Toimittajana | tahdon saada tilauksesta keräilylistan                                                      | voin pakata yhden tilauksen tuotteet.                                |
+| Toimittajana | tahdon pystyä vaihtamaan tilattujen tuotteiden yksikkömääriä                                | voin korjata inventaarivirheistä johtuvat virhetilanteet.            |
+| Toimittajana | tahdon nähdä listan kaikista tehdyistä tilauksista                                          | voin tarkistaa tilauksien tiedot myöhemmin sen lähettämisen jälkeen. |
 | Toimittajana | tahdon pystyä muodostamaan ja lähettämään laskun asiakkaalle tilauksen lähettämisen jälkeen | asiakkailtani perittävät myyntisaamiset tulevat hoidettua nopeammin. |
-| Toimittajana | tahdon saada yhteenvedon varastosta loppuneista tuotteista | osaan tilata tuotteita lisää varastooni jo valmiiksi. |
+| Toimittajana | tahdon saada yhteenvedon varastosta loppuneista tuotteista                                  | osaan tilata tuotteita lisää varastooni jo valmiiksi.                |
 
 ### Käyttötapaukset
 
@@ -85,13 +85,17 @@ Osa työkaluista on voitu määrittää pakollisiksi työskentelyn seuraamista v
 
 ### Pakolliset palvelut ja ohjelmistot
 
-{% embed url="https://git-scm.com/" caption="Versionhallintatyökalu" %}
+{% embed url="https://git-scm.com/" %}
+Versionhallintatyökalu
+{% endembed %}
 
-{% embed url="https://gitlab.com" caption="Projektinhallintaan sekä versionhallintaan tarkoitettu palvelu" %}
+{% embed url="https://gitlab.com" %}
+Projektinhallintaan sekä versionhallintaan tarkoitettu palvelu
+{% endembed %}
 
 ### Muut palvelut ja ohjelmistot
 
-{% embed url="https://visualstudio.microsoft.com/vs/" caption="C\# ohjelman tekemiseen" %}
-
-
+{% embed url="https://visualstudio.microsoft.com/vs/" %}
+C# ohjelman tekemiseen
+{% endembed %}
 

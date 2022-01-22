@@ -10,7 +10,7 @@ description: >-
 
 **KOPIO** edellisistä esimerkeistä.
 
-Yritysasiakkaana ****_**\(jäljempänä asiakas\)**_ ****tahdon pystyä _**poimimaan tilaukseen**_ haluamani _**tuotteita,**_ jotta voin luoda haluamani tilauksen.
+Yritysasiakkaana ** **_**(jäljempänä asiakas)**_** ** tahdon pystyä _**poimimaan tilaukseen**_ haluamani _**tuotteita,**_ jotta voin luoda haluamani tilauksen.
 
 ## Tarinan ensimmäinen käyttötapaus
 
@@ -40,8 +40,8 @@ Asiakkaan valitsema tuote ei näytä tilauksessa. Ohjelma ei kaadu mikäli virhe
 
 1. Asiakas saa listan valittavista tuotteista.
 2. Asiakas valitsee tuotteen listalta ja hyväksyy sen tilaukseen.
-3. \(järjestelmä lisää tässä kohdin tuotteen tilaukseen\)
-4. \(järjestelmä ilmoittaa asiakkaalle, että tuote on lisätty tilaukseen\)
+3. (järjestelmä lisää tässä kohdin tuotteen tilaukseen)
+4. (järjestelmä ilmoittaa asiakkaalle, että tuote on lisätty tilaukseen)
 
 **Kuvaus virheellisestä käyttötapauksesta**
 
@@ -51,7 +51,7 @@ Asiakkaan valitsema tuote ei näytä tilauksessa. Ohjelma ei kaadu mikäli virhe
 
 ## VAIHE 1: Käyttöliittymän luonnokset
 
-Kun asia on vieras ja siitä on saatu kyseltyä kaikki mahdollinen, hyvä tapa lähteä liikkeelle on tehdä käyttöliittymä luonnoksia. Vastataan siis kysymykseen: 
+Kun asia on vieras ja siitä on saatu kyseltyä kaikki mahdollinen, hyvä tapa lähteä liikkeelle on tehdä käyttöliittymä luonnoksia. Vastataan siis kysymykseen:&#x20;
 
 _Miltä ohjelma tulisi näyttämään ja sen käyttö tuntumaan?_
 
@@ -61,13 +61,15 @@ Helpoin tapa on paperi ja kynä, sitten erilaiset luonnosteluohjelmat jne. Mikä
 
 ### Kuvakaappaukset
 
-![Ohjelman ensimm&#xE4;inen n&#xE4;kym&#xE4; t&#xE4;ss&#xE4; kohtaa sen historiaa.](../.gitbook/assets/screen-shot-2018-09-23-at-10.27.54.png)
+![Ohjelman ensimmäinen näkymä tässä kohtaa sen historiaa.](../.gitbook/assets/screen-shot-2018-09-23-at-10.27.54.png)
 
-![Ohjelman listaus tuotteista kun niit&#xE4; on vain muutama kappale.](../.gitbook/assets/screen-shot-2018-09-23-at-10.28.04.png)
+![Ohjelman listaus tuotteista kun niitä on vain muutama kappale.](../.gitbook/assets/screen-shot-2018-09-23-at-10.28.04.png)
 
 ## VAIHE 2: Ohjelman rakenteen luokkakaavio
 
-{% file src="../.gitbook/assets/20180921\_riihimaki\_ohjelmointiprojekti.html" caption="Ohjelman rakenteen luonnos" %}
+{% file src="../.gitbook/assets/20180921_riihimaki_ohjelmointiprojekti.html" %}
+Ohjelman rakenteen luonnos
+{% endfile %}
 
 Liitteesstä _**"Ohjelman rakenteen luonnos"**_ on käyty läpi ohjelman rakennetta mitä se voisi olla teknisesti toteutettuna. Kyseessä on vain esimerkki omasta näkemyksestä ja se saa ja voi erota riippuen ohjelmoijasta.
 
@@ -95,7 +97,7 @@ Seuraava kokonaisuus on taas hieman helpompi kun asia on tutumpi ja alun ongelma
 * Mitä tietoja tai metodeita Tilaus-luokassa tulisi olla?
 * Miten tilauksen luominen toimii kokonaisuudessaan?
 * Miten tuotelistaus tulisi toimimaan?
-* Onko tuotteet "kovakoodattu" vai luetaanko tiedostosta? \(mitkä ovat näiden hyödyt ja haitat?\)
+* Onko tuotteet "kovakoodattu" vai luetaanko tiedostosta? (mitkä ovat näiden hyödyt ja haitat?)
 
 ### Tiedostojärjestelmä
 
@@ -117,5 +119,4 @@ Kun ohjelmoidaan, se ei tarkoita, että kaikki asiat pitää tietää ja osata. 
 
 Soittolista tähän liittyvistä asioista. Esittelee omia ajatuksia miten näihin työtehtäviin on päästy.
 
-{% embed url="https://www.youtube.com/playlist?list=PL3iay\_FdAzV\_7GzGYkoO1msZPSLl1vIaz" %}
-
+{% embed url="https://www.youtube.com/playlist?list=PL3iay_FdAzV_7GzGYkoO1msZPSLl1vIaz" %}

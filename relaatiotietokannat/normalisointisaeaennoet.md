@@ -9,17 +9,17 @@ description: >-
 
 ## Mitä normalisoinnilla tarkoitetaan?
 
-Lyhyesti sanottuna normalisointi \(eng. normalization\) tarkoittaa tietokantasuunnitteluun liittyviä tekniikoita, joiden tarkoitus on minimoida tiedon toistuvuutta ja riippuvuutta. Säännöt keskittyvät oleellisesti tietokantataulujen sisältöihin.
+Lyhyesti sanottuna normalisointi (eng. normalization) tarkoittaa tietokantasuunnitteluun liittyviä tekniikoita, joiden tarkoitus on minimoida tiedon toistuvuutta ja riippuvuutta. Säännöt keskittyvät oleellisesti tietokantataulujen sisältöihin.
 
-Noudattamalla sääntöjä ne ohjaavat siihen, että suuri taulu saadaan pilkottua pienemmiksi tauluiksi sekä luomaan näiden välille riippuvuussuhteita. Kts. [Pää- ja viiteavaimet](paeae-ja-viiteavaimet.md). Lopputuloksena tietokannassa oleva tieto on siis selkeämmin järjestetty. Terminä normalisointi viittaakin tietokannan rakenteisiin . 
+Noudattamalla sääntöjä ne ohjaavat siihen, että suuri taulu saadaan pilkottua pienemmiksi tauluiksi sekä luomaan näiden välille riippuvuussuhteita. Kts. [Pää- ja viiteavaimet](paeae-ja-viiteavaimet.md). Lopputuloksena tietokannassa oleva tieto on siis selkeämmin järjestetty. Terminä normalisointi viittaakin tietokannan rakenteisiin .&#x20;
 
 Erilaisia normaalimuotoja on yhteensä kuusi kappaletta mutta pääasiassa kolme ensimmäistä on tärkeintä. Kolmannen jälkeen ei aina saada suuria hyötyjä mutta hyvä tapa on yrittää noudattaa kolmea ensimmäistä. Sääntöjen noudattaminen tarkoittaa myös, että toteuttaakseen esimerkiksi kolmannen normaalimuodon pitää sen hetkisen ratkaisun toteuttaa myös kaksi edellistä normaalimuotoa.
 
 Kun tietokannassa on huomioitu nämä säännöt niin voidaan lyhyesti aina ilmaista esimerkiksi, että tietokantamalli on 3. normaalimuodon mukainen. Tämä jo heti antaa viitteen sille minkälainen tietokanta on kyseessä. Aina näin ei ole ja suunnitteluvirheet johtavat erilaisiin ongelmiin tiedon käsittelyn kanssa.
 
-Normalisoinnin lisäksi voidaan puhua denormalisoinnista \(eng. denormalization\), joka tarkoittaa sääntöjen rikkomista. Tämä tehdään usein hyvästä syystä ja perustellen. Ei siksi, että sääntöjä ei noudatettaisi vaan sillä voidaan joissain tilanteissa nostaa esimerkiksi suorituskykyä.
+Normalisoinnin lisäksi voidaan puhua denormalisoinnista (eng. denormalization), joka tarkoittaa sääntöjen rikkomista. Tämä tehdään usein hyvästä syystä ja perustellen. Ei siksi, että sääntöjä ei noudatettaisi vaan sillä voidaan joissain tilanteissa nostaa esimerkiksi suorituskykyä.
 
-Tietokannan normalisoinnin taustalla on [Edgar Codd](https://fi.wikipedia.org/wiki/Edgar_F._Codd), joka on esitellyt ja määritellyt ensimmäiset kolme sääntöä. Tutustutaan seuraavaksi kolmeen ensimmäiseen normaalimuotoon syvemmin.
+Tietokannan normalisoinnin taustalla on [Edgar Codd](https://fi.wikipedia.org/wiki/Edgar\_F.\_Codd), joka on esitellyt ja määritellyt ensimmäiset kolme sääntöä. Tutustutaan seuraavaksi kolmeen ensimmäiseen normaalimuotoon syvemmin.
 
 ## Normalisoimaton tieto
 
@@ -30,7 +30,7 @@ On mahdollista, että oikean tiedon kanssa tietyissä olosuhteissa normalisointi
 ![Normalisoimaton tietokantataulu](../.gitbook/assets/screenshot-2019-09-17-at-17.09.02.png)
 
 {% code title="Esimerkkidata-televisiosarjat" %}
-```text
+```
 *************************** 1. row ***************************
               id: 1
             nimi: Game of Thrones
@@ -60,7 +60,7 @@ kasikirjoittajat: David Benioff,D. B. Weiss,Bryan Cogman,George R. R. Martin,Van
 
 Yllä oleva malli esittää yhden esimerkkirivin millaista tietoa taulu sisältää. Kun tietoa ei ole tallennettu oikealla tavalla, tuottaa se usein ongelmia. Tiedon lisääminen, muokkaaminen ja poistaminen osoittautuu yleensä hankalaksi. Ensimmäiseksi tarkastelemme esimerkkiä 1. normaalimuodon määrittelemällä tavalla.
 
-## Ensimmäinen normaalimuoto \(1NF\)
+## Ensimmäinen normaalimuoto (1NF)
 
 Ensimmäinen normaalimuoto on tosi, jos:
 
@@ -77,22 +77,22 @@ Kun tarkastellaan esimerkin taulua **televisiosarjat** niin on melko selkeää, 
 
 Nyt tilanne ei vielä ole muuttunut paremmaksi. Taulujen välillä ei ole liitosta ja uusi **luojat** -taulu ei sisällä pääavainta. Jos mietimme ensin pääavainta niin valintamme voisi olla jokin seuraavista:
 
-* Juokseva numerointi \(1,2,3,4,5....\)
+* Juokseva numerointi (1,2,3,4,5....)
 * Jokin luonnollinen yhdistelmä sarakkeita, kuten esimerkiksi **sarjan tunniste** ja **henkilön nimi**.
 
 Koska taulujen välillä ei ole minkäänlaista suhdetta niin voimme vielä miettiä, että mikä sen kuuluisi olla. Kun tiedämme, että alkuperäisessä sarakkeessa on ollut kaksi arvoa niin voimme päätellä, että yhdellä tv-sarjalla on yksi tai useampi luoja. Voimme tarkastella aina myös muita taulun rivejä, josta voisimme päätellä lisää mutta tässä kohdin tiedämme, että luojia voi olla useita mutta usein vähintään yksi. Tottakai tilanne, jossa luojaa ei tiedetä on aivan mahdollinen. Muotoillaan suhde seuraavasti:
 
-* **Tv-sarjalla voi olla useita luojia tai ei yhtään.** 
+* **Tv-sarjalla voi olla useita luojia tai ei yhtään.**&#x20;
 
-Tämän perusteella saattaisimme päästä seuraavanlaiseen taulujen suhteeseen. Esimerkki sisältää jo kentät edellä olevan suhdetyypin luomiselle. Alla olevassa kuvassa taulu **televisiosarjat** on liitetty **luojat** -tauluun. Kuvassa ei näy suhteen tyyppiä mutta se on aiemmin kuvatun mukainen. [\(Suhteiden kuvaamistavasta on oma lukunsa\)](er-kaaviot.md). **Televisiosarjat** -taulusta huomaamme, että siitä puuttuu nyt kokonaan **luojat** -sarake. Sarakkeen tietojen perusteella on siis luotu kokonaan oma taulunsa. Huomaamme myös, että **luojat** -taulun pääavaimena toimii nyt sen kaksi saraketta. Palaamme tähän vielä myöhemmin.
+Tämän perusteella saattaisimme päästä seuraavanlaiseen taulujen suhteeseen. Esimerkki sisältää jo kentät edellä olevan suhdetyypin luomiselle. Alla olevassa kuvassa taulu **televisiosarjat** on liitetty **luojat** -tauluun. Kuvassa ei näy suhteen tyyppiä mutta se on aiemmin kuvatun mukainen. [(Suhteiden kuvaamistavasta on oma lukunsa)](er-kaaviot.md). **Televisiosarjat** -taulusta huomaamme, että siitä puuttuu nyt kokonaan **luojat** -sarake. Sarakkeen tietojen perusteella on siis luotu kokonaan oma taulunsa. Huomaamme myös, että **luojat** -taulun pääavaimena toimii nyt sen kaksi saraketta. Palaamme tähän vielä myöhemmin.
 
 ![televisiosarjat - luojat - relaatio](../.gitbook/assets/screenshot-2019-09-18-at-21.29.39.png)
 
-Alla näemme esimerkit tämän ensimmäisen kohdan normalisoinnin jälkeen eli miten tieto on esitetty **luojat** -taulussa. **Luojat** taulussa siis viitataan **televisiosarjat** -riviin sen tunnisteella **\(id\)**.
+Alla näemme esimerkit tämän ensimmäisen kohdan normalisoinnin jälkeen eli miten tieto on esitetty **luojat** -taulussa. **Luojat** taulussa siis viitataan **televisiosarjat** -riviin sen tunnisteella **(id)**.
 
-![Esimerkki televisiosarjat taulun riveist&#xE4;](../.gitbook/assets/screenshot-2019-09-18-at-21.30.11.png)
+![Esimerkki televisiosarjat taulun riveistä](../.gitbook/assets/screenshot-2019-09-18-at-21.30.11.png)
 
-![Esimerkki luojat taulun riveist&#xE4;](../.gitbook/assets/screenshot-2019-09-18-at-21.28.40.png)
+![Esimerkki luojat taulun riveistä](../.gitbook/assets/screenshot-2019-09-18-at-21.28.40.png)
 
 {% hint style="info" %}
 Luojat -taulun pääavain ei ole vielä kovin järkevät mutta asioita usein tehdään yksi kerrallaan. Pääavaimessa on kuitenkin se etu, että henkilöä ei voi nyt lisätä toiseen kertaan samaan tv-sarjaan luojaksi mikäli rivi on jo olemassa. Mysql antaa seuraavanlaisen virheen kun pääavaimen ehdot eivät täyty:
@@ -104,15 +104,15 @@ Pääsääntöisesti tässä on kyse 1. normaalimuodon toteutumisesta eli jokain
 
 ![televisiosarjat - luojat - tvkanavat - relaatio](../.gitbook/assets/screenshot-2019-09-18-at-21.54.04.png)
 
-![Esimerkki tvkanavat taulun riveist&#xE4;](../.gitbook/assets/screenshot-2019-09-18-at-21.52.57.png)
+![Esimerkki tvkanavat taulun riveistä](../.gitbook/assets/screenshot-2019-09-18-at-21.52.57.png)
 
-Molemmissa tilanteissa **tvsarja\_id** -sarake viittaa **televisiosarjat** -taulun pääavaimeen. Tällöin siis **tvsarja\_id -sarake toimii viiteavaimena**. Tähän tapaan jatkettaisiin muiden tietojen kohdalla. Kaikkia ei käydä läpi yksitellen, koska vastaavia sarakkeita on esimerkissä paljon. Nyt siis taulut eivät vielä täysin toteuta 1. normaalimuotoa mutta jatkamalla loppuun asti samalla tapaa, näin tulisi käymään. Esimerkissämme siirrymme 2. normaalimuotoon. 
+Molemmissa tilanteissa **tvsarja\_id** -sarake viittaa **televisiosarjat** -taulun pääavaimeen. Tällöin siis **tvsarja\_id -sarake toimii viiteavaimena**. Tähän tapaan jatkettaisiin muiden tietojen kohdalla. Kaikkia ei käydä läpi yksitellen, koska vastaavia sarakkeita on esimerkissä paljon. Nyt siis taulut eivät vielä täysin toteuta 1. normaalimuotoa mutta jatkamalla loppuun asti samalla tapaa, näin tulisi käymään. Esimerkissämme siirrymme 2. normaalimuotoon.&#x20;
 
 {% hint style="info" %}
 Taulussa voisi olla myös tilanne missä olisi sarakkeet: paaosa\_01, paaosa\_02, paaosa\_03 jne. Tällaiset sarakkeet kertovat myös huonosta suunnittelusta, koska ovat samalla tavoin arvoja, joita on useita vaikka eivät yhdessä sarakkeessa olekaan. Ongelma on myös, että joudumme aina muuttamaan tietokantarakennetta, jos tietojen määrä kasvaa. Tähän tulisi myös noudattaa 1. normaalimuodon sääntöä.
 {% endhint %}
 
-## Toinen normaalimuoto \(2NF\)
+## Toinen normaalimuoto (2NF)
 
 Toinen normaalimuoto on tosi, jos:
 
@@ -123,7 +123,7 @@ Nykyinen esimerkkimme on 2. normaalimuodon osalta huono. **Televisiosarjat** -ta
 
 ![tvkanavat esimerkki 2. normaalimuoto](../.gitbook/assets/screenshot-2019-09-18-at-22.48.07.png)
 
-Kuvan mukaisessa tilanteessa **tvkanavat** -taulu sisältää nyt uuden pääavaimen, **joka koostuu tvsarja\_id ja kanavan\_id -sarakkeesta**. Kun nyt tarkastelemme kanavan nimeä niin voimme miettiä riippuuko se koko pääavaimesta. Nimi riippuu selkeästi kanavan tunnisteesta \(kanavan\_id\) arvosta. Kun taas TV-sarjan tunniste muuttuu niin sillä ei ole mitään yhteyttä kanavan nimeen. 
+Kuvan mukaisessa tilanteessa **tvkanavat** -taulu sisältää nyt uuden pääavaimen, **joka koostuu tvsarja\_id ja kanavan\_id -sarakkeesta**. Kun nyt tarkastelemme kanavan nimeä niin voimme miettiä riippuuko se koko pääavaimesta. Nimi riippuu selkeästi kanavan tunnisteesta (kanavan\_id) arvosta. Kun taas TV-sarjan tunniste muuttuu niin sillä ei ole mitään yhteyttä kanavan nimeen.&#x20;
 
 Tällaisessa tilanteessa huomaamme, että **kanavan\_nimi** -sarake ei riipu molemmista pääavaimen sarakkeista mutta sen arvo myös toistuu. Jos kanavan tunniste vaihtuu niin kuuluisi muistaa päivittää vielä kanavan nimi sekä muut toistuvat tiedot. Kuvattu tilanne usein tarkoittaa, ettei taulu toteuta 2. normaalimuotoa. Näissä tilanteissa tiedot pitää myös purkaa omaan tauluun. Esimerkin tilanteessa voimme saada aikaiseksi seuraavan tietokantarakenteen:
 
@@ -139,7 +139,7 @@ Jos nyt päivittäisimme TV-kanavan tietoja niin sisältö pysyy ajantasaisena. 
 
 Samankaltainen tilanne saattaisi tulla vastaan **luojat** -taulun kanssa. Kun taas mietimme tietokannan sisältöä niin tällaiset suhteet voitaisiin pystyä huomaamaan jo tietokannan suunnittelun aikana ja siten suunnitella etukäteen. Toisinaan taas yhteydet huomataan myöhemmin kun oikeaa tietoa saadaan luotua. Usein tietojen suhteet keskenään eivät ole selviä kuten aina esimerkeissä.
 
-## Kolmas normaalimuoto \(3NF\)
+## Kolmas normaalimuoto (3NF)
 
 Kolmas normaalimuoto on tosi, jos:
 
@@ -152,17 +152,17 @@ Kolmas normaalimuoto on tosi, jos:
 
 Esimerkkiä varten keskitymme **televisiosarjat** -taulun **tyylit** -sarakkeeseen. Yksinkertaisuuden vuoksi olemme luoneet taas tilanteen missä tauluun on lisätty sarake **tyyli\_id**. Alla on kuva tilanteesta, jossa ei näy kaikkia sarakkeita taulusta.
 
-![Esimerkki kolmannesta normaalimuodosta - l&#xE4;ht&#xF6;tilanne - televisiosarjat taulu](../.gitbook/assets/screenshot-2019-09-18-at-23.26.08.png)
+![Esimerkki kolmannesta normaalimuodosta - lähtötilanne - televisiosarjat taulu](../.gitbook/assets/screenshot-2019-09-18-at-23.26.08.png)
 
-Kun tarkastelemme taulua nyt 3. normaalimuodon ehdoilla niin voimme ilmaista asian seuraavasti. Sarakkeet **tyyli** \(tv-sarjan kategoria tai tyylilaji\) ja **tyyli\_id** ovat molemmat riippuvaisia pääavaimesta. Se siis määrittää tyylilajin. Mainitut kaksi saraketta eivät kuitenkaan ole toisistaan riippumattomia. Tyylilaji voidaan tässä päätellä tyylilajin tunnisteen perusteella. Tv-sarjoja on olemassa vielä useampia kuin tyylilajeja, joten tämä aiheuttaa myös tiedon toistuvuutta **televisiosarjat** -taulussa.
+Kun tarkastelemme taulua nyt 3. normaalimuodon ehdoilla niin voimme ilmaista asian seuraavasti. Sarakkeet **tyyli** (tv-sarjan kategoria tai tyylilaji) ja **tyyli\_id** ovat molemmat riippuvaisia pääavaimesta. Se siis määrittää tyylilajin. Mainitut kaksi saraketta eivät kuitenkaan ole toisistaan riippumattomia. Tyylilaji voidaan tässä päätellä tyylilajin tunnisteen perusteella. Tv-sarjoja on olemassa vielä useampia kuin tyylilajeja, joten tämä aiheuttaa myös tiedon toistuvuutta **televisiosarjat** -taulussa.
 
 Kun edellä mainitun oloinen tilanne kohdataan, ratkaisu on jälleen kerran helppo. Tiedot tulisi siirtää omaan tauluunsa. Tämän perusteella voimme siis päästä seuraavanlaiseen tietokantaratkaisuun.
 
 ![3. normaalimuoto - esimerkki lopputilanne](../.gitbook/assets/screenshot-2019-09-18-at-23.44.10.png)
 
-**Televisiosarjat** -tauluun jäi siis vain tyylilajin tunniste \(sarake myös uudelleen nimetty\) ja tyylilaji erotettiin omaksi taulukseen. Televisiosarja -taulusta viitataan tyylilajeihin ja **tyylilajit** -taulu ei sisällä tv-sarjan tunnistetta. Tällöin voidaan puhua, että puhutaan **yksi suhde yhteen -liitoksesta** taulujen välissä. Taulujen sisältämä tieto näyttää nyt vielä seuraavalta.
+**Televisiosarjat** -tauluun jäi siis vain tyylilajin tunniste (sarake myös uudelleen nimetty) ja tyylilaji erotettiin omaksi taulukseen. Televisiosarja -taulusta viitataan tyylilajeihin ja **tyylilajit** -taulu ei sisällä tv-sarjan tunnistetta. Tällöin voidaan puhua, että puhutaan **yksi suhde yhteen -liitoksesta** taulujen välissä. Taulujen sisältämä tieto näyttää nyt vielä seuraavalta.
 
-![Televisiosarjat -taulu muutoksen j&#xE4;lkeen.](../.gitbook/assets/screenshot-2019-09-18-at-23.43.05.png)
+![Televisiosarjat -taulu muutoksen jälkeen.](../.gitbook/assets/screenshot-2019-09-18-at-23.43.05.png)
 
 ![Tyylilajit -taulu.](../.gitbook/assets/screenshot-2019-09-18-at-23.42.52.png)
 
@@ -208,7 +208,7 @@ Mikäli vielä kävisimme tietoja läpi niin esimerkin tapauksessa voisi olal my
 
 {% embed url="https://www.w3schools.in/dbms/database-normalization/" %}
 
-{% embed url="https://en.wikipedia.org/wiki/Database\_normalization" %}
+{% embed url="https://en.wikipedia.org/wiki/Database_normalization" %}
 
 {% embed url="https://tietokantojen-perusteet.github.io/" %}
 
@@ -217,4 +217,3 @@ Mikäli vielä kävisimme tietoja läpi niin esimerkin tapauksessa voisi olal my
 {% embed url="https://gerardnico.com/data/modeling/normalization" %}
 
 {% embed url="https://tietokantojen-perusteet-19.mooc.fi/osa-4/1-tietokannan-normalisointi" %}
-
