@@ -60,9 +60,22 @@ _Vuorovaikutuskaaviot_ korostavat yksittäisten ohjelmiston osien yhteistyötä.
 
 ![Esimerkki sekvenssikaaviosta](<.gitbook/assets/sekvenssikaavio esimerkki.png>)
 
+### Kuvauskieli
+
+UML -kaaviot sisältävät standardoidun kuvauskielen eli notaation. Kirjallisuudessa puhutaan siis notaatiosta millä tarkoitetaan eri kaavioille luotuja merkintätapoja. Yhteenveto näistä notaatioista löytyy seuraavasta liitetiedostosta.
+
+{% file src=".gitbook/assets/uml notaatiot.pdf" %}
+Tiedosto sisältää lähdeteoksesta skannatun yhteenvedon notaatioista.
+{% endfile %}
+
 ### Luokkakaaviot
 
+Luokkakaavio kuvaa järjestelmässä olevia oliotyyppejä ja niiden välillä esiintyviiä erilaisia staattisia suhteista. Nämä suhteet jakautuvat kahteen päätyppiin:
 
+* Assosisaatiot - esimerkiksi asiakas voi vuokrata joukon videoita.
+* Alityypit - sairaanhoitajon uksi henkilölaji.
+
+{% file src=".gitbook/assets/uml luokkakaavio esimerkki.pdf" %}
 
 ### Aktiviteettikaaviot
 
