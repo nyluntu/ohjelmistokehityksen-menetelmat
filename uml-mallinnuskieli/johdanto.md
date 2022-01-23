@@ -2,9 +2,7 @@
 description: UML (Unified Modeling Language) -kaavioiden perusteet.
 ---
 
-# UML -kaaviot
-
-## Johdanto
+# Johdanto
 
 UML on lyhenne termeistä Unified Modelin Language. Kyseessä on tapa mallintaa ohjelmiston komponentteja, rakenteita ja suoritusvaiheita. UML sisältää useita erilaisia kaaviotyyppejä mallintamiseen ja antaa täten valmiita, sekä standardoituja tapoja, kuvata ohjelmistojen suunnitteluun liittyviä asioita.
 
@@ -18,7 +16,7 @@ Vaikka ohjelmistojen tuottaminen on muuttunut 80- ja 90-luvusta lähtien valtava
 
 Dokumentointi on tärkeässä osassa ohjelmistotuotantoa. Dokumentoinnin haasteet ovat lähinnä nopeasti muuttuvissa vaatimuksisa ja vaarana sen vanheneminen. UML -kaavioita käsin piirtäen ei ole tehokkain dokumentointitapa muuttuvien vaatimusten vuoksi. Mukaan on tullut paljon kaavioiden piirtämiseen tarkoitettuja ohjelmistoja sekä työkaluja, jotka luovat olemassa olevasta lähdekoodista halutunlaisia kaavioita.
 
-Aloitetaan tutustuminen muutamiin tärkeimpiin kaaviotyyppeihin. Sen kautta näemme miten UML -mallinnuskielestä voi olla hyötyä ohjelmistoja suunnitellessa.
+Aloitetaan tutustuminen muutamiin tärkeimpiin kaaviotyyppeihin. Sen kautta pyrimme tutustumaan miten UML -mallinnuskielestä voi olla hyötyä ohjelmistoja suunnitellessa.
 
 ## Kaaviotyypit
 
@@ -50,38 +48,72 @@ Kaaviot voidaan karkeasti jakaa kolmeen erilaiseen päätyyppiin.&#x20;
 
 _Rakennekaaviot_ kuvaavat ohjelmiston rakenteita, joiden täytyy olla mallinnettavassa järjestelmässä. Tämä voi tarkoittaa esimerkiksi ohjelmiston eri komponenttien osittamista toisiinsa nähden.&#x20;
 
-![Esimerkki luokkakaaviosta](<.gitbook/assets/luokkakaavio esimerkki.png>)
+![Esimerkki luokkakaaviosta](<../.gitbook/assets/luokkakaavio esimerkki.png>)
 
 _Käyttäytymiskaaviot ****_ korostavat ohjelmsiton käyttäytymistä eri tilanteissa. Esimerkiksi miten ohjelman logiikan tulisi toimia kuvatussa tilanteessa.&#x20;
 
-![Esimerkki aktiviteettikaaviosta](<.gitbook/assets/esimerkki aktiviteettikaaviosta.png>)
+![Esimerkki aktiviteettikaaviosta](<../.gitbook/assets/esimerkki aktiviteettikaaviosta.png>)
 
 _Vuorovaikutuskaaviot_ korostavat yksittäisten ohjelmiston osien yhteistyötä. Esimerkiksi voidaan kuvata kahden eri järjestelmän välistä viestimistä ja käyttäytymistä.
 
-![Esimerkki sekvenssikaaviosta](<.gitbook/assets/sekvenssikaavio esimerkki.png>)
+![Esimerkki sekvenssikaaviosta](<../.gitbook/assets/sekvenssikaavio esimerkki.png>)
 
 ### Kuvauskieli
 
-UML -kaaviot sisältävät standardoidun kuvauskielen eli notaation. Kirjallisuudessa puhutaan siis notaatiosta millä tarkoitetaan eri kaavioille luotuja merkintätapoja. Yhteenveto näistä notaatioista löytyy seuraavasta liitetiedostosta.
+UML -kaaviot sisältävät standardoidun kuvauskielen eli notaation. Kirjallisuudessa puhutaan siis notaatiosta millä tarkoitetaan eri kaavioille luotuja merkintätapoja. Yhteenveto näistä notaatioista löytyy alla olevasta liitetiedostosta.
 
-{% file src=".gitbook/assets/uml notaatiot.pdf" %}
+{% file src="../.gitbook/assets/uml notaatiot.pdf" %}
 Tiedosto sisältää lähdeteoksesta skannatun yhteenvedon notaatioista.
 {% endfile %}
 
+Tutustu myös Tutorials Point sivuston notaatioiden yhteenvetoon.
+
+{% embed url="https://www.tutorialspoint.com/uml/uml_basic_notations.htm" %}
+
 ### Luokkakaaviot
 
-Luokkakaavio kuvaa järjestelmässä olevia oliotyyppejä ja niiden välillä esiintyviiä erilaisia staattisia suhteista. Nämä suhteet jakautuvat kahteen päätyppiin:
+Luokkakaavioista on tullut oliosuuntautuneiden menetelmien keskeinen osa. Näihin liittyy erittäin laaja joukko mallinnuskäsitteitä. Materiaalissa esittellään ns. peruskäsitteet, joita tarvitaan useammin.
+
+Luokkakaavio tarkoitus on kuvata järjestelmässä olevia oliotyyppejä ja niiden välillä esiintyviä erilaisia staattisia suhteita. Nämä suhteet jakautuvat kahteen päätyppiin:
 
 * Assosisaatiot - esimerkiksi asiakas voi vuokrata joukon videoita.
-* Alityypit - sairaanhoitajon uksi henkilölaji.
+* Alityypit - sairaanhoitaja on yksi henkilölaji.
 
-{% file src=".gitbook/assets/uml luokkakaavio esimerkki.pdf" %}
+Suhteiden lisäksi luokkakaavioissa voidaan esittää **operaatioita**, jotka ovat niitä prosesseja mitkä luokka osaa toteuttaa. Tällainen voi olla luokkakaavion esimerkissä oleva Tilaus-luokan **lähetä()**-operaatio.
+
+{% file src="../.gitbook/assets/uml luokkakaavio esimerkki.pdf" %}
+
+Tutustu myös Tutorials Point sivuston tarjoamaan materiaaliin luokkakaavioihin liittyen.
+
+{% embed url="https://www.tutorialspoint.com/uml/uml_class_diagram.htm" %}
+
+{% embed url="https://fi.wikipedia.org/wiki/Luokkakaavio" %}
 
 ### Aktiviteettikaaviot
 
+Aktiviteettikaavioita käytetään järjestelmän työkulun mallintamiseen. Toiselta nimeltä nämä tunnetaan myös _toimintakaavioina_. Toimintakaavio kuvaa tehtävien tapahtumajärjestystä. Siinä voidaan esitellä ehdollista, että rinnakkaista toimintaa. Aktiviteettikaaivo muistuttaa _tilakaaviota_ mutta niiden sisällössä on pieniä eroja. Notaatiot muistuttavat toisiaan.
+
+{% file src="../.gitbook/assets/uml aktiviteettikaavio esimerkki.pdf" %}
+
+Tutustu myös Tutorials Point sivuston yhteenvetoon aktiviteettikaavioista.
+
+{% embed url="https://www.tutorialspoint.com/uml/uml_activity_diagram.htm" %}
+
+{% embed url="https://fi.wikipedia.org/wiki/Aktiviteettikaavio" %}
+
 ### Käyttötapauskaaviot
 
+Käyttötapaukset (use cases) ovat tapa kuvata järjestelmän ominaisuuksia sekä niiden tavoitteita. Nämä ovat usein tekstipohjaisia kevyitä kuvauksia siitä miten järjestelmän tulisi toimia tietyssä tissa. Käyttötapauksista on puhuttu erikseen tämän sivuston [materiaaleissa](../ketterae-ohjelmistokehitys/agile-kaeyttaejaetarina-ja-kaeyttoetapaus.md#kaeyttoetapaus).&#x20;
 
+Käyttötapauskaaviot puolestaan ovat tapa mallintaa näitä vaatimuksia suhteellisen yksinkertaisella tavalla. Kaavioihin liittyy lähinnä **toimijoiden, käyttötapausten** ja niiden välisten **suhteiden** kuvaamista.
+
+{% file src="../.gitbook/assets/uml kayttotapauskaavio esimerkki.pdf" %}
+
+Tutustu myös Tutorials Point sivuston yhteenvetoon käyttötapauskaavioista.
+
+{% embed url="https://www.tutorialspoint.com/uml/uml_use_case_diagram.htm" %}
+
+{% embed url="https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6tapauskaavio" %}
 
 ## Lähteet
 

@@ -50,9 +50,9 @@
 * [TDD perusteet 103](yksikkoetestaus/tdd-perusteet-103.md)
 * [TDD muu materiaali ja lähteitä](yksikkoetestaus/tdd-muu-materiaali-ja-laehteitae.md)
 
-***
+## UML mallinnuskieli
 
-* [UML -kaaviot](uml-kaaviot.md)
+* [Johdanto](uml-mallinnuskieli/johdanto.md)
 
 ## Relaatiotietokannat
 
