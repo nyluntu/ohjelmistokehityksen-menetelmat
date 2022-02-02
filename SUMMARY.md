@@ -6,7 +6,7 @@
 
 ## Toimeksiannot <a href="#toimeksiannot-2020-01" id="toimeksiannot-2020-01"></a>
 
-* [Toimeksiannon rajaukset](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
+* [Projektityön rajaukset ja toimeksiannot](toimeksiannot-2020-01/toimeksiannon-rajaukset.md)
 * [Palkanlaskenta](toimeksiannot-2020-01/palkanlaskenta.md)
 * [Kilometrikorvaus](toimeksiannot-2020-01/kilometrikorvaus.md)
 * [Laskutus](toimeksiannot-2020-01/laskutus.md)
